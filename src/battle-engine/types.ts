@@ -122,6 +122,8 @@ export interface BattleContext {
   turn: number;
   /** AI difficulty */
   aiDifficulty: 'easy' | 'normal' | 'hard';
+  /** PvP mode: 'ai' for single player, 'local' for local PvP */
+  pvpMode?: 'ai' | 'local';
 }
 
 /* ------------------------------------------------------------------ */

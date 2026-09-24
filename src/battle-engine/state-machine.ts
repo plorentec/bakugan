@@ -50,6 +50,7 @@ export class BattleEngine {
   private timerInterval: ReturnType<typeof setInterval> | null = null;
   private timerHelper = new TimerHelper();
   private difficulty: 'easy' | 'normal' | 'hard';
+  private pvpMode: 'ai' | 'local' = 'ai';
 
   constructor(aiDifficulty: 'easy' | 'normal' | 'hard' = 'easy') {
     this.difficulty = aiDifficulty;
@@ -61,6 +62,11 @@ export class BattleEngine {
     return this.state;
   }
 
+  /** Get the current PvP mode */
+  getPvPMode(): 'ai' | 'local' {
+    return this.pvpMode;
+  }
+
   /* ================================================================== */
   /*  Battle Lifecycle                                                    */
   /* ================================================================== */
@@ -70,6 +76,8 @@ export class BattleEngine {
    * Initializes state and transitions to REVEAL_GATE.
    */
   startBattle(context: BattleContext): BattleState {
+    this.pvpMode = context.pvpMode ?? 'ai';
+
     const playerState = this.createPlayerState(
       0,
       'Player',
@@ -228,8 +236,8 @@ export class BattleEngine {
         player.bakugan.name,
       );
 
-      // Apply AI handicap
-      if (player.id === 1) {
+      // Apply AI handicap (only in AI mode, not local PvP)
+      if (player.id === 1 && this.pvpMode === 'ai') {
         const handicap = this.ai.getGPowerHandicap();
         if (handicap < 0) {
           this.log(`${player.name} has AI handicap: ${handicap} G`);
@@ -275,10 +283,12 @@ export class BattleEngine {
 
     this.log('Ability Card window opened! Play a card or pass.');
 
-    // AI plays its ability card after a short delay
-    this.timerHelper.delay(() => {
-      this.aiPlayAbilityCard();
-    }, 500);
+    // AI plays its ability card after a short delay (only in AI mode)
+    if (this.pvpMode === 'ai') {
+      this.timerHelper.delay(() => {
+        this.aiPlayAbilityCard();
+      }, 500);
+    }
 
     this.startTimer(this.state.maxTimer, () => {
       this.closeAbilityWindow();
@@ -449,10 +459,12 @@ export class BattleEngine {
     this.state.minigameActive = true;
     this.log('Minigame started! Both players perform simultaneously.');
 
-    // AI "plays" the minigame after a delay
-    this.timerHelper.delay(() => {
-      this.resolveMinigame(1, this.ai.playMinigame());
-    }, 2000);
+    // AI "plays" the minigame after a delay (only in AI mode)
+    if (this.pvpMode === 'ai') {
+      this.timerHelper.delay(() => {
+        this.resolveMinigame(1, this.ai.playMinigame());
+      }, 2000);
+    }
   }
 
   /**

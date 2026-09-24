@@ -106,6 +106,17 @@ export default function Home() {
           variants={staggerItem}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
+          href="/battle?mode=pvp"
+          onClick={() => playSelectSound()}
+          className="block w-full py-4 px-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-blue-600 hover:to-cyan-600 transition shadow-lg shadow-blue-500/20"
+        >
+          PvP Battle
+        </motion.a>
+
+        <motion.a
+          variants={staggerItem}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           href="/battle"
           onClick={() => playSelectSound()}
           className="block w-full py-4 px-6 bg-gradient-to-r from-red-500 to-purple-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-red-600 hover:to-purple-600 transition shadow-lg shadow-red-500/20"

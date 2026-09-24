@@ -1,13 +1,16 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useBattleStore } from '@/stores/battle-store';
+import { usePvPStore } from '@/stores/pvp-store';
 import { eventBus } from '@/game/events/EventBus';
 import { playSelectSound } from '@/lib/sounds';
 import { zoomIn, PAGE_TRANSITION } from '@/lib/animations';
 import BattleHUD from '@/ui/battle/BattleHUD';
+import PlayerIndicator from '@/ui/battle/PlayerIndicator';
+import TurnTimer from '@/ui/battle/TurnTimer';
 import ScreenShake from '@/ui/effects/ScreenShake';
 import bakuganData from '@/data/raw/bakugan.json';
 import gateCardData from '@/data/raw/gate-cards.json';
@@ -25,14 +28,63 @@ const PhaserGame = dynamic(() => import('@/game/PhaserGame'), { ssr: false });
 
 export default function BattlePage() {
   const { startBattle, phase, player, battleEngine, startBattleEngine } = useBattleStore();
+  const {
+    isActive: pvpActive,
+    mode: pvpMode,
+    currentTurnIndex,
+    turnTimer,
+    turnTimerMax,
+    players: pvpPlayers,
+    startLocalBattle,
+    startAIBattle,
+    forfeit,
+    resetPvP,
+  } = usePvPStore();
   const [gameStarted, setGameStarted] = useState(false);
   const [shakeTrigger, setShakeTrigger] = useState(0);
+  const [selectedMode, setSelectedMode] = useState<'ai' | 'local' | null>(null);
+  const [showForfeitConfirm, setShowForfeitConfirm] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const handleStart = () => {
+  const handleStartAI = useCallback(() => {
     playSelectSound();
+    startAIBattle();
     startBattle();
+    setSelectedMode('ai');
     setGameStarted(true);
-  };
+  }, [startAIBattle, startBattle]);
+
+  const handleStartLocal = useCallback(() => {
+    playSelectSound();
+    startLocalBattle();
+    startBattle();
+    setSelectedMode('local');
+    setGameStarted(true);
+  }, [startLocalBattle, startBattle]);
+
+  const handleForfeit = useCallback(() => {
+    playSelectSound();
+    forfeit(currentTurnIndex);
+    setShowForfeitConfirm(false);
+    setGameStarted(false);
+    resetPvP();
+  }, [forfeit, currentTurnIndex, resetPvP]);
+
+  // Turn timer for local PvP
+  useEffect(() => {
+    if (!pvpActive || pvpMode !== 'local' || !gameStarted) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+
+    timerRef.current = setInterval(() => {
+      usePvPStore.getState().tickTimer();
+    }, 1000);
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [pvpActive, pvpMode, gameStarted]);
 
   // Listen for BATTLE_TRIGGERED and start the battle engine
   useEffect(() => {
@@ -66,6 +118,7 @@ export default function BattlePage() {
         gateCard: gateCard as unknown as GateCard,
         turn: 1,
         aiDifficulty: 'easy',
+        pvpMode: usePvPStore.getState().mode,
       };
 
       startBattleEngine(context);
@@ -109,6 +162,47 @@ export default function BattlePage() {
               </p>
             </motion.div>
 
+            {/* Mode selection */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="flex flex-col items-center gap-4"
+            >
+              <h2 className="font-mono text-sm uppercase text-gray-500">Select Mode</h2>
+              <div className="flex gap-4">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handleStartAI}
+                  className={`flex flex-col items-center gap-2 rounded-lg border-2 px-8 py-5 transition ${
+                    selectedMode === 'ai'
+                      ? 'border-orange-500 bg-orange-500/20'
+                      : 'border-gray-700 bg-gray-900 hover:border-gray-500'
+                  }`}
+                >
+                  <span className="text-2xl">🤖</span>
+                  <span className="font-mono text-sm font-bold text-white">vs AI</span>
+                  <span className="font-mono text-[10px] text-gray-400">Single Player</span>
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handleStartLocal}
+                  className={`flex flex-col items-center gap-2 rounded-lg border-2 px-8 py-5 transition ${
+                    selectedMode === 'local'
+                      ? 'border-blue-500 bg-blue-500/20'
+                      : 'border-gray-700 bg-gray-900 hover:border-gray-500'
+                  }`}
+                >
+                  <span className="text-2xl">👥</span>
+                  <span className="font-mono text-sm font-bold text-white">Local PvP</span>
+                  <span className="font-mono text-[10px] text-gray-400">2 Players</span>
+                </motion.button>
+              </div>
+            </motion.div>
+
             {/* Deck preview */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -119,7 +213,7 @@ export default function BattlePage() {
               {/* Bakugan lineup */}
               <div>
                 <h2 className="mb-3 text-center font-mono text-sm uppercase text-gray-500">
-                  Your Bakugan
+                  {selectedMode === 'local' ? 'P1 Bakugan' : 'Your Bakugan'}
                 </h2>
                 <div className="flex gap-4">
                   {bakuganData.slice(0, 3).map((b) => (
@@ -141,6 +235,33 @@ export default function BattlePage() {
                   ))}
                 </div>
               </div>
+
+              {selectedMode === 'local' && (
+                <div>
+                  <h2 className="mb-3 text-center font-mono text-sm uppercase text-gray-500">
+                    P2 Bakugan
+                  </h2>
+                  <div className="flex gap-4">
+                    {bakuganData.slice(3, 6).map((b) => (
+                      <div
+                        key={b.id}
+                        className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900 p-3"
+                      >
+                        <div
+                          className="h-10 w-10 rounded-full"
+                          style={{
+                            backgroundColor: attributeColor(b.attributes[0]),
+                          }}
+                        />
+                        <span className="font-mono text-xs font-bold">{b.name}</span>
+                        <span className="font-mono text-[10px] text-gray-500">
+                          {b.base_g_power} G
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Ability Cards */}
               <div>
@@ -183,22 +304,15 @@ export default function BattlePage() {
                     <span className="text-yellow-400">Scratch</span> during battle minigame for
                     G-Power
                   </li>
+                  {selectedMode === 'local' && (
+                    <li>
+                      <span className="text-blue-400">P1</span> controls bottom &nbsp;|&nbsp;
+                      <span className="text-red-400">P2</span> controls top
+                    </li>
+                  )}
                 </ul>
               </div>
             </motion.div>
-
-            {/* Start button */}
-            <motion.button
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleStart}
-              className="rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-10 py-4 font-bold uppercase tracking-wider shadow-lg shadow-orange-500/20 transition hover:from-orange-600 hover:to-red-600"
-            >
-              Start Battle
-            </motion.button>
 
             <motion.p
               initial={{ opacity: 0 }}
@@ -220,6 +334,65 @@ export default function BattlePage() {
               <div className="pointer-events-none absolute inset-0">
                 <BattleHUD />
               </div>
+
+              {/* PvP overlays — only active in local PvP mode */}
+              {pvpActive && pvpMode === 'local' && (
+                <>
+                  <PlayerIndicator
+                    currentPlayer={currentTurnIndex}
+                    playerNames={[pvpPlayers[0].name, pvpPlayers[1].name]}
+                    isActive={pvpActive}
+                  />
+                  <TurnTimer
+                    timeRemaining={turnTimer}
+                    maxTime={turnTimerMax}
+                    isActive={pvpActive}
+                  />
+                </>
+              )}
+
+              {/* Forfeit button — only during active battle */}
+              {gameStarted && pvpActive && (
+                <div className="pointer-events-auto absolute bottom-4 right-4 z-50">
+                  <AnimatePresence>
+                    {showForfeitConfirm ? (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.9 }}
+                        className="flex flex-col items-center gap-2 rounded-lg border border-red-500 bg-gray-900 p-3"
+                      >
+                        <span className="font-mono text-xs text-red-400">Forfeit match?</span>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={handleForfeit}
+                            className="rounded bg-red-500 px-3 py-1 font-mono text-xs font-bold text-white hover:bg-red-600"
+                          >
+                            Yes
+                          </button>
+                          <button
+                            onClick={() => setShowForfeitConfirm(false)}
+                            className="rounded bg-gray-700 px-3 py-1 font-mono text-xs text-gray-300 hover:bg-gray-600"
+                          >
+                            No
+                          </button>
+                        </div>
+                      </motion.div>
+                    ) : (
+                      <motion.button
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => setShowForfeitConfirm(true)}
+                        className="rounded-lg border border-gray-600 bg-gray-800/80 px-4 py-2 font-mono text-xs text-gray-400 backdrop-blur-sm hover:border-red-500 hover:text-red-400"
+                      >
+                        Forfeit
+                      </motion.button>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
             </div>
 
             {/* Sidebar — deck info */}

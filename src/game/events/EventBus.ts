@@ -32,7 +32,11 @@ export type GameEventType =
   // FASE 7: Animation events
   | 'ANIMATION_SHAKE'
   | 'ANIMATION_GLOW'
-  | 'ANIMATION_PARTICLE';
+  | 'ANIMATION_PARTICLE'
+  // FASE 9: PvP events
+  | 'PVP_TURN_CHANGED'
+  | 'PVP_MATCH_OVER'
+  | 'PVP_FORFEIT';
 
 export interface GameEventPayloads {
   BAKUGAN_THROWN: { bakuganId: string; targetX: number; targetY: number; force: number; playerId: number };
@@ -73,6 +77,10 @@ export interface GameEventPayloads {
   ANIMATION_SHAKE: { intensity?: number; duration?: number };
   ANIMATION_GLOW: { x: number; y: number; color?: string; duration?: number };
   ANIMATION_PARTICLE: { x: number; y: number; type: 'sparkles' | 'glow' | 'explosion' | 'trail'; color?: string };
+  // FASE 9: PvP events
+  PVP_TURN_CHANGED: { currentPlayer: number; turnCount: number; playerName: string };
+  PVP_MATCH_OVER: { winnerIndex: number; winnerName: string; gateCardsWon: [number, number] };
+  PVP_FORFEIT: { playerId: number; playerName: string };
 }
 
 type Callback<T = unknown> = (data: T) => void;
