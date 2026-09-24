@@ -6,6 +6,9 @@ import abilityCardData from '@/data/raw/ability-cards.json';
 import { eventBus } from '@/game/events/EventBus';
 import { BattleEngine } from '@/battle-engine/state-machine';
 import type { BattleContext } from '@/battle-engine/types';
+import { useProgressionStore } from '@/stores/progression-store';
+import { calculateBrawlRewards } from '@/lib/money';
+import { calculateXpReward, type Difficulty } from '@/lib/xp';
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                               */
@@ -60,8 +63,20 @@ export interface BattleState {
   winReason: string;
   selectedAbilityCard: string | null;
 
+  // Battle context
+  difficulty: Difficulty;
+  isStoryMode: boolean;
+  storyOpponentId: string | null;
+
+  // Reward tracking
+  bakuganDefeatedByPlayer: number;
+  bakuganDefeatedByOpponent: number;
+  defeatedBakuganLevels: number[];
+  opponentGateCardsWon: number;
+  powerUpsCollected: number;
+
   // Actions
-  startBattle: () => void;
+  startBattle: (difficulty?: Difficulty, storyOpponentId?: string) => void;
   setPhase: (phase: BattlePhase) => void;
   placeGateCard: (gateCardId: string) => void;
   selectBakugan: (index: number) => void;
@@ -79,6 +94,10 @@ export interface BattleState {
   setSelectedAbilityCard: (cardId: string | null) => void;
   addBattleLog: (message: string) => void;
   resetBattle: () => void;
+
+  // Reward actions
+  processRewards: () => void;
+  recordOpponentGateCardWin: () => void;
 }
 
 /* ------------------------------------------------------------------ */
@@ -122,7 +141,19 @@ export const useBattleStore = create<BattleState>((set, get) => ({
   winReason: '',
   selectedAbilityCard: null,
 
-  startBattle: () => {
+  // Battle context
+  difficulty: 'easy',
+  isStoryMode: false,
+  storyOpponentId: null,
+
+  // Reward tracking
+  bakuganDefeatedByPlayer: 0,
+  bakuganDefeatedByOpponent: 0,
+  defeatedBakuganLevels: [],
+  opponentGateCardsWon: 0,
+  powerUpsCollected: 0,
+
+  startBattle: (difficulty: Difficulty = 'easy', storyOpponentId?: string) => {
     set({
       phase: 'PLACE_GATE',
       player: createDefaultPlayer('Player', 0),
@@ -139,6 +170,14 @@ export const useBattleStore = create<BattleState>((set, get) => ({
       winnerPlayerId: null,
       winReason: '',
       selectedAbilityCard: null,
+      difficulty,
+      isStoryMode: !!storyOpponentId,
+      storyOpponentId: storyOpponentId ?? null,
+      bakuganDefeatedByPlayer: 0,
+      bakuganDefeatedByOpponent: 0,
+      defeatedBakuganLevels: [],
+      opponentGateCardsWon: 0,
+      powerUpsCollected: 0,
     });
   },
 
@@ -190,7 +229,8 @@ export const useBattleStore = create<BattleState>((set, get) => ({
     const who = winnerPlayerId === 0 ? 'player' : 'opponent';
     const winner = state[who];
 
-    set({
+    // Track if opponent won a gate card (for shutout check)
+    const updates: Partial<BattleState> = {
       [who]: {
         ...winner,
         gateCardsWon: winner.gateCardsWon + 1,
@@ -198,7 +238,13 @@ export const useBattleStore = create<BattleState>((set, get) => ({
       phase: 'SELECT_BAKUGAN',
       battleMessage: `${winner.name} wins the Gate Card!`,
       currentGateCardOnField: null,
-    } as Partial<BattleState>);
+    };
+
+    if (winnerPlayerId === 1) {
+      updates.opponentGateCardsWon = (state.opponentGateCardsWon || 0) + 1;
+    }
+
+    set(updates as Partial<BattleState>);
   },
 
   updateGPower: (playerId, gPower) => {
@@ -286,7 +332,66 @@ export const useBattleStore = create<BattleState>((set, get) => ({
       selectedAbilityCard: null,
       currentGateCardOnField: null,
       battleMessage: '',
+      difficulty: 'easy',
+      isStoryMode: false,
+      storyOpponentId: null,
+      bakuganDefeatedByPlayer: 0,
+      bakuganDefeatedByOpponent: 0,
+      defeatedBakuganLevels: [],
+      opponentGateCardsWon: 0,
+      powerUpsCollected: 0,
     });
+  },
+
+  /* ================================================================== */
+  /*  Reward Processing                                                   */
+  /* ================================================================== */
+
+  processRewards: () => {
+    const state = get();
+    const progStore = useProgressionStore.getState();
+
+    // Calculate money reward
+    const moneyResult = calculateBrawlRewards({
+      playerWon: state.winnerPlayerId === 0,
+      bakuganDefeated: state.bakuganDefeatedByPlayer,
+      defeatedBakuganLevels: state.defeatedBakuganLevels,
+      opponentShutout: state.opponentGateCardsWon === 0,
+      isStoryMode: state.isStoryMode,
+      opponentLevel: 1,
+      powerUpsCollected: state.powerUpsCollected,
+      hasExperienceBoost: false,
+    });
+
+    // Calculate XP reward
+    const xpResult = calculateXpReward({
+      opponentLevel: 1,
+      bakuganDefeatedLevels: state.defeatedBakuganLevels,
+      difficulty: state.difficulty,
+      hasExperienceBoost: false,
+      playerWon: state.winnerPlayerId === 0,
+    });
+
+    // Apply money
+    if (moneyResult.total > 0) {
+      progStore.addMoney(moneyResult.total);
+    }
+
+    // Apply XP
+    if (xpResult.total > 0) {
+      const newLevel = progStore.addXp(xpResult.total);
+      // Level-up is handled by the progression store; the UI reads hasLeveledUp
+    }
+
+    // Story mode: complete opponent
+    if (state.isStoryMode && state.storyOpponentId && state.winnerPlayerId === 0) {
+      progStore.completeStoryOpponent(state.storyOpponentId);
+    }
+  },
+
+  recordOpponentGateCardWin: () => {
+    const { opponentGateCardsWon } = get();
+    set({ opponentGateCardsWon: opponentGateCardsWon + 1 });
   },
 }));
 
