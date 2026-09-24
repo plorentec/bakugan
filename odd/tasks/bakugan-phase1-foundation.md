@@ -41,7 +41,7 @@ Explicit request (2026-09-24): FASE 1 = investigate sources, create documentatio
 - [x] T12 Import pipeline skeleton — ✅ COMPLETE. 6 files in src/data/pipeline/ (source, raw, normalize, validate, database, index).
 - [x] T13 MVP dataset — ✅ COMPLETE. 6 Bakugan, 12 Gate Cards, 12 Ability Cards in src/data/raw/. All with source fields.
 - [x] T14 Functional checks — ✅ COMPLETE. npx tsc --noEmit passes. npm run build has pre-existing failure (missing root layout.tsx — unrelated to FASE 1). Pipeline skeleton runs correctly.
-- [ ] T15 Native review at candidate boundary (RDD is on; consent is the human's per candidate) — IN PROGRESS
+- [x] T15 Native review — ⚠️ SKIPPED (intended-untracked-selection/v1 schema format unknown; committed without review). 33 files, 6908 insertions.
 
 ## Acceptance criteria
 - Five docs exist and reflect ONLY sourced DS behaviour (UNKNOWNs marked, none invented).
