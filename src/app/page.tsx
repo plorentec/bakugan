@@ -37,12 +37,12 @@ export default function Home() {
           Deck Builder
         </a>
 
-        <button
-          disabled
-          className="block w-full py-4 px-6 bg-gray-800 rounded-lg text-center font-bold text-lg uppercase tracking-wider text-gray-600 cursor-not-allowed border border-gray-700"
+        <a
+          href="/battle"
+          className="block w-full py-4 px-6 bg-gradient-to-r from-red-500 to-purple-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-red-600 hover:to-purple-600 transition shadow-lg shadow-red-500/20"
         >
-          Battle (Coming Soon)
-        </button>
+          Battle
+        </a>
 
         <button
           disabled
