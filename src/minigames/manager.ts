@@ -1,14 +1,22 @@
 /**
  * Minigame Manager — creates and manages minigames based on Gate Card tier.
  *
- * Gold → Scratch Battle or Spin Battle (MVP: Scratch only)
- * Silver → Timing Battle or Pop Battle (placeholder)
- * Copper → Trace Battle or Bound Battle (placeholder)
+ * Gold → Scratch Battle or Spin Battle
+ * Silver → Timing Battle or Pop Battle
+ * Copper → Trace Battle or Bound Battle
+ *
+ * Tier-to-minigame mapping is used when the Gate Card's battle_type
+ * is not specific enough, or for random selection within a tier.
  */
 
-import type { GateCardBattleType } from '@/data/schemas';
+import type { GateCardBattleType, GateCardTier } from '@/data/schemas';
 import type { IMinigame, MinigameConfig, MinigameType } from './types';
 import { ScratchBattle } from './scratch-battle';
+import { SpinBattle } from './spin-battle';
+import { TimingBattle } from './timing-battle';
+import { PopBattle } from './pop-battle';
+import { TraceBattle } from './trace-battle';
+import { BoundBattle } from './bound-battle';
 import balanceConfig from '@/data/config/balance.json';
 
 /* ------------------------------------------------------------------ */
@@ -35,37 +43,51 @@ export class MinigameManager {
       case 'scratch':
         this.currentMinigame = new ScratchBattle(config);
         break;
-
       case 'spin':
-        // Placeholder: use Scratch Battle for now
-        this.currentMinigame = new ScratchBattle(config);
+        this.currentMinigame = new SpinBattle(config);
         break;
-
       case 'timing':
-        // Placeholder: use Scratch Battle for now
-        this.currentMinigame = new ScratchBattle(config);
+        this.currentMinigame = new TimingBattle(config);
         break;
-
       case 'pop':
-        // Placeholder: use Scratch Battle for now
-        this.currentMinigame = new ScratchBattle(config);
+        this.currentMinigame = new PopBattle(config);
         break;
-
       case 'trace':
-        // Placeholder: use Scratch Battle for now
-        this.currentMinigame = new ScratchBattle(config);
+        this.currentMinigame = new TraceBattle(config);
         break;
-
       case 'bound':
-        // Placeholder: use Scratch Battle for now
-        this.currentMinigame = new ScratchBattle(config);
+        this.currentMinigame = new BoundBattle(config);
         break;
-
       default:
         this.currentMinigame = new ScratchBattle(config);
     }
 
     return this.currentMinigame;
+  }
+
+  /**
+   * Create a random minigame for a given Gate Card tier.
+   * Useful when the card's specific battle_type is not set,
+   * or when you want random selection within the tier.
+   *
+   * Gold  → ['scratch', 'spin']
+   * Silver → ['timing', 'pop']
+   * Copper → ['trace', 'bound']
+   */
+  createMinigameForTier(
+    tier: GateCardTier,
+    difficulty: number = 1.0,
+  ): IMinigame {
+    const tierMinigames: Record<GateCardTier, MinigameType[]> = {
+      gold: ['scratch', 'spin'],
+      silver: ['timing', 'pop'],
+      copper: ['trace', 'bound'],
+    };
+
+    const options = tierMinigames[tier];
+    const chosen = options[Math.floor(Math.random() * options.length)];
+
+    return this.createMinigame(chosen, difficulty);
   }
 
   /**
