@@ -1,0 +1,354 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000040",
+    "name": "Rewind",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active"
+      }
+    ],
+    "description": "Battle starts over",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card. Restarts the current battle.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000041",
+    "name": "Scratch Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Scratch Battle",
+          "value": "scratch"
+        }
+      }
+    ],
+    "description": "Battle starts over as Scratch Battle",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card. Restarts battle as Scratch Battle minigame.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000042",
+    "name": "Spin Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Spin Battle",
+          "value": "spin"
+        }
+      }
+    ],
+    "description": "Battle starts over as Spin Battle",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card. Restarts battle as Spin Battle minigame.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000043",
+    "name": "Timing Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Timing Battle",
+          "value": "timing"
+        }
+      }
+    ],
+    "description": "Battle starts over as Timing Battle",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card. Restarts battle as Timing Battle minigame.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000050",
+    "name": "Stolen Gold",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "GATE_CARD_TIER",
+          "description": "Only on Gold Gate Card",
+          "value": "gold"
+        }
+      },
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Gold Gate Cards",
+        "value": "gold"
+      }
+    ],
+    "description": "Skip battle on Gold Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Skips battle on Gold Gate Card. Highest G wins.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000051",
+    "name": "Swiped Silver",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "GATE_CARD_TIER",
+          "description": "Only on Silver Gate Card",
+          "value": "silver"
+        }
+      },
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Silver Gate Cards",
+        "value": "silver"
+      }
+    ],
+    "description": "Skip battle on Silver Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Skips battle on Silver Gate Card. Highest G wins.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000052",
+    "name": "Copped Copper",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "GATE_CARD_TIER",
+          "description": "Only on Copper Gate Card",
+          "value": "copper"
+        }
+      },
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Copper Gate Cards",
+        "value": "copper"
+      }
+    ],
+    "description": "Skip battle on Copper Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Skips battle on Copper Gate Card. Highest G wins.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000053",
+    "name": "Negative Wave",
+    "color": "green",
+    "effects": [
+      {
+        "type": "REMOVE_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "G_POWER_BOOST",
+          "description": "Removes G-Power boosts for both combatants",
+          "value": "all_boosts"
+        }
+      }
+    ],
+    "description": "Cancel G-Power boosts for both combatants",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Cancels G-Power boosts from Gate Cards and other sources for both sides.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000060",
+    "name": "Bright Light",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+80 G for Haos",
+          "value": "haos"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+50 G for Subterra and Darkus",
+          "value": ["subterra", "darkus"]
+        }
+      }
+    ],
+    "description": "+80 G for Haos, +50 G for Subterra and Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card. Flat G-Power boost based on attribute.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000061",
+    "name": "G-Power Boost",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+60 G for Pyrus, Subterra, and Darkus",
+          "value": ["pyrus", "subterra", "darkus"]
+        }
+      }
+    ],
+    "description": "+60 G for Pyrus, Subterra, and Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card. Flat G-Power boost based on attribute.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000062",
+    "name": "Blaze",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+80 G for Pyrus",
+          "value": "pyrus"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+50 G for Aquos and Ventus",
+          "value": ["aquos", "ventus"]
+        }
+      }
+    ],
+    "description": "+80 G for Pyrus, +50 G for Aquos and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card. Flat G-Power boost based on attribute.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000063",
+    "name": "G-Power Bump",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "+60 G for Aquos, Haos, and Ventus",
+          "value": ["aquos", "haos", "ventus"]
+        }
+      }
+    ],
+    "description": "+60 G for Aquos, Haos, and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card. Flat G-Power boost based on attribute.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  }
+]

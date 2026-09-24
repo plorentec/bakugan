@@ -1,0 +1,55 @@
+{
+  "g_power": {
+    "per_level_increment": 25,
+    "min_level": 1,
+    "max_level": 11,
+    "stat_max": 4,
+    "stat_points_per_level": 1
+  },
+  "battle": {
+    "timer_seconds": 30,
+    "domination_threshold": 0.95,
+    "ability_card_window_seconds": 5
+  },
+  "minigame": {
+    "result_min": 0.0,
+    "result_max": 1.0,
+    "g_power_per_result_point": 100
+  },
+  "field": {
+    "advantage_g_power": 50,
+    "disadvantage_g_power": -50,
+    "hazard_damage": {
+      "pyrus_lava": -10,
+      "darkus_lightning": -50
+    }
+  },
+  "special_shot": {
+    "required_level": 3,
+    "meter_fill_rate_base": 10,
+    "meter_fill_rate_losing": 20
+  },
+  "ai": {
+    "easy": {
+      "minigame_accuracy_min": 0.3,
+      "minigame_accuracy_max": 0.5,
+      "g_power_handicap": -50,
+      "use_special_shots": false
+    },
+    "normal": {
+      "minigame_accuracy_min": 0.4,
+      "minigame_accuracy_max": 0.7,
+      "g_power_handicap": 0,
+      "use_special_shots": "basic"
+    },
+    "hard": {
+      "minigame_accuracy_min": 0.6,
+      "minigame_accuracy_max": 0.9,
+      "g_power_handicap": 0,
+      "use_special_shots": true
+    }
+  },
+  "story": {
+    "g_power_handicap": -100
+  }
+}

@@ -1,6 +1,8 @@
 node_modules
 .next
-data
+data/*.db
+data/*.sqlite
+data/*.sqlite3
 .env
 *.log
 .DS_Store

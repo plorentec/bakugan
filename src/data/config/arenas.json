@@ -1,0 +1,333 @@
+{
+  "arenas": [
+    {
+      "id": "standard-arena",
+      "name": "Standard Arena",
+      "description": "Very small map without anything particularly interesting. The basic arena for tutorials and early battles.",
+      "is_standard": true,
+      "field_size": { "width": 800, "height": 600 },
+      "hazards": [],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Standard arena. No hazards. Basic tutorial field.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "aquos-arena",
+      "name": "Aquos Field",
+      "description": "Fountains push back non-Aquos or launch up. Circular river moves non-Aquos counterclockwise.",
+      "is_standard": false,
+      "advantage_attribute": "aquos",
+      "disadvantage_attribute": "pyrus",
+      "field_size": { "width": 900, "height": 650 },
+      "hazards": [
+        {
+          "id": "aquos-fountain-1",
+          "type": "fountain",
+          "position": { "x": 200, "y": 300 },
+          "effect": "Pushes back non-Aquos Bakugan or launches them upward",
+          "affected_attributes": ["aquos"],
+          "launch_force": 1.0
+        },
+        {
+          "id": "aquos-fountain-2",
+          "type": "fountain",
+          "position": { "x": 700, "y": 300 },
+          "effect": "Pushes back non-Aquos Bakugan or launches them upward",
+          "affected_attributes": ["aquos"],
+          "launch_force": 1.0
+        },
+        {
+          "id": "aquos-river",
+          "type": "river",
+          "position": { "x": 450, "y": 325 },
+          "size": { "width": 600, "height": 80 },
+          "effect": "Circular river moves non-Aquos Bakugan counterclockwise",
+          "affected_attributes": ["aquos"]
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Aquos field. Fountains and circular river.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "subterra-arena",
+      "name": "Subterra Field",
+      "description": "Biggest map. Four lanes, rest is quicksand (slows non-Subterra). Pillars impossible to reach without boosts.",
+      "is_standard": false,
+      "advantage_attribute": "subterra",
+      "disadvantage_attribute": "ventus",
+      "field_size": { "width": 1000, "height": 700 },
+      "hazards": [
+        {
+          "id": "subterra-quicksand-1",
+          "type": "quicksand",
+          "position": { "x": 150, "y": 200 },
+          "size": { "width": 200, "height": 150 },
+          "effect": "Slows non-Subterra Bakugan movement",
+          "affected_attributes": ["subterra"]
+        },
+        {
+          "id": "subterra-quicksand-2",
+          "type": "quicksand",
+          "position": { "x": 650, "y": 200 },
+          "size": { "width": 200, "height": 150 },
+          "effect": "Slows non-Subterra Bakugan movement",
+          "affected_attributes": ["subterra"]
+        },
+        {
+          "id": "subterra-quicksand-3",
+          "type": "quicksand",
+          "position": { "x": 150, "y": 450 },
+          "size": { "width": 200, "height": 150 },
+          "effect": "Slows non-Subterra Bakugan movement",
+          "affected_attributes": ["subterra"]
+        },
+        {
+          "id": "subterra-quicksand-4",
+          "type": "quicksand",
+          "position": { "x": 650, "y": 450 },
+          "size": { "width": 200, "height": 150 },
+          "effect": "Slows non-Subterra Bakugan movement",
+          "affected_attributes": ["subterra"]
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 8,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Subterra field. Biggest map. Four lanes with quicksand between them.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "ventus-arena",
+      "name": "Ventus Field",
+      "description": "Vents blow non-Ventus up and away. Tornado picks up and flings non-Ventus randomly (path marked).",
+      "is_standard": false,
+      "advantage_attribute": "ventus",
+      "disadvantage_attribute": "subterra",
+      "field_size": { "width": 900, "height": 650 },
+      "hazards": [
+        {
+          "id": "ventus-vent-1",
+          "type": "vent",
+          "position": { "x": 300, "y": 200 },
+          "effect": "Blows non-Ventus Bakugan up and away",
+          "affected_attributes": ["ventus"],
+          "launch_force": 1.2
+        },
+        {
+          "id": "ventus-vent-2",
+          "type": "vent",
+          "position": { "x": 600, "y": 400 },
+          "effect": "Blows non-Ventus Bakugan up and away",
+          "affected_attributes": ["ventus"],
+          "launch_force": 1.2
+        },
+        {
+          "id": "ventus-tornado",
+          "type": "tornado",
+          "position": { "x": 450, "y": 325 },
+          "effect": "Picks up non-Ventus Bakugan and flings them randomly along marked path",
+          "affected_attributes": ["ventus"]
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Ventus field. Vents and tornado.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "pyrus-arena",
+      "name": "Pyrus Field",
+      "description": "Geysers repel non-Pyrus or launch up (more forceful than fountains). Lava lines: non-Pyrus lose 10 G-Power and get launched if on too long.",
+      "is_standard": false,
+      "advantage_attribute": "pyrus",
+      "disadvantage_attribute": "aquos",
+      "field_size": { "width": 900, "height": 650 },
+      "hazards": [
+        {
+          "id": "pyrus-geyser-1",
+          "type": "geyser",
+          "position": { "x": 250, "y": 300 },
+          "effect": "Repels non-Pyrus Bakugan or launches them upward (more forceful than fountains)",
+          "affected_attributes": ["pyrus"],
+          "launch_force": 1.5
+        },
+        {
+          "id": "pyrus-geyser-2",
+          "type": "geyser",
+          "position": { "x": 650, "y": 300 },
+          "effect": "Repels non-Pyrus Bakugan or launches them upward (more forceful than fountains)",
+          "affected_attributes": ["pyrus"],
+          "launch_force": 1.5
+        },
+        {
+          "id": "pyrus-lava-1",
+          "type": "lava_line",
+          "position": { "x": 450, "y": 200 },
+          "size": { "width": 300, "height": 10 },
+          "effect": "Non-Pyrus Bakugan lose 10 G-Power and get launched if on lava too long",
+          "affected_attributes": ["pyrus"],
+          "g_power_penalty": -10
+        },
+        {
+          "id": "pyrus-lava-2",
+          "type": "lava_line",
+          "position": { "x": 450, "y": 450 },
+          "size": { "width": 300, "height": 10 },
+          "effect": "Non-Pyrus Bakugan lose 10 G-Power and get launched if on lava too long",
+          "affected_attributes": ["pyrus"],
+          "g_power_penalty": -10
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Pyrus field. Geysers and lava lines.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "haos-arena",
+      "name": "Haos Field",
+      "description": "Floating cubes suck in and launch non-Haos randomly. Warp strips teleport all Bakugan to opposite side.",
+      "is_standard": false,
+      "advantage_attribute": "haos",
+      "disadvantage_attribute": "darkus",
+      "field_size": { "width": 900, "height": 650 },
+      "hazards": [
+        {
+          "id": "haos-cube-1",
+          "type": "floating_cube",
+          "position": { "x": 300, "y": 250 },
+          "effect": "Sucks in non-Haos Bakugan and launches them randomly",
+          "affected_attributes": ["haos"]
+        },
+        {
+          "id": "haos-cube-2",
+          "type": "floating_cube",
+          "position": { "x": 600, "y": 400 },
+          "effect": "Sucks in non-Haos Bakugan and launches them randomly",
+          "affected_attributes": ["haos"]
+        },
+        {
+          "id": "haos-warp-1",
+          "type": "warp_strip",
+          "position": { "x": 100, "y": 325 },
+          "size": { "width": 50, "height": 100 },
+          "effect": "Teleports all Bakugan to the opposite warp strip",
+          "launch_force": 0
+        },
+        {
+          "id": "haos-warp-2",
+          "type": "warp_strip",
+          "position": { "x": 750, "y": 325 },
+          "size": { "width": 50, "height": 100 },
+          "effect": "Teleports all Bakugan to the opposite warp strip",
+          "launch_force": 0
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Haos field. Floating cubes and warp strips.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    },
+    {
+      "id": "darkus-arena",
+      "name": "Darkus Field",
+      "description": "Lightning rains down: non-Darkus struck lose 50 G-Power and get launched.",
+      "is_standard": false,
+      "advantage_attribute": "darkus",
+      "disadvantage_attribute": "haos",
+      "field_size": { "width": 900, "height": 650 },
+      "hazards": [
+        {
+          "id": "darkus-lightning-1",
+          "type": "lightning",
+          "position": { "x": 250, "y": 200 },
+          "effect": "Lightning strikes non-Darkus Bakugan: -50 G-Power and launched",
+          "affected_attributes": ["darkus"],
+          "g_power_penalty": -50
+        },
+        {
+          "id": "darkus-lightning-2",
+          "type": "lightning",
+          "position": { "x": 450, "y": 325 },
+          "effect": "Lightning strikes non-Darkus Bakugan: -50 G-Power and launched",
+          "affected_attributes": ["darkus"],
+          "g_power_penalty": -50
+        },
+        {
+          "id": "darkus-lightning-3",
+          "type": "lightning",
+          "position": { "x": 650, "y": 450 },
+          "effect": "Lightning strikes non-Darkus Bakugan: -50 G-Power and launched",
+          "affected_attributes": ["darkus"],
+          "g_power_penalty": -50
+        }
+      ],
+      "spawn_points": [],
+      "gate_card_slots": 6,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Darkus field. Lightning strikes.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-24T00:00:00Z",
+      "updated_at": "2026-09-24T00:00:00Z"
+    }
+  ],
+  "power_up_spawn_rates": {
+    "g_power_boost": 0.3,
+    "experience_boost": 0.2,
+    "s_power_boost": 0.1
+  },
+  "power_up_values": {
+    "g_power_boost": 30,
+    "experience_boost": 0.2,
+    "s_power_boost_small": 0.25,
+    "s_power_boost_large": 1.0
+  }
+}

@@ -1,0 +1,303 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000010",
+    "name": "Serpenoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 180,
+      "aquos": 60,
+      "subterra": 90,
+      "haos": 140,
+      "darkus": 130,
+      "ventus": 50
+    },
+    "effect": {
+      "type": "BONUS_TWICE",
+      "description": "If the depicted Bakugan stands on it, bonus applied twice"
+    },
+    "depicted_bakugan": "Serpenoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Serpenoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000011",
+    "name": "Juggernoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 160,
+      "subterra": 70,
+      "haos": 100,
+      "darkus": 70,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "BONUS_TWICE",
+      "description": "If the depicted Bakugan stands on it, bonus applied twice"
+    },
+    "depicted_bakugan": "Juggernoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Juggernoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000012",
+    "name": "Saurus",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 50,
+      "subterra": 180,
+      "haos": 100,
+      "darkus": 50,
+      "ventus": 80
+    },
+    "effect": {
+      "type": "BONUS_TWICE",
+      "description": "If the depicted Bakugan stands on it, bonus applied twice"
+    },
+    "depicted_bakugan": "Saurus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Saurus stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000013",
+    "name": "Falconeer",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 80,
+      "ventus": 160
+    },
+    "effect": {
+      "type": "BONUS_TWICE",
+      "description": "If the depicted Bakugan stands on it, bonus applied twice"
+    },
+    "depicted_bakugan": "Falconeer",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Falconeer stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000020",
+    "name": "Fire Pit",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 120,
+      "subterra": 80,
+      "haos": 20,
+      "darkus": 20,
+      "ventus": 60
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000021",
+    "name": "Muddy Ground",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 60,
+      "subterra": 140,
+      "haos": 120,
+      "darkus": 80,
+      "ventus": 20
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000022",
+    "name": "Light-Burst",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 50,
+      "subterra": 90,
+      "haos": 200,
+      "darkus": 170,
+      "ventus": 110
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000023",
+    "name": "Tsunami",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 170,
+      "subterra": 110,
+      "haos": 80,
+      "darkus": 110,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000030",
+    "name": "Lockdown",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "DOUBLE_ABILITY_CARD_BOOSTS",
+      "description": "All G-Power boosts from Ability Cards doubled"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles Ability Card G-Power boosts.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000031",
+    "name": "G-Power Exchange",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 30,
+      "subterra": 50,
+      "haos": 20,
+      "darkus": 20,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "SWAP_G_POWER",
+      "description": "Each Bakugan's original G-Power swapped"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps original G-Power between combatants.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000032",
+    "name": "Mega Warrior",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 40,
+      "subterra": 50,
+      "haos": 110,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "effect": {
+      "type": "GATE_CARD_BONUS",
+      "magnitude": 100,
+      "description": "+100 G for each Gate Card each side won"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. +100 G per captured Gate Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000033",
+    "name": "Stand Off",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 80,
+      "subterra": 50,
+      "haos": 80,
+      "darkus": 60,
+      "ventus": 20
+    },
+    "effect": {
+      "type": "PREVENT_ABILITY_CARDS",
+      "description": "Neither side can play Ability Cards"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Prevents both sides from playing Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  }
+]

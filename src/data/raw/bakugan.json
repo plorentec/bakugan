@@ -1,0 +1,144 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "name": "Dragonoid",
+    "attributes": ["pyrus"],
+    "base_g_power": 400,
+    "max_g_power": 650,
+    "stats": {
+      "speed": 4,
+      "defense": 2,
+      "control": 2,
+      "steering": 1,
+      "magnet": 3
+    },
+    "description": "The flagship Pyrus Bakugan. High speed and magnet make it excellent at field control and standing on Gate Cards.",
+    "special_shot": "Pyrus Strike",
+    "special_shot_description": "Cloaked in fiery aura, shoots like rocket. If hits opposing Bakugan while active → Critical KO, win Gate Card without fight.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 400/650. Stats from guide table. Pyrus attribute only.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "name": "Preyas",
+    "attributes": ["aquos"],
+    "base_g_power": 380,
+    "max_g_power": 630,
+    "stats": {
+      "speed": 2,
+      "defense": 2,
+      "control": 4,
+      "steering": 3,
+      "magnet": 1
+    },
+    "description": "Aquos trickster. High control allows precise movement. Once stands on a Gate Card, roulette randomly becomes Aquos, Subterra, or Darkus.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 380/630. Stats from guide table. Aquos attribute only. Preyas gimmick: random attribute roulette on stand.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "name": "Gorem",
+    "attributes": ["subterra"],
+    "base_g_power": 400,
+    "max_g_power": 650,
+    "stats": {
+      "speed": 3,
+      "defense": 4,
+      "control": 3,
+      "steering": 1,
+      "magnet": 1
+    },
+    "description": "The tank of Subterra. Maximum defense makes it incredibly hard to Critical KO. Low steering and magnet compensate.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 400/650. Stats from guide table. Subterra attribute only.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "name": "Tigrerra",
+    "attributes": ["haos"],
+    "base_g_power": 400,
+    "max_g_power": 650,
+    "stats": {
+      "speed": 3,
+      "defense": 2,
+      "control": 1,
+      "steering": 2,
+      "magnet": 3
+    },
+    "description": "Haos speedster with strong magnet. Low control makes precise movement challenging but magnet helps with standing.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 400/650. Stats from guide table. Haos attribute only.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "name": "Hydranoid",
+    "attributes": ["darkus"],
+    "base_g_power": 450,
+    "max_g_power": 700,
+    "stats": {
+      "speed": 3,
+      "defense": 3,
+      "control": 1,
+      "steering": 4,
+      "magnet": 2
+    },
+    "description": "The powerhouse of Darkus. Highest base G-Power among the six. Excellent steering for long field control, but low control makes turning sluggish.",
+    "special_shot": "Darkus Critical",
+    "special_shot_description": "Dark aura. Completely intangible — moves through other Bakugan. Disables opponent influence on angle. When stands, remains intangible → immune to Critical KOs from Pyrus Strike. Still vulnerable to Subterra Quake.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 450/700. Stats from guide table. Darkus attribute only. Highest base G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "name": "Skyress",
+    "attributes": ["ventus"],
+    "base_g_power": 400,
+    "max_g_power": 650,
+    "stats": {
+      "speed": 2,
+      "defense": 1,
+      "control": 3,
+      "steering": 4,
+      "magnet": 2
+    },
+    "description": "Ventus wind rider. Exceptional steering for maximum field time. Low defense makes it vulnerable to Critical KOs.",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section F",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "G-Power 400/650. Stats from guide table. Ventus attribute only.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-24T00:00:00Z",
+    "updated_at": "2026-09-24T00:00:00Z"
+  }
+]

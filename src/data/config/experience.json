@@ -1,0 +1,13 @@
+{
+  "xp_per_level": [0, 100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000],
+  "xp_multipliers": {
+    "easy": 0.5,
+    "normal": 1.0,
+    "hard": 1.5
+  },
+  "xp_base_rewards": {
+    "per_bakugan_defeated": 100,
+    "gate_card_won": 200,
+    "brawl_won": 500
+  }
+}
