@@ -4,6 +4,7 @@ import { useEffect, useRef, useCallback, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useBattleStore } from '@/stores/battle-store';
 import { ScratchBattle } from '@/minigames/scratch-battle';
+import { playSelectSound } from '@/lib/sounds';
 import balanceConfig from '@/data/config/balance.json';
 
 /* ------------------------------------------------------------------ */
@@ -27,6 +28,7 @@ export default function MinigameOverlay() {
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(10);
   const [isComplete, setIsComplete] = useState(false);
+  const [animatedScore, setAnimatedScore] = useState(0);
 
   /* ================================================================== */
   /*  Game lifecycle                                                      */
@@ -43,6 +45,7 @@ export default function MinigameOverlay() {
         cancelAnimationFrame(animFrameRef.current);
       }
       setScore(0);
+      setAnimatedScore(0);
       setTimeLeft(10);
       setIsComplete(false);
       return;
@@ -103,6 +106,17 @@ export default function MinigameOverlay() {
     };
   }, [minigameActive, resolveMinigame]);
 
+  // FASE 7: Animate score counter
+  useEffect(() => {
+    const target = Math.round(score * 100);
+    if (animatedScore === target) return;
+    const step = target > animatedScore ? 1 : -1;
+    const timer = setTimeout(() => {
+      setAnimatedScore((prev) => (prev === target ? prev : prev + step));
+    }, 20);
+    return () => clearTimeout(timer);
+  }, [score, animatedScore]);
+
   /* ================================================================== */
   /*  Input handling                                                      */
   /* ================================================================== */
@@ -120,6 +134,7 @@ export default function MinigameOverlay() {
       const y = ((e.clientY - rect.top) / rect.height) * CANVAS_HEIGHT;
 
       game.onScratchStart(x, y);
+      playSelectSound();
       (e.target as HTMLElement).setPointerCapture(e.pointerId);
     },
     [],
@@ -237,30 +252,44 @@ export default function MinigameOverlay() {
         className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80"
       >
         <motion.div
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.8, opacity: 0 }}
+          transition={{ duration: 0.3, ease: 'backOut' }}
           className="flex flex-col items-center gap-4 rounded-xl border border-gray-600 bg-gray-900 p-6 shadow-2xl"
         >
           {/* Header */}
-          <div className="text-center">
+          <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.15 }}
+            className="text-center"
+          >
             <h2 className="font-mono text-xl font-bold text-yellow-400">SCRATCH BATTLE</h2>
             <p className="mt-1 font-mono text-sm text-gray-400">
               Scratch the symbol as fast as you can!
             </p>
-          </div>
+          </motion.div>
 
           {/* Timer and Score */}
           <div className="flex items-center gap-8">
             <div className="text-center">
-              <div className="font-mono text-2xl font-bold text-white">
+              <motion.div
+                animate={timeLeft <= 3 ? { scale: [1, 1.1, 1], color: ['#ffffff', '#ef4444', '#ffffff'] } : {}}
+                transition={{ duration: 0.5, repeat: Infinity }}
+                className="font-mono text-2xl font-bold text-white"
+              >
                 {timeLeft.toFixed(1)}s
-              </div>
+              </motion.div>
               <div className="font-mono text-[10px] text-gray-500">TIME</div>
             </div>
             <div className="text-center">
-              <div className="font-mono text-2xl font-bold text-yellow-400">
-                {(score * 100).toFixed(0)}%
-              </div>
+              <motion.div
+                key={animatedScore}
+                className="font-mono text-2xl font-bold text-yellow-400"
+              >
+                {animatedScore}%
+              </motion.div>
               <div className="font-mono text-[10px] text-gray-500">SCORE</div>
             </div>
           </div>
@@ -278,18 +307,24 @@ export default function MinigameOverlay() {
           />
 
           {/* G-Power preview */}
-          <div className="font-mono text-sm text-gray-400">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="font-mono text-sm text-gray-400"
+          >
             G-Power earned:{' '}
             <span className="font-bold text-green-400">
               +{Math.round(score * balanceConfig.minigame.g_power_per_result_point)} G
             </span>
-          </div>
+          </motion.div>
 
           {/* Completion message */}
           {isComplete && (
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 10, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.3, ease: 'backOut' }}
               className="font-mono text-lg font-bold text-yellow-400"
             >
               Time&apos;s up!

@@ -92,6 +92,16 @@ export class ArenaScene extends Phaser.Scene {
     this.spawnPlayerBakugan();
     this.spawnOpponentBakugan();
 
+    // FASE 7: Arena zoom-in entrance animation
+    this.cameras.main.setZoom(0.5);
+    this.cameras.main.centerOn(512, 384);
+    this.tweens.add({
+      targets: this.cameras.main,
+      zoom: 1,
+      duration: 800,
+      ease: 'Power2',
+    });
+
     // Listen for React → Phaser events
     eventBus.on('GATE_CARD_PLACED', this.onExternalGateCardPlaced);
   }
@@ -271,6 +281,20 @@ export class ArenaScene extends Phaser.Scene {
         0,
       );
       this.gateCards.push(cardObj);
+
+      // FASE 7: Gate card slide-in animation
+      const targetX = slot.x;
+      const targetY = slot.y;
+      cardObj.setPosition(slot.x, slot.y - 50);
+      cardObj.setAlpha(0);
+      this.tweens.add({
+        targets: cardObj,
+        y: targetY,
+        alpha: 1,
+        duration: 400,
+        delay: i * 100,
+        ease: 'Power2',
+      });
     }
   }
 
@@ -283,6 +307,16 @@ export class ArenaScene extends Phaser.Scene {
     const init = this.playerBakuganInits[this.playerBakuganIndex];
     this.playerBakugan = new BakuganObject(this, PLAYER_SPAWN_X, PLAYER_SPAWN_Y, init);
     this.playerBakugan.showAsBall();
+
+    // FASE 7: Spawn entrance — scale from 0
+    this.playerBakugan.setScale(0);
+    this.tweens.add({
+      targets: this.playerBakugan,
+      scaleX: 1,
+      scaleY: 1,
+      duration: 300,
+      ease: 'Back.easeOut',
+    });
 
     // Setup overlap with all gate card stand zones
     for (const gc of this.gateCards) {
@@ -299,6 +333,17 @@ export class ArenaScene extends Phaser.Scene {
     const init = this.opponentBakuganInits[this.opponentBakuganIndex];
     this.opponentBakugan = new BakuganObject(this, OPPONENT_SPAWN_X, OPPONENT_SPAWN_Y, init);
     this.opponentBakugan.showAsBall();
+
+    // FASE 7: Spawn entrance — scale from 0
+    this.opponentBakugan.setScale(0);
+    this.tweens.add({
+      targets: this.opponentBakugan,
+      scaleX: 1,
+      scaleY: 1,
+      duration: 300,
+      ease: 'Back.easeOut',
+      delay: 100,
+    });
 
     // Setup overlap with all gate card stand zones
     for (const gc of this.gateCards) {
@@ -529,13 +574,28 @@ export class ArenaScene extends Phaser.Scene {
           ? this.opponentBakugan
           : null;
       if (bak) {
+        // FASE 7: Enhanced double stand — bigger glow + card highlight
         this.tweens.add({
           targets: bak,
-          scaleX: 1.3,
-          scaleY: 1.3,
-          duration: 500,
+          scaleX: 1.4,
+          scaleY: 1.4,
+          duration: 400,
           yoyo: true,
-          repeat: 2,
+          repeat: 3,
+          ease: 'Sine.easeInOut',
+        });
+
+        // Glow ring
+        const glow = this.add.circle(bak.x, bak.y, 18, 0xffd700, 0.5);
+        glow.setDepth(14);
+        this.tweens.add({
+          targets: glow,
+          scaleX: 3,
+          scaleY: 3,
+          alpha: 0,
+          duration: 800,
+          ease: 'Power2',
+          onComplete: () => glow.destroy(),
         });
       }
     }
@@ -574,15 +634,32 @@ export class ArenaScene extends Phaser.Scene {
     this.showFloatingText(gateCard.x, gateCard.y - 50, 'BATTLE!', '#ff4444');
     gateCard.pulse();
 
-    // Flash the field
-    const flash = this.add.rectangle(512, 384, 1024, 768, 0xffffff, 0.3);
+    // FASE 7: Enhanced battle flash — expanding ring + screen flash
+    const flash = this.add.rectangle(512, 384, 1024, 768, 0xffffff, 0.4);
     flash.setDepth(100);
     this.tweens.add({
       targets: flash,
       alpha: 0,
-      duration: 400,
+      duration: 500,
+      ease: 'Power2',
       onComplete: () => flash.destroy(),
     });
+
+    // Battle ring effect
+    const ring = this.add.circle(gateCard.x, gateCard.y, 10, 0xff4444, 0.6);
+    ring.setDepth(99);
+    this.tweens.add({
+      targets: ring,
+      scaleX: 8,
+      scaleY: 8,
+      alpha: 0,
+      duration: 600,
+      ease: 'Power3',
+      onComplete: () => ring.destroy(),
+    });
+
+    // Camera shake on battle trigger
+    this.cameras.main.shake(300, 0.005);
 
     // Listen for battle resolution from the engine
     const onResolved = (data: { winnerPlayerId: number; gateCardId: string }) => {
@@ -606,6 +683,25 @@ export class ArenaScene extends Phaser.Scene {
     );
 
     eventBus.emit('BATTLE_PHASE_CHANGED', { phase: 'RESOLUTION' });
+
+    // FASE 7: Victory celebration — particles for winner
+    if (playerWins) {
+      for (let i = 0; i < 12; i++) {
+        const angle = (i / 12) * Math.PI * 2;
+        const particle = this.add.circle(gateCard.x, gateCard.y, 4, 0x00ff88, 0.8);
+        particle.setDepth(80);
+        this.tweens.add({
+          targets: particle,
+          x: gateCard.x + Math.cos(angle) * 50,
+          y: gateCard.y + Math.sin(angle) * 50,
+          alpha: 0,
+          scale: 0.2,
+          duration: 800,
+          ease: 'Power2',
+          onComplete: () => particle.destroy(),
+        });
+      }
+    }
 
     this.time.delayedCall(1500, () => {
       // Remove loser's Bakugan from card
@@ -667,16 +763,22 @@ export class ArenaScene extends Phaser.Scene {
 
       this.showFloatingText(defender.x, defender.y - 30, 'CRITICAL KO!', '#ff0000');
 
-      // Flash effect
-      const flash = this.add.circle(defender.x, defender.y, 40, 0xff4444, 0.5);
+      // FASE 7: Enhanced Critical KO — explosion + camera shake + flash
+      const flash = this.add.circle(defender.x, defender.y, 40, 0xff4444, 0.6);
       flash.setDepth(50);
       this.tweens.add({
         targets: flash,
-        scale: 2,
+        scale: 3,
         alpha: 0,
-        duration: 500,
+        duration: 600,
+        ease: 'Power2',
         onComplete: () => flash.destroy(),
       });
+
+      // Screen shake
+      this.cameras.main.shake(400, 0.01);
+
+      // Knockback spin already handled by BakuganObject.knockback()
     }
   }
 
@@ -792,7 +894,15 @@ export class ArenaScene extends Phaser.Scene {
     const overlay = this.add.rectangle(512, 384, 1024, 768, 0x000000, 0.7);
     overlay.setDepth(90);
 
-    this.add
+    // FASE 7: Results fade in
+    overlay.setAlpha(0);
+    this.tweens.add({
+      targets: overlay,
+      alpha: 0.7,
+      duration: 300,
+    });
+
+    const titleText = this.add
       .text(512, 350, 'BATTLE COMPLETE', {
         fontSize: '36px',
         fontFamily: 'monospace',
@@ -800,16 +910,34 @@ export class ArenaScene extends Phaser.Scene {
         fontStyle: 'bold',
       })
       .setOrigin(0.5)
-      .setDepth(91);
+      .setDepth(91)
+      .setAlpha(0);
 
-    this.add
+    this.tweens.add({
+      targets: titleText,
+      alpha: 1,
+      y: 340,
+      duration: 500,
+      delay: 200,
+      ease: 'Power2',
+    });
+
+    const subText = this.add
       .text(512, 410, 'Click to restart', {
         fontSize: '18px',
         fontFamily: 'monospace',
         color: '#aaaaaa',
       })
       .setOrigin(0.5)
-      .setDepth(91);
+      .setDepth(91)
+      .setAlpha(0);
+
+    this.tweens.add({
+      targets: subText,
+      alpha: 1,
+      duration: 400,
+      delay: 500,
+    });
 
     this.input.once('pointerdown', () => {
       this.scene.restart();
@@ -828,13 +956,26 @@ export class ArenaScene extends Phaser.Scene {
     txt.setOrigin(0.5);
     txt.setDepth(80);
 
+    // FASE 7: Enhanced floating text — scale pop + float up
+    txt.setScale(0.5);
     this.tweens.add({
       targets: txt,
-      y: y - 50,
-      alpha: 0,
-      duration: 1500,
-      ease: 'Power2',
-      onComplete: () => txt.destroy(),
+      scaleX: 1.2,
+      scaleY: 1.2,
+      duration: 200,
+      ease: 'Back.easeOut',
+      onComplete: () => {
+        this.tweens.add({
+          targets: txt,
+          scaleX: 1,
+          scaleY: 1,
+          y: y - 50,
+          alpha: 0,
+          duration: 1200,
+          ease: 'Power2',
+          onComplete: () => txt.destroy(),
+        });
+      },
     });
   }
 

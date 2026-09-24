@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useDeckStore } from "@/stores/deck-store";
+import { playClickSound } from "@/lib/sounds";
+import { slideInLeft, PAGE_TRANSITION } from "@/lib/animations";
 import BakuganPanel from "@/ui/deck-builder/BakuganPanel";
 import GateCardPanel from "@/ui/deck-builder/GateCardPanel";
 import AbilityCardPanel from "@/ui/deck-builder/AbilityCardPanel";
@@ -16,7 +18,11 @@ export default function DeckBuilderPage() {
   }, [loadDeck]);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <motion.div
+      {...PAGE_TRANSITION}
+      variants={slideInLeft}
+      className="min-h-screen bg-gray-950 text-white"
+    >
       {/* Header */}
       <motion.header
         initial={{ y: -40, opacity: 0 }}
@@ -28,6 +34,7 @@ export default function DeckBuilderPage() {
           <div className="flex items-center gap-3">
             <a
               href="/"
+              onClick={() => playClickSound()}
               className="text-sm text-gray-400 hover:text-white transition"
             >
               &larr; Menu
@@ -94,6 +101,6 @@ export default function DeckBuilderPage() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

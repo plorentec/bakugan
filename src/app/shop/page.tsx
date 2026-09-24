@@ -4,6 +4,8 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useProgressionStore } from "@/stores/progression-store";
+import { playClickSound, playBuySound } from "@/lib/sounds";
+import { slideInRight, PAGE_TRANSITION } from "@/lib/animations";
 import MoneyDisplay from "@/ui/shop/MoneyDisplay";
 import ShopTier, { type ShopTierItem } from "@/ui/shop/ShopTier";
 import shopConfig from "@/data/config/shop.json";
@@ -106,6 +108,7 @@ export default function ShopPage() {
   const activeTier = tierData.find((t) => t.id === activeTab) ?? tierData[0];
 
   const handleBuy = (type: "bakugan" | "gate" | "ability", id: string, price: number) => {
+    playBuySound();
     switch (type) {
       case "bakugan":
         purchaseBakugan(id, price);
@@ -120,13 +123,18 @@ export default function ShopPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <motion.div
+      {...PAGE_TRANSITION}
+      variants={slideInRight}
+      className="min-h-screen bg-gray-950 text-white"
+    >
       {/* Header */}
       <div className="sticky top-0 z-10 bg-gray-900/95 backdrop-blur border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link
               href="/"
+              onClick={() => playClickSound()}
               className="text-gray-400 hover:text-white transition text-sm font-bold"
             >
               ← Home
@@ -149,7 +157,12 @@ export default function ShopPage() {
             return (
               <button
                 key={tier.id}
-                onClick={() => isUnlocked && setActiveTab(tier.id)}
+                onClick={() => {
+                  if (isUnlocked) {
+                    playClickSound();
+                    setActiveTab(tier.id);
+                  }
+                }}
                 disabled={!isUnlocked}
                 className={`flex-shrink-0 px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition whitespace-nowrap ${
                   isActive
@@ -199,6 +212,6 @@ export default function ShopPage() {
           </motion.div>
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 }

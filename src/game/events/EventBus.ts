@@ -4,6 +4,8 @@
  * Phaser scenes emit game events (stands, KO, phase changes).
  * React components listen and update the HUD / store.
  * React components also emit commands (throw, move, place card).
+ *
+ * FASE 7: Added animation-specific events for sound/visual triggers.
  */
 
 export type GameEventType =
@@ -26,7 +28,11 @@ export type GameEventType =
   | 'BATTLE_ENGINE_MINIGAME_RESULT'
   | 'BATTLE_ENGINE_G_POWER_UPDATE'
   | 'BATTLE_ENGINE_RESOLVED'
-  | 'BATTLE_ENGINE_LOG';
+  | 'BATTLE_ENGINE_LOG'
+  // FASE 7: Animation events
+  | 'ANIMATION_SHAKE'
+  | 'ANIMATION_GLOW'
+  | 'ANIMATION_PARTICLE';
 
 export interface GameEventPayloads {
   BAKUGAN_THROWN: { bakuganId: string; targetX: number; targetY: number; force: number; playerId: number };
@@ -63,6 +69,10 @@ export interface GameEventPayloads {
   BATTLE_ENGINE_G_POWER_UPDATE: { player0: number; player1: number };
   BATTLE_ENGINE_RESOLVED: { winnerPlayerId: number; reason: string; gateCardId: string };
   BATTLE_ENGINE_LOG: { message: string };
+  // FASE 7: Animation events
+  ANIMATION_SHAKE: { intensity?: number; duration?: number };
+  ANIMATION_GLOW: { x: number; y: number; color?: string; duration?: number };
+  ANIMATION_PARTICLE: { x: number; y: number; type: 'sparkles' | 'glow' | 'explosion' | 'trail'; color?: string };
 }
 
 type Callback<T = unknown> = (data: T) => void;

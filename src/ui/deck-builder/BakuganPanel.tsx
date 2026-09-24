@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useDeckStore } from "@/stores/deck-store";
+import { playSelectSound } from "@/lib/sounds";
+import { staggerContainer, staggerItem } from "@/lib/animations";
 import type { Bakugan, Attribute } from "@/data/schemas";
 import bakuganData from "@/data/raw/bakugan.json";
 
@@ -59,6 +61,7 @@ export default function BakuganPanel() {
   const inDeck = (id: string) => deck.bakugan.some((b) => b.bakugan_id === id);
 
   const handleToggle = (b: Bakugan) => {
+    playSelectSound();
     if (inDeck(b.id)) {
       removeBakugan(b.id);
     } else if (deck.bakugan.length < 3) {
@@ -99,27 +102,53 @@ export default function BakuganPanel() {
         ))}
       </div>
 
-      {/* Bakugan cards */}
-      <div className="flex flex-col gap-2 overflow-y-auto flex-1 pr-1">
+      {/* Bakugan cards — staggered entrance */}
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col gap-2 overflow-y-auto flex-1 pr-1"
+      >
         {filtered.map((b) => {
           const selected = inDeck(b.id);
           const primaryAttr = b.attributes[0];
           return (
             <motion.button
               key={b.id}
+              variants={staggerItem}
               onClick={() => handleToggle(b)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              animate={
+                selected
+                  ? {
+                      boxShadow: [
+                        "0 0 0px rgba(255,200,0,0)",
+                        "0 0 12px rgba(255,200,0,0.4)",
+                        "0 0 0px rgba(255,200,0,0)",
+                      ],
+                    }
+                  : { boxShadow: "0 0 0px rgba(255,200,0,0)" }
+              }
+              transition={
+                selected
+                  ? { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
+                  : { duration: 0.3 }
+              }
               className={`relative w-full text-left p-3 rounded-lg border-2 transition-all ${
                 selected
-                  ? `${attributeBorderColors[primaryAttr]} bg-gray-800/80 ring-2 ring-${primaryAttr === "haos" ? "yellow" : primaryAttr === "darkus" ? "purple" : primaryAttr === "pyrus" ? "red" : primaryAttr === "aquos" ? "blue" : primaryAttr === "ventus" ? "green" : "amber"}-400/50`
+                  ? `${attributeBorderColors[primaryAttr]} bg-gray-800/80`
                   : "border-gray-700 bg-gray-800/50 hover:border-gray-500"
               }`}
             >
               {selected && (
-                <span className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold">
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold"
+                >
                   IN DECK
-                </span>
+                </motion.span>
               )}
 
               {/* Name + Attribute badge */}
@@ -166,7 +195,7 @@ export default function BakuganPanel() {
             </motion.button>
           );
         })}
-      </div>
+      </motion.div>
 
       {/* Deck count */}
       <div className="text-center text-xs text-gray-400 pt-2 border-t border-gray-700">

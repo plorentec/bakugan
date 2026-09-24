@@ -4,6 +4,8 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useProgressionStore } from "@/stores/progression-store";
+import { playClickSound } from "@/lib/sounds";
+import { fadeScaleIn, PAGE_TRANSITION } from "@/lib/animations";
 import { STORY_OPPONENTS, isOpponentUnlocked, getDefeatedCount } from "@/lib/story";
 import type { Attribute } from "@/data/schemas";
 
@@ -69,13 +71,18 @@ export default function StoryPage() {
   }, [storyProgress]);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <motion.div
+      {...PAGE_TRANSITION}
+      variants={fadeScaleIn}
+      className="min-h-screen bg-gray-950 text-white"
+    >
       {/* Header */}
       <div className="sticky top-0 z-10 bg-gray-900/95 backdrop-blur border-b border-gray-800">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link
               href="/"
+              onClick={() => playClickSound()}
               className="text-gray-400 hover:text-white transition text-sm font-bold"
             >
               ← Home
@@ -122,9 +129,10 @@ export default function StoryPage() {
             return (
               <motion.div
                 key={opponent.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.08 }}
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ delay: idx * 0.08, duration: 0.35, ease: "easeOut" }}
+                whileHover={!isLocked ? { scale: 1.02, y: -2 } : undefined}
                 className={`relative rounded-xl border-2 overflow-hidden transition-all ${
                   isLocked
                     ? "border-gray-800 bg-gray-900/50 opacity-40"
@@ -211,6 +219,7 @@ export default function StoryPage() {
                   {!isLocked && !opponent.defeated && (
                     <Link
                       href={`/battle?story=${opponent.id}`}
+                      onClick={() => playClickSound()}
                       className={`block w-full py-2 rounded-lg text-center font-bold text-sm uppercase tracking-wider transition bg-gradient-to-r ${
                         attributeColors[opponent.attribute]
                       } text-white hover:opacity-90`}
@@ -241,6 +250,7 @@ export default function StoryPage() {
             </p>
             <Link
               href="/shop"
+              onClick={() => playClickSound()}
               className="inline-block px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold uppercase tracking-wider hover:from-orange-600 hover:to-red-600 transition"
             >
               Visit Shop
@@ -248,6 +258,6 @@ export default function StoryPage() {
           </motion.div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }

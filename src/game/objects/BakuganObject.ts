@@ -10,6 +10,9 @@ import type { Attribute } from '@/data/schemas';
  *
  * Movement duration is governed by the Bakugan's Steering stat:
  * each tick decrements a timer; when it expires the Bakugan auto-stops.
+ *
+ * FASE 7: Added throw arc animation, stand glow+scale, rolling bob,
+ * and critical KO explosion effects.
  */
 
 const STEERING_TICK_MS = 800; // ms per steering point
@@ -75,6 +78,7 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
   /**
    * Launch the Bakugan toward (targetX, targetY) with the given force.
    * Speed stat multiplies the base velocity.
+   * FASE 7: Adds arc trajectory tween + rolling bob animation.
    */
   throw(targetX: number, targetY: number, force: number): void {
     this.isOnField = true;
@@ -94,6 +98,25 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
     // Steering duration: base 2s + 0.8s per steering point
     this.steeringDuration = 2000 + this.stats.steering * 800;
     this.steeringTimeLeft = this.steeringDuration;
+
+    // FASE 7: Arc trajectory tween — yoyo scale for "flying arc" feel
+    this.scene.tweens.add({
+      targets: this,
+      scaleX: { from: 1, to: 0.7 },
+      scaleY: { from: 1, to: 0.7 },
+      duration: 200,
+      yoyo: true,
+      ease: 'Sine.easeInOut',
+    });
+
+    // FASE 7: Rolling bob animation — subtle vertical oscillation
+    this.scene.tweens.add({
+      targets: this,
+      angle: { from: 0, to: 360 },
+      duration: 600,
+      repeat: -1,
+      ease: 'Linear',
+    });
   }
 
   /* ------------------------------------------------------------------ */
@@ -135,12 +158,20 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
   stopMoving(): void {
     this.setVelocity(0, 0);
     this.setAngularVelocity(0);
+    // Kill all tweens (including throw bob) when stopping
+    this.scene.tweens.killTweensOf(this);
+    this.setScale(1);
+    this.setAngle(0);
   }
 
   /* ------------------------------------------------------------------ */
   /*  Stand / Unstand                                                    */
   /* ------------------------------------------------------------------ */
 
+  /**
+   * Stand the Bakugan on a Gate Card.
+   * FASE 7: Enhanced with scale-up + glow pulse + rotation entrance.
+   */
   standOn(_gateCardSlotIndex: number): void {
     this.isStanding = true;
     this.currentGateCardSlotIndex = _gateCardSlotIndex;
@@ -148,15 +179,49 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
     this.setTexture(`bakugan-${this.attribute}-stand`);
     this.setDepth(15);
 
-    // Glow tween
+    // FASE 7: Stand entrance animation — scale up from 0.5 with glow pulse
+    this.setScale(0.5);
     this.scene.tweens.add({
       targets: this,
-      scaleX: 1.15,
-      scaleY: 1.15,
-      duration: 400,
+      scaleX: 1.2,
+      scaleY: 1.2,
+      duration: 300,
+      ease: 'Back.easeOut',
+      onComplete: () => {
+        // After entrance, start glow pulse loop
+        this.scene.tweens.add({
+          targets: this,
+          scaleX: 1.15,
+          scaleY: 1.15,
+          duration: 400,
+          yoyo: true,
+          repeat: -1,
+          ease: 'Sine.easeInOut',
+        });
+      },
+    });
+
+    // FASE 7: Subtle rotation wobble on stand
+    this.scene.tweens.add({
+      targets: this,
+      angle: { from: -5, to: 5 },
+      duration: 200,
       yoyo: true,
-      repeat: -1,
+      repeat: 2,
       ease: 'Sine.easeInOut',
+    });
+
+    // FASE 7: Glow ring effect
+    const glowRing = this.scene.add.circle(this.x, this.y, 20, 0xffffff, 0.3);
+    glowRing.setDepth(14);
+    this.scene.tweens.add({
+      targets: glowRing,
+      scaleX: 2.5,
+      scaleY: 2.5,
+      alpha: 0,
+      duration: 600,
+      ease: 'Power2',
+      onComplete: () => glowRing.destroy(),
     });
   }
 
@@ -167,6 +232,7 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
     this.setDepth(10);
     this.scene.tweens.killTweensOf(this);
     this.setScale(1);
+    this.setAngle(0);
   }
 
   /* ------------------------------------------------------------------ */
@@ -176,6 +242,7 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
   /**
    * Knock the Bakugan off its Gate Card.
    * Returns true if the KO was successful (i.e. defence was overcome).
+   * FASE 7: Added explosion particles + screen shake via event.
    */
   knockback(direction: { x: number; y: number }, force: number): boolean {
     // Check defense threshold: force must exceed defense-based threshold
@@ -186,6 +253,33 @@ export class BakuganObject extends Phaser.Physics.Arcade.Sprite {
     this.isOnField = true;
     this.setVelocity(direction.x * force, direction.y * force);
     this.setDrag(200);
+
+    // FASE 7: KO explosion particles — small circles that scatter outward
+    for (let i = 0; i < 8; i++) {
+      const angle = (i / 8) * Math.PI * 2;
+      const dist = 15 + Math.random() * 20;
+      const particle = this.scene.add.circle(this.x, this.y, 3, 0xff4444, 0.8);
+      particle.setDepth(50);
+      this.scene.tweens.add({
+        targets: particle,
+        x: this.x + Math.cos(angle) * dist,
+        y: this.y + Math.sin(angle) * dist,
+        alpha: 0,
+        scale: 0.3,
+        duration: 400,
+        ease: 'Power2',
+        onComplete: () => particle.destroy(),
+      });
+    }
+
+    // FASE 7: Knockback spin
+    this.scene.tweens.add({
+      targets: this,
+      angle: 720,
+      duration: 600,
+      ease: 'Power2',
+    });
+
     return true;
   }
 

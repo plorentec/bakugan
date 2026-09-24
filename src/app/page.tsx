@@ -4,6 +4,8 @@ import { useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useProgressionStore } from "@/stores/progression-store";
 import { getXpForLevel } from "@/lib/xp";
+import { playSelectSound } from "@/lib/sounds";
+import { staggerContainer, staggerItem, PAGE_TRANSITION } from "@/lib/animations";
 
 export default function Home() {
   const money = useProgressionStore((s) => s.money);
@@ -23,12 +25,18 @@ export default function Home() {
   }, [xp, level]);
 
   return (
-    <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center text-white">
+    <motion.div
+      {...PAGE_TRANSITION}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.4, staggerChildren: 0.1 } },
+        exit: { opacity: 0, transition: { duration: 0.2 } },
+      }}
+      className="min-h-screen bg-gray-950 flex flex-col items-center justify-center text-white"
+    >
       {/* Title */}
       <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        variants={staggerItem}
         className="text-center mb-8"
       >
         <h1 className="text-5xl lg:text-7xl font-black uppercase tracking-widest mb-2">
@@ -44,9 +52,7 @@ export default function Home() {
 
       {/* Progression bar */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.2, duration: 0.4 }}
+        variants={staggerItem}
         className="w-full max-w-xs mb-8 bg-gray-900 border border-gray-800 rounded-lg p-4"
       >
         <div className="flex items-center justify-between mb-2">
@@ -71,38 +77,52 @@ export default function Home() {
 
       {/* Menu buttons */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
+        variants={staggerContainer}
         className="flex flex-col gap-3 w-full max-w-xs"
       >
-        <a
+        <motion.a
+          variants={staggerItem}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           href="/story"
+          onClick={() => playSelectSound()}
           className="block w-full py-4 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-purple-600 hover:to-indigo-600 transition shadow-lg shadow-purple-500/20"
         >
           Story Mode
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+          variants={staggerItem}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           href="/deck-builder"
+          onClick={() => playSelectSound()}
           className="block w-full py-4 px-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-orange-600 hover:to-red-600 transition shadow-lg shadow-orange-500/20"
         >
           Deck Builder
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+          variants={staggerItem}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           href="/battle"
+          onClick={() => playSelectSound()}
           className="block w-full py-4 px-6 bg-gradient-to-r from-red-500 to-purple-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-red-600 hover:to-purple-600 transition shadow-lg shadow-red-500/20"
         >
           Free Battle
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+          variants={staggerItem}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
           href="/shop"
+          onClick={() => playSelectSound()}
           className="block w-full py-4 px-6 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider hover:from-yellow-600 hover:to-amber-600 transition shadow-lg shadow-yellow-500/20"
         >
           Shop
-        </a>
+        </motion.a>
       </motion.div>
 
       {/* Footer */}
@@ -114,6 +134,6 @@ export default function Home() {
       >
         Fan project &mdash; Not affiliated with SEGA or Spin Master
       </motion.p>
-    </div>
+    </motion.div>
   );
 }
