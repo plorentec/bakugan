@@ -318,6 +318,26 @@
       "created_at": "2026-09-24T00:00:00Z",
       "updated_at": "2026-09-24T00:00:00Z"
     }
+    ,
+    {
+      "id": "battle-arena",
+      "name": "Battle Arena",
+      "description": "Only in Battle Arena. Bigger than basic Arena. No hazards. Postgame exclusive.",
+      "is_standard": true,
+      "field_size": { "width": 1000, "height": 750 },
+      "hazards": [],
+      "spawn_points": [],
+      "gate_card_slots": 8,
+      "difficulty_levels": 3,
+      "source": {
+        "source": "GameFAQs guide FAQ 81516, Section C",
+        "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+        "source_notes": "Battle Arena. Postgame exclusive. Bigger than standard Arena. No hazards.",
+        "asset_license_status": "reference_only_no_redistribution"
+      },
+      "created_at": "2026-09-25T00:00:00Z",
+      "updated_at": "2026-09-25T00:00:00Z"
+    }
   ],
   "power_up_spawn_rates": {
     "g_power_boost": 0.3,

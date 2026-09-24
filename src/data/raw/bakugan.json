@@ -1,144 +1,382 @@
 [
   {
-    "id": "00000000-0000-0000-0000-000000000001",
+    "id": "b0000001-0000-0000-0000-000000000001",
+    "name": "Serpenoid",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 190,
+    "max_g_power": 440,
+    "stats": { "speed": 2, "defense": 1, "control": 1, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000002",
+    "name": "Juggernoid",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 200,
+    "max_g_power": 450,
+    "stats": { "speed": 1, "defense": 2, "control": 1, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000003",
+    "name": "Robotallion",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 200,
+    "max_g_power": 450,
+    "stats": { "speed": 1, "defense": 1, "control": 2, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000004",
+    "name": "Saurus",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 210,
+    "max_g_power": 460,
+    "stats": { "speed": 1, "defense": 1, "control": 1, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000005",
+    "name": "Falconeer",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 210,
+    "max_g_power": 460,
+    "stats": { "speed": 3, "defense": 1, "control": 1, "steering": 1, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000006",
+    "name": "Manion",
+    "attributes": ["subterra", "haos", "ventus"],
+    "base_g_power": 300,
+    "max_g_power": 550,
+    "stats": { "speed": 1, "defense": 1, "control": 1, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Subterra, Haos, Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000007",
+    "name": "Ravenoid",
+    "attributes": ["pyrus", "haos", "ventus"],
+    "base_g_power": 300,
+    "max_g_power": 550,
+    "stats": { "speed": 2, "defense": 1, "control": 1, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus, Haos, Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000008",
+    "name": "Stinglash",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 230,
+    "max_g_power": 480,
+    "stats": { "speed": 1, "defense": 1, "control": 1, "steering": 1, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000009",
+    "name": "Centipoid",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 240,
+    "max_g_power": 490,
+    "stats": { "speed": 1, "defense": 2, "control": 1, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000010",
+    "name": "Gargonoid",
+    "attributes": ["pyrus", "aquos", "subterra", "darkus", "ventus"],
+    "base_g_power": 250,
+    "max_g_power": 500,
+    "stats": { "speed": 1, "defense": 1, "control": 2, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All except Haos.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000011",
+    "name": "Fear Ripper",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 270,
+    "max_g_power": 520,
+    "stats": { "speed": 1, "defense": 1, "control": 1, "steering": 2, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000012",
+    "name": "Siege",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 270,
+    "max_g_power": 520,
+    "stats": { "speed": 1, "defense": 3, "control": 1, "steering": 1, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000013",
+    "name": "Monarus",
+    "attributes": ["pyrus", "haos", "ventus"],
+    "base_g_power": 300,
+    "max_g_power": 550,
+    "stats": { "speed": 2, "defense": 1, "control": 1, "steering": 3, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus, Haos, Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000014",
+    "name": "Griffon",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 300,
+    "max_g_power": 550,
+    "stats": { "speed": 3, "defense": 2, "control": 1, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000015",
+    "name": "Terrorclaw",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus"],
+    "base_g_power": 320,
+    "max_g_power": 570,
+    "stats": { "speed": 1, "defense": 4, "control": 2, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All except Ventus.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000016",
+    "name": "Laserman",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 370,
+    "max_g_power": 620,
+    "stats": { "speed": 4, "defense": 2, "control": 1, "steering": 2, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All attributes.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000017",
+    "name": "Reaper",
+    "attributes": ["aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 380,
+    "max_g_power": 630,
+    "stats": { "speed": 3, "defense": 2, "control": 4, "steering": 3, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. All except Pyrus.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000018",
+    "name": "Leonidas",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 420,
+    "max_g_power": 670,
+    "stats": { "speed": 3, "defense": 2, "control": 2, "steering": 3, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Your choice of attribute.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000019",
+    "name": "Omega Leonidas",
+    "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"],
+    "base_g_power": 650,
+    "max_g_power": 900,
+    "stats": { "speed": 3, "defense": 2, "control": 3, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Your choice of attribute. Highest G-Power (tied with Battle Ax Vladitor).", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000020",
+    "name": "Fortress",
+    "attributes": ["pyrus"],
+    "base_g_power": 390,
+    "max_g_power": 640,
+    "stats": { "speed": 3, "defense": 2, "control": 2, "steering": 2, "magnet": 4 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000021",
     "name": "Dragonoid",
     "attributes": ["pyrus"],
     "base_g_power": 400,
     "max_g_power": 650,
-    "stats": {
-      "speed": 4,
-      "defense": 2,
-      "control": 2,
-      "steering": 1,
-      "magnet": 3
-    },
-    "description": "The flagship Pyrus Bakugan. High speed and magnet make it excellent at field control and standing on Gate Cards.",
-    "special_shot": "Pyrus Strike",
-    "special_shot_description": "Cloaked in fiery aura, shoots like rocket. If hits opposing Bakugan while active → Critical KO, win Gate Card without fight.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 400/650. Stats from guide table. Pyrus attribute only.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 4, "defense": 2, "control": 2, "steering": 1, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
   {
-    "id": "00000000-0000-0000-0000-000000000002",
+    "id": "b0000001-0000-0000-0000-000000000022",
+    "name": "Delta Dragonoid II",
+    "attributes": ["pyrus"],
+    "base_g_power": 500,
+    "max_g_power": 750,
+    "stats": { "speed": 4, "defense": 3, "control": 3, "steering": 1, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000023",
+    "name": "Sirenoid",
+    "attributes": ["aquos"],
+    "base_g_power": 390,
+    "max_g_power": 640,
+    "stats": { "speed": 1, "defense": 2, "control": 4, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Aquos only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000024",
     "name": "Preyas",
     "attributes": ["aquos"],
     "base_g_power": 380,
     "max_g_power": 630,
-    "stats": {
-      "speed": 2,
-      "defense": 2,
-      "control": 4,
-      "steering": 3,
-      "magnet": 1
-    },
-    "description": "Aquos trickster. High control allows precise movement. Once stands on a Gate Card, roulette randomly becomes Aquos, Subterra, or Darkus.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 380/630. Stats from guide table. Aquos attribute only. Preyas gimmick: random attribute roulette on stand.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 2, "defense": 2, "control": 4, "steering": 3, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Aquos only. Preyas gimmick: once stands on Gate Card, roulette randomly becomes Aquos, Subterra, or Darkus.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
   {
-    "id": "00000000-0000-0000-0000-000000000003",
+    "id": "b0000001-0000-0000-0000-000000000025",
+    "name": "Preyas II",
+    "attributes": ["aquos"],
+    "base_g_power": 480,
+    "max_g_power": 730,
+    "stats": { "speed": 1, "defense": 2, "control": 4, "steering": 3, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Aquos only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000026",
+    "name": "Cycloid",
+    "attributes": ["subterra"],
+    "base_g_power": 390,
+    "max_g_power": 640,
+    "stats": { "speed": 2, "defense": 4, "control": 2, "steering": 1, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Subterra only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000027",
     "name": "Gorem",
     "attributes": ["subterra"],
     "base_g_power": 400,
     "max_g_power": 650,
-    "stats": {
-      "speed": 3,
-      "defense": 4,
-      "control": 3,
-      "steering": 1,
-      "magnet": 1
-    },
-    "description": "The tank of Subterra. Maximum defense makes it incredibly hard to Critical KO. Low steering and magnet compensate.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 400/650. Stats from guide table. Subterra attribute only.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 3, "defense": 4, "control": 3, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Subterra only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
   {
-    "id": "00000000-0000-0000-0000-000000000004",
+    "id": "b0000001-0000-0000-0000-000000000028",
+    "name": "Hammer Gorem",
+    "attributes": ["subterra"],
+    "base_g_power": 500,
+    "max_g_power": 750,
+    "stats": { "speed": 4, "defense": 4, "control": 3, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Subterra only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000029",
+    "name": "Tentaclear",
+    "attributes": ["haos"],
+    "base_g_power": 390,
+    "max_g_power": 640,
+    "stats": { "speed": 3, "defense": 3, "control": 4, "steering": 1, "magnet": 1 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Haos only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000030",
     "name": "Tigrerra",
     "attributes": ["haos"],
     "base_g_power": 400,
     "max_g_power": 650,
-    "stats": {
-      "speed": 3,
-      "defense": 2,
-      "control": 1,
-      "steering": 2,
-      "magnet": 3
-    },
-    "description": "Haos speedster with strong magnet. Low control makes precise movement challenging but magnet helps with standing.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 400/650. Stats from guide table. Haos attribute only.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 3, "defense": 2, "control": 1, "steering": 2, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Haos only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
   {
-    "id": "00000000-0000-0000-0000-000000000005",
+    "id": "b0000001-0000-0000-0000-000000000031",
+    "name": "Blade Tigrerra",
+    "attributes": ["haos"],
+    "base_g_power": 500,
+    "max_g_power": 750,
+    "stats": { "speed": 4, "defense": 3, "control": 1, "steering": 2, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Haos only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000032",
     "name": "Hydranoid",
     "attributes": ["darkus"],
     "base_g_power": 450,
     "max_g_power": 700,
-    "stats": {
-      "speed": 3,
-      "defense": 3,
-      "control": 1,
-      "steering": 4,
-      "magnet": 2
-    },
-    "description": "The powerhouse of Darkus. Highest base G-Power among the six. Excellent steering for long field control, but low control makes turning sluggish.",
-    "special_shot": "Darkus Critical",
-    "special_shot_description": "Dark aura. Completely intangible — moves through other Bakugan. Disables opponent influence on angle. When stands, remains intangible → immune to Critical KOs from Pyrus Strike. Still vulnerable to Subterra Quake.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 450/700. Stats from guide table. Darkus attribute only. Highest base G-Power.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 3, "defense": 3, "control": 1, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Darkus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
   {
-    "id": "00000000-0000-0000-0000-000000000006",
+    "id": "b0000001-0000-0000-0000-000000000033",
+    "name": "Dual Hydranoid",
+    "attributes": ["darkus"],
+    "base_g_power": 550,
+    "max_g_power": 800,
+    "stats": { "speed": 4, "defense": 3, "control": 2, "steering": 3, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Darkus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000034",
+    "name": "Vladitor",
+    "attributes": ["darkus"],
+    "base_g_power": 420,
+    "max_g_power": 670,
+    "stats": { "speed": 2, "defense": 4, "control": 1, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Darkus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000035",
+    "name": "Battle Ax Vladitor",
+    "attributes": ["darkus"],
+    "base_g_power": 650,
+    "max_g_power": 900,
+    "stats": { "speed": 2, "defense": 3, "control": 2, "steering": 4, "magnet": 3 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Darkus only. Highest G-Power (tied with Omega Leonidas).", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000036",
+    "name": "Harpus",
+    "attributes": ["ventus"],
+    "base_g_power": 390,
+    "max_g_power": 640,
+    "stats": { "speed": 4, "defense": 1, "control": 1, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000037",
     "name": "Skyress",
     "attributes": ["ventus"],
     "base_g_power": 400,
     "max_g_power": 650,
-    "stats": {
-      "speed": 2,
-      "defense": 1,
-      "control": 3,
-      "steering": 4,
-      "magnet": 2
-    },
-    "description": "Ventus wind rider. Exceptional steering for maximum field time. Low defense makes it vulnerable to Critical KOs.",
-    "source": {
-      "source": "GameFAQs guide FAQ 81516, Section F",
-      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
-      "source_notes": "G-Power 400/650. Stats from guide table. Ventus attribute only.",
-      "asset_license_status": "reference_only_no_redistribution"
-    },
-    "created_at": "2026-09-24T00:00:00Z",
-    "updated_at": "2026-09-24T00:00:00Z"
+    "stats": { "speed": 2, "defense": 1, "control": 3, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "b0000001-0000-0000-0000-000000000038",
+    "name": "Storm Skyress",
+    "attributes": ["ventus"],
+    "base_g_power": 500,
+    "max_g_power": 750,
+    "stats": { "speed": 3, "defense": 1, "control": 4, "steering": 4, "magnet": 2 },
+    "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Ventus only.", "asset_license_status": "reference_only_no_redistribution" },
+    "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   }
 ]
