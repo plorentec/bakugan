@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useBattleStore, type BattlePhase } from '@/stores/battle-store';
 import { eventBus, type GameEventPayloads } from '@/game/events/EventBus';
+import MinigameOverlay from './MinigameOverlay';
 
 /* ------------------------------------------------------------------ */
 /*  Phase labels                                                        */
@@ -18,6 +19,13 @@ const PHASE_LABELS: Record<BattlePhase, string> = {
   FIELD_MOVEMENT: 'Field Movement',
   STAND: 'Standing',
   BATTLE_TRIGGER: 'Battle!',
+  // Battle engine phases
+  REVEAL_GATE: 'Revealing Gate Card',
+  APPLY_BONUSES: 'Applying Bonuses',
+  ABILITY_WINDOW: 'Play Ability Card',
+  MINIGAME: 'Scratch Battle!',
+  G_POWER: 'Calculating G-Power',
+  RESOLUTION: 'Battle Resolved',
 };
 
 const PHASE_COLORS: Record<BattlePhase, string> = {
@@ -29,14 +37,49 @@ const PHASE_COLORS: Record<BattlePhase, string> = {
   FIELD_MOVEMENT: 'text-green-400',
   STAND: 'text-purple-400',
   BATTLE_TRIGGER: 'text-red-500',
+  REVEAL_GATE: 'text-yellow-400',
+  APPLY_BONUSES: 'text-blue-400',
+  ABILITY_WINDOW: 'text-green-400',
+  MINIGAME: 'text-orange-400',
+  G_POWER: 'text-cyan-400',
+  RESOLUTION: 'text-red-500',
 };
+
+/* ------------------------------------------------------------------ */
+/*  Battle Phase Groups                                                 */
+/* ------------------------------------------------------------------ */
+
+const ENGINE_PHASES = new Set<BattlePhase>([
+  'REVEAL_GATE',
+  'APPLY_BONUSES',
+  'ABILITY_WINDOW',
+  'MINIGAME',
+  'G_POWER',
+  'RESOLUTION',
+]);
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                           */
 /* ------------------------------------------------------------------ */
 
 export default function BattleHUD() {
-  const { phase, player, opponent, battleMessage } = useBattleStore();
+  const {
+    phase,
+    player,
+    opponent,
+    battleMessage,
+    timer,
+    maxTimer,
+    gPowerBars,
+    battleLog,
+    abilityWindowOpen,
+    minigameActive,
+    winReason,
+    selectedAbilityCard,
+    playAbilityCard,
+    setSelectedAbilityCard,
+    resolveMinigame,
+  } = useBattleStore();
   const [lastEvent, setLastEvent] = useState<string | null>(null);
 
   useEffect(() => {
@@ -48,6 +91,10 @@ export default function BattleHUD() {
         setLastEvent(`DOUBLE STAND — ${d.playerId === 0 ? 'You' : 'Opponent'} win!`),
       CRITICAL_KO: () => setLastEvent('CRITICAL KO!'),
       STEERING_EXPIRED: () => setLastEvent('Steering expired'),
+      BATTLE_ENGINE_STARTED: (d: GameEventPayloads['BATTLE_ENGINE_STARTED']) =>
+        setLastEvent(`Battle: ${d.players[0].bakuganName} vs ${d.players[1].bakuganName}`),
+      BATTLE_ENGINE_RESOLVED: (d: GameEventPayloads['BATTLE_ENGINE_RESOLVED']) =>
+        setLastEvent(d.reason),
     };
 
     for (const [event, handler] of Object.entries(handlers)) {
@@ -61,96 +108,228 @@ export default function BattleHUD() {
     };
   }, []);
 
+  const isEnginePhase = ENGINE_PHASES.has(phase);
+  const timerPercent = maxTimer > 0 ? (timer / maxTimer) * 100 : 0;
+  const timerWarning = timer <= 10 && timer > 0;
+
   return (
-    <div className="pointer-events-none absolute inset-0 z-50 flex flex-col justify-between p-4">
-      {/* ── Top bar ─────────────────────────────────────────── */}
-      <div className="flex items-start justify-between">
-        {/* Phase indicator */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={phase}
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 10 }}
-            className={`rounded-lg bg-black/70 px-4 py-2 font-mono text-sm font-bold ${PHASE_COLORS[phase]}`}
-          >
-            {PHASE_LABELS[phase]}
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Gate Cards won */}
-        <div className="flex gap-3">
-          <ScorePill label="You" won={player.gateCardsWon} color="emerald" />
-          <ScorePill label="CPU" won={opponent.gateCardsWon} color="rose" />
-        </div>
-      </div>
-
-      {/* ── Centre event toast ──────────────────────────────── */}
-      <div className="flex justify-center">
-        <AnimatePresence>
-          {lastEvent && (
+    <>
+      <div className="pointer-events-none absolute inset-0 z-50 flex flex-col justify-between p-4">
+        {/* ── Top bar ─────────────────────────────────────────── */}
+        <div className="flex items-start justify-between">
+          {/* Phase indicator */}
+          <AnimatePresence mode="wait">
             <motion.div
-              key={lastEvent}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              onAnimationComplete={() => {
-                setTimeout(() => setLastEvent(null), 2000);
-              }}
-              className="rounded-full bg-black/60 px-6 py-2 font-mono text-sm font-bold text-white shadow-lg"
+              key={phase}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              className={`rounded-lg bg-black/70 px-4 py-2 font-mono text-sm font-bold ${PHASE_COLORS[phase]}`}
             >
-              {lastEvent}
+              {PHASE_LABELS[phase]}
             </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+          </AnimatePresence>
 
-      {/* ── Bottom bar ──────────────────────────────────────── */}
-      <div className="flex items-end justify-between">
-        {/* Bakugan remaining */}
-        <div className="flex gap-2">
-          {player.bakugan.slice(0, 3).map((b, i) => (
-            <div
-              key={b.id}
-              className={`h-6 w-6 rounded-full border-2 ${
-                i <= player.bakuganRemaining - 1
-                  ? 'border-emerald-400 bg-emerald-500/40'
-                  : 'border-gray-600 bg-gray-800/40'
-              }`}
-            />
-          ))}
+          {/* Gate Cards won */}
+          <div className="flex gap-3">
+            <ScorePill label="You" won={player.gateCardsWon} color="emerald" />
+            <ScorePill label="CPU" won={opponent.gateCardsWon} color="rose" />
+          </div>
         </div>
 
-        {/* Battle message */}
-        <AnimatePresence mode="wait">
-          {battleMessage && (
-            <motion.div
-              key={battleMessage}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="rounded-lg bg-black/70 px-4 py-2 font-mono text-xs text-gray-300"
-            >
-              {battleMessage}
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {/* ── G-Power Bars (during battle phases) ────────────── */}
+        {isEnginePhase && (
+          <div className="mx-auto w-full max-w-2xl">
+            <div className="flex flex-col gap-2 rounded-lg bg-black/60 p-3">
+              {/* Player G-Power */}
+              <div className="flex items-center gap-2">
+                <span className="w-16 font-mono text-[10px] text-emerald-400">YOU</span>
+                <div className="h-4 flex-1 overflow-hidden rounded-full bg-gray-800">
+                  <motion.div
+                    className="h-full rounded-full bg-gradient-to-r from-emerald-600 to-emerald-400"
+                    initial={{ width: '50%' }}
+                    animate={{ width: `${gPowerBars[0] * 100}%` }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </div>
+                <span className="w-20 text-right font-mono text-xs text-emerald-400">
+                  {player.gPower}G
+                </span>
+              </div>
 
-        {/* Opponent Bakugan remaining */}
-        <div className="flex gap-2">
-          {opponent.bakugan.slice(0, 3).map((b, i) => (
-            <div
-              key={b.id}
-              className={`h-6 w-6 rounded-full border-2 ${
-                i <= opponent.bakuganRemaining - 1
-                  ? 'border-rose-400 bg-rose-500/40'
-                  : 'border-gray-600 bg-gray-800/40'
-              }`}
-            />
-          ))}
+              {/* Opponent G-Power */}
+              <div className="flex items-center gap-2">
+                <span className="w-16 font-mono text-[10px] text-rose-400">CPU</span>
+                <div className="h-4 flex-1 overflow-hidden rounded-full bg-gray-800">
+                  <motion.div
+                    className="h-full rounded-full bg-gradient-to-l from-rose-600 to-rose-400"
+                    initial={{ width: '50%' }}
+                    animate={{ width: `${gPowerBars[1] * 100}%` }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </div>
+                <span className="w-20 text-right font-mono text-xs text-rose-400">
+                  {opponent.gPower}G
+                </span>
+              </div>
+
+              {/* Timer bar */}
+              {maxTimer > 0 && (
+                <div className="mt-1 flex items-center gap-2">
+                  <span className="w-16 font-mono text-[10px] text-gray-500">TIME</span>
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-800">
+                    <motion.div
+                      className={`h-full rounded-full ${
+                        timerWarning
+                          ? 'bg-gradient-to-r from-red-600 to-red-400'
+                          : 'bg-gradient-to-r from-gray-600 to-gray-400'
+                      }`}
+                      animate={{ width: `${timerPercent}%` }}
+                      transition={{ duration: 0.1 }}
+                    />
+                  </div>
+                  <span
+                    className={`w-20 text-right font-mono text-xs ${
+                      timerWarning ? 'text-red-400' : 'text-gray-400'
+                    }`}
+                  >
+                    {timer.toFixed(1)}s
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* ── Centre event toast ──────────────────────────────── */}
+        <div className="flex justify-center">
+          <AnimatePresence>
+            {lastEvent && (
+              <motion.div
+                key={lastEvent}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                onAnimationComplete={() => {
+                  setTimeout(() => setLastEvent(null), 2000);
+                }}
+                className="rounded-full bg-black/60 px-6 py-2 font-mono text-sm font-bold text-white shadow-lg"
+              >
+                {lastEvent}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* ── Ability Card Hand (during ABILITY_WINDOW) ──────── */}
+        {abilityWindowOpen && (
+          <div className="pointer-events-auto mx-auto mb-4">
+            <div className="flex flex-col items-center gap-2 rounded-lg bg-black/70 p-3">
+              <span className="font-mono text-[10px] uppercase text-gray-500">
+                Play an Ability Card
+              </span>
+              <div className="flex gap-2">
+                {player.abilityCards.map((card) => (
+                  <button
+                    key={card.id}
+                    onClick={() => setSelectedAbilityCard(card.id)}
+                    className={`rounded-lg border p-2 font-mono text-xs transition ${
+                      selectedAbilityCard === card.id
+                        ? 'border-yellow-400 bg-yellow-400/20 text-yellow-400'
+                        : 'border-gray-600 bg-gray-800 text-gray-300 hover:border-gray-400'
+                    }`}
+                  >
+                    <div className="font-bold">{card.name}</div>
+                    <div className="text-[10px] text-gray-500">{card.color}</div>
+                  </button>
+                ))}
+                <button
+                  onClick={() => {
+                    if (selectedAbilityCard) {
+                      playAbilityCard(0, selectedAbilityCard);
+                    } else {
+                      playAbilityCard(0, '');
+                    }
+                  }}
+                  className="rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 font-mono text-xs text-gray-400 transition hover:border-gray-400 hover:text-white"
+                >
+                  Pass
+                </button>
+              </div>
+              {selectedAbilityCard && (
+                <button
+                  onClick={() => playAbilityCard(0, selectedAbilityCard)}
+                  className="rounded-lg bg-yellow-500 px-4 py-1 font-mono text-xs font-bold text-black transition hover:bg-yellow-400"
+                >
+                  Play Card
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* ── Battle Log (during engine phases) ──────────────── */}
+        {isEnginePhase && battleLog.length > 0 && (
+          <div className="pointer-events-auto absolute bottom-20 left-4 max-h-32 w-64 overflow-y-auto rounded-lg bg-black/70 p-2">
+            <div className="mb-1 font-mono text-[10px] uppercase text-gray-500">Battle Log</div>
+            {battleLog.slice(-8).map((msg, i) => (
+              <div key={i} className="font-mono text-[10px] text-gray-400">
+                {msg}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* ── Bottom bar ──────────────────────────────────────── */}
+        <div className="flex items-end justify-between">
+          {/* Bakugan remaining */}
+          <div className="flex gap-2">
+            {player.bakugan.slice(0, 3).map((b, i) => (
+              <div
+                key={b.id}
+                className={`h-6 w-6 rounded-full border-2 ${
+                  i <= player.bakuganRemaining - 1
+                    ? 'border-emerald-400 bg-emerald-500/40'
+                    : 'border-gray-600 bg-gray-800/40'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Battle message */}
+          <AnimatePresence mode="wait">
+            {battleMessage && (
+              <motion.div
+                key={battleMessage}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="rounded-lg bg-black/70 px-4 py-2 font-mono text-xs text-gray-300"
+              >
+                {battleMessage}
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Opponent Bakugan remaining */}
+          <div className="flex gap-2">
+            {opponent.bakugan.slice(0, 3).map((b, i) => (
+              <div
+                key={b.id}
+                className={`h-6 w-6 rounded-full border-2 ${
+                  i <= opponent.bakuganRemaining - 1
+                    ? 'border-rose-400 bg-rose-500/40'
+                    : 'border-gray-600 bg-gray-800/40'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* ── Minigame Overlay ────────────────────────────────── */}
+      <MinigameOverlay />
+    </>
   );
 }
 

@@ -4,20 +4,73 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useBattleStore } from '@/stores/battle-store';
+import { eventBus } from '@/game/events/EventBus';
 import BattleHUD from '@/ui/battle/BattleHUD';
 import bakuganData from '@/data/raw/bakugan.json';
+import gateCardData from '@/data/raw/gate-cards.json';
+import abilityCardData from '@/data/raw/ability-cards.json';
+import type { Attribute, Bakugan, GateCard, AbilityCard } from '@/data/schemas';
+import { BattleEngine } from '@/battle-engine/state-machine';
+import type { BattleContext } from '@/battle-engine/types';
 
 // Dynamic import — Phaser requires `window` so it must not be SSR'd.
 const PhaserGame = dynamic(() => import('@/game/PhaserGame'), { ssr: false });
 
+/* ------------------------------------------------------------------ */
+/*  Component                                                           */
+/* ------------------------------------------------------------------ */
+
 export default function BattlePage() {
-  const { startBattle, phase, player } = useBattleStore();
+  const { startBattle, phase, player, battleEngine, startBattleEngine } = useBattleStore();
   const [gameStarted, setGameStarted] = useState(false);
 
   const handleStart = () => {
     startBattle();
     setGameStarted(true);
   };
+
+  // Listen for BATTLE_TRIGGERED and start the battle engine
+  useEffect(() => {
+    const onBattleTriggered = (data: {
+      gateCardId: string;
+      player1BakuganId: string;
+      player2BakuganId: string;
+    }) => {
+      // Find the gate card and bakugan data
+      const gateCard = gateCardData.find((gc) => gc.id === data.gateCardId);
+      if (!gateCard) return;
+
+      const playerBakugan = bakuganData.find((b) => b.id === data.player1BakuganId);
+      const opponentBakugan = bakuganData.find(
+        (b) => `opponent-${b.id}` === data.player2BakuganId,
+      ) ?? bakuganData[0];
+
+      if (!playerBakugan || !opponentBakugan) return;
+
+      // Create ability cards for the battle
+      const playerCards = abilityCardData.slice(0, 3) as unknown as AbilityCard[];
+      const opponentCards = abilityCardData.slice(3, 6) as unknown as AbilityCard[];
+
+      const context: BattleContext = {
+        playerBakugan: playerBakugan as unknown as Bakugan,
+        opponentBakugan: opponentBakugan as unknown as Bakugan,
+        playerAttribute: playerBakugan.attributes[0] as Attribute,
+        opponentAttribute: opponentBakugan.attributes[0] as Attribute,
+        playerAbilityCards: playerCards,
+        opponentAbilityCards: opponentCards,
+        gateCard: gateCard as unknown as GateCard,
+        turn: 1,
+        aiDifficulty: 'easy',
+      };
+
+      startBattleEngine(context);
+    };
+
+    eventBus.on('BATTLE_TRIGGERED', onBattleTriggered);
+    return () => {
+      eventBus.off('BATTLE_TRIGGERED', onBattleTriggered);
+    };
+  }, [startBattleEngine]);
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -70,11 +123,32 @@ export default function BattlePage() {
               </div>
             </div>
 
-            {/* Stats legend */}
+            {/* Ability Cards */}
+            <div>
+              <h2 className="mb-3 text-center font-mono text-sm uppercase text-gray-500">
+                Ability Cards
+              </h2>
+              <div className="flex gap-3">
+                {abilityCardData.slice(0, 3).map((c) => (
+                  <div
+                    key={c.id}
+                    className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900 p-2"
+                  >
+                    <span
+                      className="font-mono text-xs font-bold"
+                      style={{ color: abilityCardColor(c.color) }}
+                    >
+                      {c.name}
+                    </span>
+                    <span className="font-mono text-[10px] text-gray-500">{c.color}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Controls */}
             <div className="rounded-lg border border-gray-700 bg-gray-900/50 p-4">
-              <h3 className="mb-2 font-mono text-xs uppercase text-gray-500">
-                Controls
-              </h3>
+              <h3 className="mb-2 font-mono text-xs uppercase text-gray-500">Controls</h3>
               <ul className="space-y-1 font-mono text-xs text-gray-400">
                 <li>
                   <span className="text-green-400">Click + Drag</span> on Bakugan to aim throw
@@ -84,8 +158,11 @@ export default function BattlePage() {
                 </li>
                 <li>
                   <span className="text-orange-400">Speed</span> = throw velocity &nbsp;|&nbsp;
-                  <span className="text-purple-400">Steering</span> = movement time &nbsp;|&nbsp;
-                  <span className="text-red-400">Control</span> = turn speed
+                  <span className="text-purple-400">Steering</span> = movement time
+                </li>
+                <li>
+                  <span className="text-yellow-400">Scratch</span> during battle minigame for
+                  G-Power
                 </li>
               </ul>
             </div>
@@ -156,9 +233,7 @@ export default function BattlePage() {
                   <div
                     key={i}
                     className={`h-3 w-5 rounded ${
-                      i < player.gateCardsWon
-                        ? 'bg-yellow-500'
-                        : 'bg-gray-700'
+                      i < player.gateCardsWon ? 'bg-yellow-500' : 'bg-gray-700'
                     }`}
                   />
                 ))}
@@ -185,4 +260,13 @@ function attributeColor(attr: string): string {
     ventus: '#2a9d8f',
   };
   return map[attr] ?? '#888888';
+}
+
+function abilityCardColor(color: string): string {
+  const map: Record<string, string> = {
+    red: '#ff4444',
+    green: '#44ff44',
+    blue: '#4444ff',
+  };
+  return map[color] ?? '#888888';
 }

@@ -18,7 +18,15 @@ export type GameEventType =
   | 'THROW_LANDED'
   | 'STEERING_EXPIRED'
   | 'BAKUGAN_KNOCKED_BACK'
-  | 'BATTLE_TRIGGERED';
+  | 'BATTLE_TRIGGERED'
+  // Battle engine events (FASE 4)
+  | 'BATTLE_ENGINE_STARTED'
+  | 'BATTLE_ENGINE_TIMER_TICK'
+  | 'BATTLE_ENGINE_ABILITY_CARD_PLAYED'
+  | 'BATTLE_ENGINE_MINIGAME_RESULT'
+  | 'BATTLE_ENGINE_G_POWER_UPDATE'
+  | 'BATTLE_ENGINE_RESOLVED'
+  | 'BATTLE_ENGINE_LOG';
 
 export interface GameEventPayloads {
   BAKUGAN_THROWN: { bakuganId: string; targetX: number; targetY: number; force: number; playerId: number };
@@ -33,6 +41,28 @@ export interface GameEventPayloads {
   STEERING_EXPIRED: { bakuganId: string; playerId: number };
   BAKUGAN_KNOCKED_BACK: { bakuganId: string; playerId: number; x: number; y: number };
   BATTLE_TRIGGERED: { gateCardId: string; player1BakuganId: string; player2BakuganId: string };
+  // Battle engine events
+  BATTLE_ENGINE_STARTED: {
+    phase: string;
+    players: Array<{
+      id: number;
+      name: string;
+      bakuganName: string;
+      attribute: string;
+      baseGPower: number;
+      abilityCardNames: string[];
+    }>;
+    gateCardName: string;
+    gateCardTier: string;
+    battleType: string;
+    timer: number;
+  };
+  BATTLE_ENGINE_TIMER_TICK: { timeRemaining: number };
+  BATTLE_ENGINE_ABILITY_CARD_PLAYED: { playerId: number; cardId: string; cardName: string };
+  BATTLE_ENGINE_MINIGAME_RESULT: { playerId: number; score: number; gPowerEarned: number };
+  BATTLE_ENGINE_G_POWER_UPDATE: { player0: number; player1: number };
+  BATTLE_ENGINE_RESOLVED: { winnerPlayerId: number; reason: string; gateCardId: string };
+  BATTLE_ENGINE_LOG: { message: string };
 }
 
 type Callback<T = unknown> = (data: T) => void;

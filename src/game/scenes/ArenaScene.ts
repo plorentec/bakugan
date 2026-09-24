@@ -561,6 +561,7 @@ export class ArenaScene extends Phaser.Scene {
     const playerBakId = this.playerBakugan?.bakuganId ?? '';
     const opponentBakId = this.opponentBakugan?.bakuganId ?? '';
 
+    // Emit battle trigger with full context for the battle engine
     eventBus.emit('BATTLE_TRIGGERED', {
       gateCardId: gateCard.gateCard.id,
       player1BakuganId: playerBakId,
@@ -583,17 +584,19 @@ export class ArenaScene extends Phaser.Scene {
       onComplete: () => flash.destroy(),
     });
 
-    // Auto-resolve battle after visual (simplified MVP: higher G-Power wins)
-    this.time.delayedCall(2000, () => this.resolveBattle(gateCard));
+    // Listen for battle resolution from the engine
+    const onResolved = (data: { winnerPlayerId: number; gateCardId: string }) => {
+      eventBus.off('BATTLE_ENGINE_RESOLVED', onResolved as (d: unknown) => void);
+      this.handleBattleResolved(gateCard, data.winnerPlayerId);
+    };
+    eventBus.on('BATTLE_ENGINE_RESOLVED', onResolved as (d: unknown) => void);
+
+    // Pause arena — the battle engine takes over via the React HUD
+    // The arena stays frozen in 'battle_triggered' state until resolution
   }
 
-  private resolveBattle(gateCard: GateCardObject): void {
-    const playerGP = this.playerBakugan?.gPower ?? 0;
-    const opponentGP = this.opponentBakugan?.gPower ?? 0;
-
-    // Simplified: higher G-Power wins (minigame not yet implemented)
-    const playerWins = playerGP >= opponentGP;
-    const winnerId = playerWins ? this.playerBakugan!.bakuganId : this.opponentBakugan!.bakuganId;
+  private handleBattleResolved(gateCard: GateCardObject, winnerPlayerId: number): void {
+    const playerWins = winnerPlayerId === 0;
 
     this.showFloatingText(
       gateCard.x,
