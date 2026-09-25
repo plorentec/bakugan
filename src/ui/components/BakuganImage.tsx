@@ -1,30 +1,30 @@
 "use client";
 
 /**
- * BakuganImage.tsx — Dynamic Bakugan image with 3D model support.
- * Loads 3D OBJ models via Three.js, falls back to SVG placeholder.
+ * BakuganImage.tsx — Dynamic Bakugan image using model textures as sprites.
+ * Falls back to SVG placeholder if texture fails.
  */
 
+import { useState } from "react";
 import { getModelPath } from "@/lib/model-paths";
-import dynamic from "next/dynamic";
-
-// Dynamic import for Three.js (client-only)
-const BakuganModel = dynamic(() => import("./BakuganModel"), {
-  ssr: false,
-  loading: () => <div className="animate-pulse bg-gray-800 rounded-full" />,
-});
 
 /* ------------------------------------------------------------------ */
 /*  Attribute styles                                                    */
 /* ------------------------------------------------------------------ */
 
-const ATTRIBUTE_STYLES: Record<string, { primary: string; secondary: string; glow: string; symbol: string }> = {
-  pyrus: { primary: "#dc2626", secondary: "#991b1b", glow: "#fca5a5", symbol: "⚔" },
-  aquos: { primary: "#2563eb", secondary: "#1e40af", glow: "#93c5fd", symbol: "💧" },
-  subterra: { primary: "#d97706", secondary: "#92400e", glow: "#fcd34d", symbol: "🪨" },
-  haos: { primary: "#eab308", secondary: "#a16207", glow: "#fef08a", symbol: "✨" },
-  darkus: { primary: "#7c3aed", secondary: "#5b21b6", glow: "#c4b5fd", symbol: "🌀" },
-  ventus: { primary: "#16a34a", secondary: "#15803d", glow: "#86efac", symbol: "🍃" },
+const ATTRIBUTE_STYLES: Record<string, {
+  primary: string;
+  secondary: string;
+  glow: string;
+  symbol: string;
+  name: string;
+}> = {
+  pyrus: { primary: "#dc2626", secondary: "#991b1b", glow: "#fca5a5", symbol: "⚔", name: "PYRUS" },
+  aquos: { primary: "#2563eb", secondary: "#1e40af", glow: "#93c5fd", symbol: "💧", name: "AQUOS" },
+  subterra: { primary: "#d97706", secondary: "#92400e", glow: "#fcd34d", symbol: "🪨", name: "SUBTERRA" },
+  haos: { primary: "#eab308", secondary: "#a16207", glow: "#fef08a", symbol: "✨", name: "HAOS" },
+  darkus: { primary: "#7c3aed", secondary: "#5b21b6", glow: "#c4b5fd", symbol: "🌀", name: "DARKUS" },
+  ventus: { primary: "#16a34a", secondary: "#15803d", glow: "#86efac", symbol: "🍃", name: "VENTUS" },
 };
 
 /* ------------------------------------------------------------------ */
@@ -38,7 +38,16 @@ interface BakuganImageProps {
   size?: number;
   className?: string;
   showName?: boolean;
-  use3D?: boolean;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Get texture path from model path                                     */
+/* ------------------------------------------------------------------ */
+
+function getTexturePath(name: string): string | null {
+  const modelPath = getModelPath(name);
+  if (!modelPath) return null;
+  return modelPath.replace("Model.obj", "mat1.png");
 }
 
 /* ------------------------------------------------------------------ */
@@ -52,25 +61,30 @@ export default function BakuganImage({
   size = 80,
   className = "",
   showName = true,
-  use3D = true,
 }: BakuganImageProps) {
-  const modelPath = use3D ? getModelPath(name) : undefined;
+  const [imgError, setImgError] = useState(false);
   const style = ATTRIBUTE_STYLES[attribute] || ATTRIBUTE_STYLES.pyrus;
+  const texturePath = getTexturePath(name);
+  const showTexture = texturePath && !imgError;
 
-  // If we have a 3D model, use it
-  if (modelPath) {
+  // If we have a texture, use it
+  if (showTexture) {
     return (
-      <div className={`relative ${className}`}>
-        <BakuganModel
-          name={name}
-          attribute={attribute}
-          modelPath={modelPath}
-          size={size}
-          autoRotate={true}
+      <div className={`relative ${className}`} style={{ width: size, height: size }}>
+        <img
+          src={texturePath}
+          alt={name}
+          width={size}
+          height={size}
+          className="object-cover rounded-lg"
+          style={{
+            filter: "drop-shadow(0 0 8px " + style.glow + ")",
+          }}
+          onError={() => setImgError(true)}
         />
         {showName && (
           <div
-            className="absolute bottom-0 left-0 right-0 text-center text-[9px] font-bold text-white/70 truncate"
+            className="absolute bottom-0 left-0 right-0 text-center text-[9px] font-bold text-white/80 truncate bg-black/50 rounded-b-lg"
             style={{ fontSize: Math.max(8, size * 0.1) }}
           >
             {name}
@@ -85,7 +99,7 @@ export default function BakuganImage({
   const strokeWidth = size * 0.04;
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className}`} style={{ width: size, height: size }}>
       <svg
         width={size}
         height={size}
@@ -134,7 +148,7 @@ export default function BakuganImage({
 
       {showName && (
         <div
-          className="absolute bottom-0 left-0 right-0 text-center text-[9px] font-bold text-white/70 truncate"
+          className="absolute bottom-0 left-0 right-0 text-center text-[9px] font-bold text-white/80 truncate bg-black/50 rounded-b-lg"
           style={{ fontSize: Math.max(8, size * 0.1) }}
         >
           {name}

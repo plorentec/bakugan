@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useDeckStore } from "@/stores/deck-store";
 import type { GateCard, GateCardTier } from "@/data/schemas";
 import gateCardData from "@/data/raw/gate-cards.json";
+import GateCardDesign from "@/ui/components/GateCardDesign";
 
 // ─── Tier Colors ──────────────────────────────────────────────────────
 
@@ -136,14 +137,15 @@ export default function GateCardPanel() {
                 </span>
               )}
 
-              {/* Name + Tier badge */}
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="font-bold text-white text-sm">{card.name}</span>
-                <span
-                  className={`text-[10px] uppercase px-1.5 py-0.5 rounded font-bold ${tierColors[card.tier]} text-white`}
-                >
-                  {tierLabels[card.tier]}
-                </span>
+              {/* Gate Card Design */}
+              <div className="flex justify-center mb-1.5">
+                <GateCardDesign
+                  name={card.name}
+                  tier={card.tier}
+                  bonuses={card.bonuses}
+                  effect={typeof card.effect === 'string' ? card.effect : card.effect?.description}
+                  size="sm"
+                />
               </div>
 
               {/* Battle type + best bonus */}

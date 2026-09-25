@@ -7,7 +7,7 @@ import { playSelectSound } from "@/lib/sounds";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 import type { Bakugan, Attribute } from "@/data/schemas";
 import bakuganData from "@/data/raw/bakugan.json";
-import BakuganImage from "@/ui/components/BakuganImage";
+import BakuganCard from "@/ui/components/BakuganCard";
 
 // ─── Attribute Colors ─────────────────────────────────────────────────
 
@@ -152,30 +152,16 @@ export default function BakuganPanel() {
                 </motion.span>
               )}
 
-              {/* Bakugan Image */}
-              <div className="flex items-center gap-3 mb-1.5">
-                <BakuganImage
+              {/* Bakugan Card */}
+              <div className="flex justify-center mb-1.5">
+                <BakuganCard
                   name={b.name}
                   attribute={primaryAttr}
-                  imageUrl={b.image_url}
-                  size={48}
+                  baseGPower={b.base_g_power}
+                  maxGPower={b.max_g_power}
+                  stats={b.stats}
+                  size="sm"
                 />
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <span className="font-bold text-white text-sm">{b.name}</span>
-                    <span
-                      className={`text-[10px] uppercase px-1.5 py-0.5 rounded font-bold ${attributeColors[primaryAttr]} text-white`}
-                    >
-                      {primaryAttr}
-                    </span>
-                  </div>
-                  {/* G-Power */}
-                  <div className="flex items-center gap-3 mt-0.5">
-                    <span className="text-orange-300 text-xs font-mono">
-                      {b.base_g_power} / {b.max_g_power} G
-                    </span>
-                  </div>
-                </div>
               </div>
 
               {/* Stats bar */}

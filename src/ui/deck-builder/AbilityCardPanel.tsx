@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useDeckStore } from "@/stores/deck-store";
 import type { AbilityCard, AbilityCardColor } from "@/data/schemas";
 import abilityCardData from "@/data/raw/ability-cards.json";
+import AbilityCardDesign from "@/ui/components/AbilityCardDesign";
 
 // ─── Color Styles ─────────────────────────────────────────────────────
 
@@ -131,18 +132,15 @@ export default function AbilityCardPanel() {
                 </span>
               )}
 
-              {/* Name + Color badge */}
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="font-bold text-white text-sm">{card.name}</span>
-                <span
-                  className={`text-[10px] uppercase px-1.5 py-0.5 rounded font-bold ${colorBg[card.color]} text-white`}
-                >
-                  {colorLabels[card.color]}
-                </span>
+              {/* Ability Card Design */}
+              <div className="flex justify-center mb-1.5">
+                <AbilityCardDesign
+                  name={card.name}
+                  color={card.color}
+                  effect={card.description || ""}
+                  size="sm"
+                />
               </div>
-
-              {/* Description */}
-              <p className="text-xs text-gray-300 mb-1.5">{card.description}</p>
 
               {/* Effects */}
               <div className="flex flex-col gap-0.5">

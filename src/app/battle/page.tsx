@@ -230,7 +230,6 @@ export default function BattlePage() {
                         attribute={b.attributes[0]}
                         size={56}
                         showName={false}
-                        use3D={true}
                       />
                       <span className="font-mono text-xs font-bold">{b.name}</span>
                       <span className="font-mono text-[10px] text-gray-500">
@@ -257,7 +256,6 @@ export default function BattlePage() {
                           attribute={b.attributes[0]}
                           size={56}
                           showName={false}
-                          use3D={true}
                         />
                         <span className="font-mono text-xs font-bold">{b.name}</span>
                         <span className="font-mono text-[10px] text-gray-500">
