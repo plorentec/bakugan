@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface MoneyDisplayProps {
@@ -8,6 +9,14 @@ interface MoneyDisplayProps {
 }
 
 export default function MoneyDisplay({ amount, lastChange }: MoneyDisplayProps) {
+  const [changeKey, setChangeKey] = useState(0);
+
+  useEffect(() => {
+    if (lastChange !== 0) {
+      setChangeKey((k) => k + 1);
+    }
+  }, [lastChange]);
+
   return (
     <div className="flex items-center gap-2">
       <span className="text-yellow-400 font-black text-xl tabular-nums">
@@ -16,7 +25,7 @@ export default function MoneyDisplay({ amount, lastChange }: MoneyDisplayProps) 
       <AnimatePresence>
         {lastChange !== 0 && (
           <motion.span
-            key={Date.now()}
+            key={changeKey}
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 0, y: lastChange > 0 ? -20 : 20 }}
             exit={{ opacity: 0 }}

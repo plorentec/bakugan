@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { AnimatePresence } from "framer-motion";
 import "./globals.css";
+import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: "Bakugan Battle Brawlers",
@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-950 text-white min-h-screen antialiased">
-        <AnimatePresence mode="wait">
-          {children}
-        </AnimatePresence>
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

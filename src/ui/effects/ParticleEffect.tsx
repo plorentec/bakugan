@@ -9,7 +9,7 @@
  */
 
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useState, useEffect } from "react";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                               */
@@ -73,6 +73,18 @@ const PARTICLE_CONFIGS: Record<ParticleType, ParticleConfig> = {
 };
 
 /* ------------------------------------------------------------------ */
+/*  Seeded random (deterministic per mount, avoids hydration mismatch) */
+/* ------------------------------------------------------------------ */
+
+function seededRandom(seed: number): () => number {
+  let s = seed;
+  return () => {
+    s = (s * 16807 + 0) % 2147483647;
+    return (s - 1) / 2147483646;
+  };
+}
+
+/* ------------------------------------------------------------------ */
 /*  Component                                                           */
 /* ------------------------------------------------------------------ */
 
@@ -86,17 +98,21 @@ export default function ParticleEffect({
   active = true,
 }: ParticleEffectProps) {
   const config = PARTICLE_CONFIGS[type];
+  const [particles, setParticles] = useState<
+    { id: number; targetX: number; targetY: number; size: number; dur: number; delay: number }[]
+  >([]);
 
-  const particles = useMemo(() => {
-    return Array.from({ length: count }, (_, i) => {
-      const angle = (i / count) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
-      const dist = config.spread * (0.5 + Math.random() * 0.5);
+  useEffect(() => {
+    const rng = seededRandom(Date.now() + count);
+    const newParticles = Array.from({ length: count }, (_, i) => {
+      const angle = (i / count) * Math.PI * 2 + (rng() - 0.5) * 0.5;
+      const dist = config.spread * (0.5 + rng() * 0.5);
       const size =
         config.sizeRange[0] +
-        Math.random() * (config.sizeRange[1] - config.sizeRange[0]);
+        rng() * (config.sizeRange[1] - config.sizeRange[0]);
       const dur =
         config.durationRange[0] +
-        Math.random() * (config.durationRange[1] - config.durationRange[0]);
+        rng() * (config.durationRange[1] - config.durationRange[0]);
 
       return {
         id: i,
@@ -104,12 +120,13 @@ export default function ParticleEffect({
         targetY: Math.sin(angle) * dist + (config.gravity ?? 0) * dur * 0.3,
         size,
         dur,
-        delay: Math.random() * 0.1,
+        delay: rng() * 0.1,
       };
     });
-  }, [count, type]); // eslint-disable-line react-hooks/exhaustive-deps
+    setParticles(newParticles);
+  }, [count, type, config]);
 
-  if (!active) return null;
+  if (!active || particles.length === 0) return null;
 
   return (
     <div
@@ -120,16 +137,16 @@ export default function ParticleEffect({
         <motion.div
           key={p.id}
           initial={{
+            opacity: config.opacity,
             x: 0,
             y: 0,
             scale: 1,
-            opacity: config.opacity,
           }}
           animate={{
+            opacity: 0,
             x: p.targetX,
             y: p.targetY,
-            scale: 0,
-            opacity: 0,
+            scale: 0.3,
           }}
           transition={{
             duration: p.dur,
