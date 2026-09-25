@@ -18,7 +18,7 @@ export type AbilityCardColor = z.infer<typeof AbilityCardColorSchema>;
  */
 export const AbilityCardSchema = z.object({
   /** Unique identifier (UUID v4) */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Display name */
   name: z.string().min(1),
   /** Card color determines usage rules and deck composition */

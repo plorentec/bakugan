@@ -28,7 +28,7 @@ export type ArenaHazardType = z.infer<typeof ArenaHazardTypeSchema>;
  */
 export const ArenaHazardSchema = z.object({
   /** Unique identifier */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Type of hazard */
   type: ArenaHazardTypeSchema,
   /** Center position on the field */
@@ -71,7 +71,7 @@ export type PowerUpType = z.infer<typeof PowerUpTypeSchema>;
  */
 export const ArenaSpawnPointSchema = z.object({
   /** Unique identifier */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Type of spawn point */
   type: ArenaSpawnPointTypeSchema,
   /** Position on the field */
@@ -88,7 +88,7 @@ export type ArenaSpawnPoint = z.infer<typeof ArenaSpawnPointSchema>;
  */
 export const ArenaSchema = z.object({
   /** Unique identifier (UUID v4) */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Arena display name */
   name: z.string().min(1),
   /** Description of the arena */

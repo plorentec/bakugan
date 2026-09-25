@@ -70,7 +70,7 @@ export type GateCardEffect = z.infer<typeof GateCardEffectSchema>;
  */
 export const GateCardSchema = z.object({
   /** Unique identifier (UUID v4) */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Display name */
   name: z.string().min(1),
   /** Tier determines deck composition rules and special effects */

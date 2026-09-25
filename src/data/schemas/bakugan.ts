@@ -27,8 +27,8 @@ export type BakuganStats = z.infer<typeof BakuganStatsSchema>;
  * Each Bakugan has attributes, G-Power range, and 5 stats.
  */
 export const BakuganSchema = z.object({
-  /** Unique identifier (UUID v4) */
-  id: z.string().uuid(),
+  /** Unique identifier */
+  id: z.string().min(1),
   /** Display name */
   name: z.string().min(1),
   /** One or more elemental attributes */

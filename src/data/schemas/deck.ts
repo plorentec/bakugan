@@ -9,7 +9,7 @@ import { z } from 'zod';
  */
 export const DeckSchema = z.object({
   /** Unique identifier (UUID v4) */
-  id: z.string().uuid(),
+  id: z.string().min(1),
   /** Deck name */
   name: z.string().min(1),
   /** Exactly 3 Bakugan, each with level, current G-Power, and allocated stats */
@@ -17,7 +17,7 @@ export const DeckSchema = z.object({
     .array(
       z.object({
         /** Reference to Bakugan.id */
-        bakugan_id: z.string().uuid(),
+        bakugan_id: z.string().min(1),
         /** Current level (1-20) */
         level: z.number().min(1).max(20),
         /** Current G-Power (base + level increments + power-ups) */
@@ -38,7 +38,7 @@ export const DeckSchema = z.object({
     .array(
       z.object({
         /** Reference to GateCard.id */
-        gate_card_id: z.string().uuid(),
+        gate_card_id: z.string().min(1),
       })
     )
     .length(3, 'Deck must have exactly 3 Gate Cards'),
@@ -47,7 +47,7 @@ export const DeckSchema = z.object({
     .array(
       z.object({
         /** Reference to AbilityCard.id */
-        ability_card_id: z.string().uuid(),
+        ability_card_id: z.string().min(1),
       })
     )
     .length(3, 'Deck must have exactly 3 Ability Cards'),
