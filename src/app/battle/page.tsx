@@ -12,6 +12,8 @@ import BattleHUD from '@/ui/battle/BattleHUD';
 import PlayerIndicator from '@/ui/battle/PlayerIndicator';
 import TurnTimer from '@/ui/battle/TurnTimer';
 import ScreenShake from '@/ui/effects/ScreenShake';
+import ArenaBackground from '@/ui/components/ArenaBackground';
+import BakuganImage from '@/ui/components/BakuganImage';
 import bakuganData from '@/data/raw/bakugan.json';
 import gateCardData from '@/data/raw/gate-cards.json';
 import abilityCardData from '@/data/raw/ability-cards.json';
@@ -144,8 +146,10 @@ export default function BattlePage() {
       <motion.div
         {...PAGE_TRANSITION}
         variants={zoomIn}
-        className="min-h-screen bg-gray-950 text-white"
+        className="relative min-h-screen text-white overflow-hidden"
       >
+        <ArenaBackground attribute="darkus" />
+        <div className="relative z-10 min-h-screen">
         {!gameStarted ? (
           /* ── Pre-battle lobby ──────────────────────────────── */
           <div className="flex min-h-screen flex-col items-center justify-center gap-8 px-4">
@@ -219,13 +223,13 @@ export default function BattlePage() {
                   {bakuganData.slice(0, 3).map((b) => (
                     <div
                       key={b.id}
-                      className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900 p-3"
+                      className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900/80 backdrop-blur p-3"
                     >
-                      <div
-                        className="h-10 w-10 rounded-full"
-                        style={{
-                          backgroundColor: attributeColor(b.attributes[0]),
-                        }}
+                      <BakuganImage
+                        name={b.name}
+                        attribute={b.attributes[0]}
+                        size={56}
+                        showName={false}
                       />
                       <span className="font-mono text-xs font-bold">{b.name}</span>
                       <span className="font-mono text-[10px] text-gray-500">
@@ -245,13 +249,13 @@ export default function BattlePage() {
                     {bakuganData.slice(3, 6).map((b) => (
                       <div
                         key={b.id}
-                        className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900 p-3"
+                        className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900/80 backdrop-blur p-3"
                       >
-                        <div
-                          className="h-10 w-10 rounded-full"
-                          style={{
-                            backgroundColor: attributeColor(b.attributes[0]),
-                          }}
+                        <BakuganImage
+                          name={b.name}
+                          attribute={b.attributes[0]}
+                          size={56}
+                          showName={false}
                         />
                         <span className="font-mono text-xs font-bold">{b.name}</span>
                         <span className="font-mono text-[10px] text-gray-500">
@@ -434,6 +438,7 @@ export default function BattlePage() {
             </aside>
           </div>
         )}
+        </div>
       </motion.div>
     </ScreenShake>
   );

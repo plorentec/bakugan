@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react';
 import bakuganData from '@/data/raw/bakugan.json';
 import gateCardsData from '@/data/raw/gate-cards.json';
 import abilityCardsData from '@/data/raw/ability-cards.json';
+import BakuganImage from '@/ui/components/BakuganImage';
+import ArenaBackground from '@/ui/components/ArenaBackground';
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                               */
@@ -102,9 +104,11 @@ export default function BakudexPage() {
   /* ------------------------------------------------------------------ */
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-3xl font-bold mb-2">Bakudex</h1>
-      <p className="text-gray-400 mb-6">Complete collection tracker</p>
+    <div className="relative min-h-screen text-white overflow-hidden">
+      <ArenaBackground attribute="haos" />
+      <div className="relative z-10 p-6">
+        <h1 className="text-3xl font-bold mb-2">Bakudex</h1>
+        <p className="text-gray-400 mb-6">Complete collection tracker</p>
 
       {/* Stats Bar */}
       <div className="grid grid-cols-4 gap-4 mb-6">
@@ -205,6 +209,7 @@ export default function BakudexPage() {
         (activeTab === 'ability_cards' && filteredAbilityCards.length === 0)) && (
         <p className="text-gray-500 text-center py-8">No items match your filters.</p>
       )}
+      </div>
     </div>
   );
 }
@@ -235,26 +240,21 @@ function StatCard({ label, value, max, percent }: {
 }
 
 function BakuganCard({ bakugan, owned }: { bakugan: any; owned: boolean }) {
-  const attrColor: Record<string, string> = {
-    pyrus: '#ff4400',
-    aquos: '#0066ff',
-    subterra: '#884400',
-    haos: '#ffdd00',
-    darkus: '#8800aa',
-    ventus: '#00aa44',
-  };
-
   return (
-    <div className={`rounded-lg p-3 border ${owned ? 'bg-gray-800 border-gray-600' : 'bg-gray-900 border-gray-800 opacity-50'}`}>
-      <div className="flex items-center gap-2 mb-1">
-        <span
-          className="w-3 h-3 rounded-full"
-          style={{ backgroundColor: attrColor[bakugan.attributes[0]] ?? '#666' }}
+    <div className={`rounded-lg p-3 border ${owned ? 'bg-gray-800/80 backdrop-blur border-gray-600' : 'bg-gray-900/80 backdrop-blur border-gray-800 opacity-50'}`}>
+      <div className="flex items-center gap-3 mb-1">
+        <BakuganImage
+          name={bakugan.name}
+          attribute={bakugan.attributes[0]}
+          size={48}
+          showName={false}
         />
-        <span className="font-medium">{bakugan.name}</span>
-      </div>
-      <div className="text-xs text-gray-400 mb-1">
-        {bakugan.attributes.map((a: string) => a.charAt(0).toUpperCase() + a.slice(1)).join(', ')}
+        <div>
+          <span className="font-medium">{bakugan.name}</span>
+          <div className="text-xs text-gray-400">
+            {bakugan.attributes.map((a: string) => a.charAt(0).toUpperCase() + a.slice(1)).join(', ')}
+          </div>
+        </div>
       </div>
       <div className="text-xs">
         G-Power: {bakugan.base_g_power}–{bakugan.max_g_power}
