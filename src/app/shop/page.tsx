@@ -137,10 +137,10 @@ export default function ShopPage() {
               onClick={() => playClickSound()}
               className="text-gray-400 hover:text-white transition text-sm font-bold"
             >
-              ← Home
+              ← Inicio
             </Link>
             <h1 className="text-xl font-black uppercase tracking-wider text-orange-400">
-              Shop
+              Tienda
             </h1>
           </div>
           <MoneyDisplay amount={money} lastChange={lastMoneyChange} />
@@ -193,7 +193,7 @@ export default function ShopPage() {
                 {activeTier.name}
               </h2>
               <span className="text-sm text-gray-500">
-                {activeTier.items.length} items
+                {activeTier.items.length} elementos
               </span>
             </div>
 
@@ -205,8 +205,8 @@ export default function ShopPage() {
               />
             ) : (
               <div className="text-center py-16 text-gray-500">
-                <p className="text-lg font-bold mb-2">🔒 Locked</p>
-                <p className="text-sm">Complete the required condition to unlock this tier</p>
+                <p className="text-lg font-bold mb-2">🔒 Bloqueado</p>
+                <p className="text-sm">Completa la condición requerida para desbloquear esta categoría</p>
               </div>
             )}
           </motion.div>

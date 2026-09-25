@@ -82,7 +82,7 @@ export default function DeckSummary() {
       {/* Deck Name */}
       <div>
         <label className="text-[10px] text-gray-500 uppercase tracking-wider">
-          Deck Name
+          Nombre del Mazo
         </label>
         <input
           type="text"
@@ -128,7 +128,7 @@ export default function DeckSummary() {
               key={`empty-b-${i}`}
               className="flex items-center justify-center bg-gray-800/30 rounded px-2.5 py-1.5 border border-dashed border-gray-700"
             >
-              <span className="text-[10px] text-gray-600">Empty Slot</span>
+              <span className="text-[10px] text-gray-600">Vacío</span>
             </div>
           ))}
         </div>
@@ -165,7 +165,7 @@ export default function DeckSummary() {
               key={`empty-g-${i}`}
               className="flex items-center justify-center bg-gray-800/30 rounded px-2.5 py-1.5 border border-dashed border-gray-700"
             >
-              <span className="text-[10px] text-gray-600">Empty Slot</span>
+              <span className="text-[10px] text-gray-600">Vacío</span>
             </div>
           ))}
         </div>
@@ -202,7 +202,7 @@ export default function DeckSummary() {
               key={`empty-a-${i}`}
               className="flex items-center justify-center bg-gray-800/30 rounded px-2.5 py-1.5 border border-dashed border-gray-700"
             >
-              <span className="text-[10px] text-gray-600">Empty Slot</span>
+              <span className="text-[10px] text-gray-600">Vacío</span>
             </div>
           ))}
         </div>
@@ -211,10 +211,10 @@ export default function DeckSummary() {
       {/* Deck stats summary */}
       <div className="bg-gray-800/40 rounded-lg p-3 border border-gray-700">
         <h3 className="text-[10px] text-gray-500 uppercase tracking-wider mb-2">
-          Deck Summary
+          Resumen del Mazo
         </h3>
         <div className="flex justify-between text-xs">
-          <span className="text-gray-400">Total Base G-Power</span>
+          <span className="text-gray-400">G-Power Base Total</span>
           <span className="text-orange-300 font-mono font-bold">{totalGPower}</span>
         </div>
       </div>
@@ -231,7 +231,7 @@ export default function DeckSummary() {
             : "bg-gray-700 text-gray-500 cursor-not-allowed"
         }`}
       >
-        {isValid ? "Save Deck" : "Complete Deck to Save"}
+        {isValid ? "Guardar Mazo" : "Completa el Mazo para Guardar"}
       </motion.button>
     </div>
   );

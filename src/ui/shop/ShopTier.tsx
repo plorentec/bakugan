@@ -49,7 +49,7 @@ export default function ShopTier({ tierName, items, onBuy }: ShopTierProps) {
                 : "bg-gray-800 text-gray-400 hover:bg-gray-700"
             }`}
           >
-            {f === "all" ? `All (${items.length})` : `${f} (${counts[f as keyof typeof counts]})`}
+            {f === "all" ? `Todos (${items.length})` : `${f} (${counts[f as keyof typeof counts]})`}
           </button>
         ))}
       </div>
@@ -71,7 +71,7 @@ export default function ShopTier({ tierName, items, onBuy }: ShopTierProps) {
         ))}
         {filtered.length === 0 && (
           <div className="col-span-full text-center text-gray-500 py-8">
-            No items in this category
+            No hay elementos en esta categoría
           </div>
         )}
       </div>

@@ -108,7 +108,7 @@ export default function BakudexPage() {
       <ArenaBackground attribute="haos" />
       <div className="relative z-10 p-6">
         <h1 className="text-3xl font-bold mb-2">Bakudex</h1>
-        <p className="text-gray-400 mb-6">Complete collection tracker</p>
+        <p className="text-gray-400 mb-6">Rastreador de colección completo</p>
 
       {/* Stats Bar */}
       <div className="grid grid-cols-4 gap-4 mb-6">
@@ -141,7 +141,7 @@ export default function BakudexPage() {
       <div className="flex gap-3 mb-4 flex-wrap">
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Buscar..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="px-3 py-1 rounded bg-gray-700 border border-gray-600 text-white"
@@ -153,7 +153,7 @@ export default function BakudexPage() {
           onChange={(e) => setAttributeFilter(e.target.value as AttributeFilter)}
           className="px-3 py-1 rounded bg-gray-700 border border-gray-600"
         >
-          <option value="all">All Attributes</option>
+          <option value="all">Todos los Atributos</option>
           {['pyrus', 'aquos', 'subterra', 'haos', 'darkus', 'ventus'].map((a) => (
             <option key={a} value={a}>{a.charAt(0).toUpperCase() + a.slice(1)}</option>
           ))}
@@ -166,10 +166,10 @@ export default function BakudexPage() {
             onChange={(e) => setTierFilter(e.target.value as TierFilter)}
             className="px-3 py-1 rounded bg-gray-700 border border-gray-600"
           >
-            <option value="all">All Tiers</option>
-            <option value="gold">Gold</option>
-            <option value="silver">Silver</option>
-            <option value="copper">Copper</option>
+            <option value="all">Todas las Categorías</option>
+            <option value="gold">Oro</option>
+            <option value="silver">Plata</option>
+            <option value="copper">Cobre</option>
           </select>
         )}
 
@@ -180,10 +180,10 @@ export default function BakudexPage() {
             onChange={(e) => setColorFilter(e.target.value as ColorFilter)}
             className="px-3 py-1 rounded bg-gray-700 border border-gray-600"
           >
-            <option value="all">All Colors</option>
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
+            <option value="all">Todos los Colores</option>
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
           </select>
         )}
       </div>
@@ -207,7 +207,7 @@ export default function BakudexPage() {
       {((activeTab === 'bakugan' && filteredBakugan.length === 0) ||
         (activeTab === 'gate_cards' && filteredGateCards.length === 0) ||
         (activeTab === 'ability_cards' && filteredAbilityCards.length === 0)) && (
-        <p className="text-gray-500 text-center py-8">No items match your filters.</p>
+        <p className="text-gray-500 text-center py-8">No hay elementos que coincidan con tus filtros.</p>
       )}
       </div>
     </div>
@@ -234,7 +234,7 @@ function StatCard({ label, value, max, percent }: {
       <div className="mt-1 h-2 bg-gray-700 rounded">
         <div className="h-2 bg-blue-500 rounded" style={{ width: `${pct}%` }} />
       </div>
-      <div className="text-xs text-gray-400 mt-1">{pct}% complete</div>
+      <div className="text-xs text-gray-400 mt-1">{pct}% completo</div>
     </div>
   );
 }
@@ -263,7 +263,7 @@ function BakuganCard({ bakugan, owned }: { bakugan: any; owned: boolean }) {
         SPD {bakugan.stats.speed} | DEF {bakugan.stats.defense} | CTR {bakugan.stats.control} | STR {bakugan.stats.steering} | MAG {bakugan.stats.magnet}
       </div>
       <div className="text-xs text-gray-600 mt-1">
-        {owned ? '✓ Owned' : '✗ Locked'}
+        {owned ? '✓ Obtenido' : '✗ Bloqueado'}
       </div>
     </div>
   );
@@ -287,14 +287,14 @@ function GateCardEntry({ card, owned }: { card: any; owned: boolean }) {
         <span className="text-xs text-gray-500 capitalize">({card.tier})</span>
       </div>
       <div className="text-xs text-gray-400 mb-1">
-        Battle: {card.battle_type}
-        {card.depicted_bakugan && ` | Depicts: ${card.depicted_bakugan}`}
+        Batalla: {card.battle_type}
+        {card.depicted_bakugan && ` | Representa: ${card.depicted_bakugan}`}
       </div>
       {card.effect && (
         <div className="text-xs text-gray-500 italic">{card.effect.description}</div>
       )}
       <div className="text-xs text-gray-600 mt-1">
-        {owned ? '✓ Owned' : '✗ Locked'}
+        {owned ? '✓ Obtenido' : '✗ Bloqueado'}
       </div>
     </div>
   );
@@ -319,7 +319,7 @@ function AbilityCardEntry({ card, owned }: { card: any; owned: boolean }) {
       </div>
       <div className="text-xs text-gray-400 mb-1">{card.description}</div>
       <div className="text-xs text-gray-600 mt-1">
-        {owned ? '✓ Owned' : '✗ Locked'}
+        {owned ? '✓ Obtenido' : '✗ Bloqueado'}
       </div>
     </div>
   );

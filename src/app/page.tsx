@@ -62,7 +62,7 @@ export default function Home() {
             Battle Brawlers
           </h2>
           <p className="text-gray-500 mt-4 text-sm">
-            Nintendo DS Web Recreation
+            Recreación Web del Nintendo DS
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export default function Home() {
             onClick={() => playSelectSound()}
             className="block w-full py-4 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-purple-500/20"
           >
-            🎮 Story Mode
+            🎮 Modo Historia
           </motion.a>
 
           <motion.a
@@ -115,7 +115,7 @@ export default function Home() {
             onClick={() => playSelectSound()}
             className="block w-full py-4 px-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-orange-500/20"
           >
-            🃏 Deck Builder
+            🃏 Constructor de Mazos
           </motion.a>
 
           <motion.a
@@ -126,7 +126,7 @@ export default function Home() {
             onClick={() => playSelectSound()}
             className="block w-full py-4 px-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-blue-500/20"
           >
-            ⚔️ PvP Battle
+            ⚔️ Batalla PvP
           </motion.a>
 
           <motion.a
@@ -137,7 +137,7 @@ export default function Home() {
             onClick={() => playSelectSound()}
             className="block w-full py-4 px-6 bg-gradient-to-r from-red-500 to-purple-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-red-500/20"
           >
-            🔥 Free Battle
+            🔥 Batalla Libre
           </motion.a>
 
           <motion.a
@@ -148,7 +148,7 @@ export default function Home() {
             onClick={() => playSelectSound()}
             className="block w-full py-4 px-6 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-yellow-500/20"
           >
-            🛒 Shop
+            🛒 Tienda
           </motion.a>
 
           <motion.a
@@ -170,7 +170,7 @@ export default function Home() {
           transition={{ delay: 0.6 }}
           className="mt-8 text-[10px] text-gray-600 text-center"
         >
-          Fan project — Not affiliated with SEGA or Spin Master
+          Proyecto de fans — No afiliado a SEGA ni Spin Master
         </motion.p>
       </div>
     </motion.div>

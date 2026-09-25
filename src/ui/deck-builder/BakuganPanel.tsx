@@ -86,7 +86,7 @@ export default function BakuganPanel() {
               : "bg-gray-800 text-gray-400 hover:bg-gray-700"
           }`}
         >
-          All
+          Todos
         </button>
         {attributes.map((attr) => (
           <button
@@ -148,7 +148,7 @@ export default function BakuganPanel() {
                   animate={{ scale: 1 }}
                   className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold"
                 >
-                  IN DECK
+                  EN MAZO
                 </motion.span>
               )}
 
@@ -209,7 +209,7 @@ export default function BakuganPanel() {
 
       {/* Deck count */}
       <div className="text-center text-xs text-gray-400 pt-2 border-t border-gray-700">
-        {deck.bakugan.length} / 3 in deck
+        {deck.bakugan.length} / 3 en mazo
       </div>
     </div>
   );

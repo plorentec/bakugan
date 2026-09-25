@@ -146,7 +146,7 @@ export default function TurnTimer({
           animate={{ opacity: 1, y: 0 }}
           className="mt-1 text-center font-mono text-[10px] font-bold text-yellow-500"
         >
-          HURRY!
+          ¡APÚRATE!
         </motion.p>
       )}
       {timeRemaining <= CRITICAL_THRESHOLD && (
@@ -155,7 +155,7 @@ export default function TurnTimer({
           animate={{ opacity: 1, y: 0 }}
           className="mt-1 text-center font-mono text-[10px] font-bold text-red-500"
         >
-          TIME&apos;S UP!
+          ¡TIEMPO!
         </motion.p>
       )}
     </div>

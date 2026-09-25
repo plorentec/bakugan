@@ -37,12 +37,12 @@ export default function DeckBuilderPage() {
               onClick={() => playClickSound()}
               className="text-sm text-gray-400 hover:text-white transition"
             >
-              &larr; Menu
+              &larr; Menú
             </a>
             <span className="text-gray-600">|</span>
             <h1 className="text-xl font-black uppercase tracking-widest">
               <span className="text-orange-500">Bakugan</span>{" "}
-              <span className="text-white">Deck Builder</span>
+              <span className="text-white">Constructor de Mazos</span>
             </h1>
           </div>
         </div>

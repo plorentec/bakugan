@@ -159,10 +159,10 @@ export default function BattlePage() {
               className="text-center"
             >
               <h1 className="text-4xl font-black uppercase tracking-widest text-orange-500">
-                Battle Arena
+                Arena de Batalla
               </h1>
               <p className="mt-2 text-gray-400">
-                Place Gate Cards, throw Bakugan, win 3 Gate Cards to triumph!
+                ¡Coloca Gate Cards, lanza Bakugan, gana 3 Gate Cards para triunfar!
               </p>
             </motion.div>
 
@@ -173,7 +173,7 @@ export default function BattlePage() {
               transition={{ delay: 0.1 }}
               className="flex flex-col items-center gap-4"
             >
-              <h2 className="font-mono text-sm uppercase text-gray-500">Select Mode</h2>
+              <h2 className="font-mono text-sm uppercase text-gray-500">Seleccionar Modo</h2>
               <div className="flex gap-4">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -186,8 +186,8 @@ export default function BattlePage() {
                   }`}
                 >
                   <span className="text-2xl">🤖</span>
-                  <span className="font-mono text-sm font-bold text-white">vs AI</span>
-                  <span className="font-mono text-[10px] text-gray-400">Single Player</span>
+                  <span className="font-mono text-sm font-bold text-white">vs IA</span>
+                  <span className="font-mono text-[10px] text-gray-400">Un Jugador</span>
                 </motion.button>
 
                 <motion.button
@@ -201,8 +201,8 @@ export default function BattlePage() {
                   }`}
                 >
                   <span className="text-2xl">👥</span>
-                  <span className="font-mono text-sm font-bold text-white">Local PvP</span>
-                  <span className="font-mono text-[10px] text-gray-400">2 Players</span>
+                  <span className="font-mono text-sm font-bold text-white">PvP Local</span>
+                  <span className="font-mono text-[10px] text-gray-400">2 Jugadores</span>
                 </motion.button>
               </div>
             </motion.div>
@@ -217,7 +217,7 @@ export default function BattlePage() {
               {/* Bakugan lineup */}
               <div>
                 <h2 className="mb-3 text-center font-mono text-sm uppercase text-gray-500">
-                  {selectedMode === 'local' ? 'P1 Bakugan' : 'Your Bakugan'}
+                  {selectedMode === 'local' ? 'Bakugan J1' : 'Tu Bakugan'}
                 </h2>
                 <div className="flex gap-4">
                   {bakuganData.slice(0, 3).map((b) => (
@@ -294,26 +294,26 @@ export default function BattlePage() {
 
               {/* Controls */}
               <div className="rounded-lg border border-gray-700 bg-gray-900/50 p-4">
-                <h3 className="mb-2 font-mono text-xs uppercase text-gray-500">Controls</h3>
+                <h3 className="mb-2 font-mono text-xs uppercase text-gray-500">Controles</h3>
                 <ul className="space-y-1 font-mono text-xs text-gray-400">
                   <li>
-                    <span className="text-green-400">Click + Drag</span> on Bakugan to aim throw
+                    <span className="text-green-400">Clic + Arrastrar</span> en Bakugan para apuntar el lanzamiento
                   </li>
                   <li>
-                    <span className="text-blue-400">WASD / Arrows</span> to steer on field
+                    <span className="text-blue-400">WASD / Flechas</span> para dirigir en el campo
                   </li>
                   <li>
-                    <span className="text-orange-400">Speed</span> = throw velocity &nbsp;|&nbsp;
-                    <span className="text-purple-400">Steering</span> = movement time
+                    <span className="text-orange-400">Velocidad</span> = velocidad de lanzamiento &nbsp;|&nbsp;
+                    <span className="text-purple-400">Dirección</span> = tiempo de movimiento
                   </li>
                   <li>
-                    <span className="text-yellow-400">Scratch</span> during battle minigame for
+                    <span className="text-yellow-400">Scratch</span> durante el minijuego de batalla para
                     G-Power
                   </li>
                   {selectedMode === 'local' && (
                     <li>
-                      <span className="text-blue-400">P1</span> controls bottom &nbsp;|&nbsp;
-                      <span className="text-red-400">P2</span> controls top
+                      <span className="text-blue-400">J1</span> controla abajo &nbsp;|&nbsp;
+                      <span className="text-red-400">J2</span> controla arriba
                     </li>
                   )}
                 </ul>
@@ -326,7 +326,7 @@ export default function BattlePage() {
               transition={{ delay: 0.6 }}
               className="text-xs text-gray-600"
             >
-              Fan project — Not affiliated with SEGA or Spin Master
+              Proyecto de fans — No afiliado a SEGA ni Spin Master
             </motion.p>
           </div>
         ) : (
@@ -368,13 +368,13 @@ export default function BattlePage() {
                         exit={{ opacity: 0, scale: 0.9 }}
                         className="flex flex-col items-center gap-2 rounded-lg border border-red-500 bg-gray-900 p-3"
                       >
-                        <span className="font-mono text-xs text-red-400">Forfeit match?</span>
+                        <span className="font-mono text-xs text-red-400">¿Rendirse?</span>
                         <div className="flex gap-2">
                           <button
                             onClick={handleForfeit}
                             className="rounded bg-red-500 px-3 py-1 font-mono text-xs font-bold text-white hover:bg-red-600"
                           >
-                            Yes
+                            Sí
                           </button>
                           <button
                             onClick={() => setShowForfeitConfirm(false)}
@@ -393,7 +393,7 @@ export default function BattlePage() {
                         onClick={() => setShowForfeitConfirm(true)}
                         className="rounded-lg border border-gray-600 bg-gray-800/80 px-4 py-2 font-mono text-xs text-gray-400 backdrop-blur-sm hover:border-red-500 hover:text-red-400"
                       >
-                        Forfeit
+                        Rendirse
                       </motion.button>
                     )}
                   </AnimatePresence>
@@ -403,7 +403,7 @@ export default function BattlePage() {
 
             {/* Sidebar — deck info */}
             <aside className="ml-4 flex h-[768px] w-56 flex-col gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4">
-              <h3 className="font-mono text-xs uppercase text-gray-500">Your Deck</h3>
+              <h3 className="font-mono text-xs uppercase text-gray-500">Tu Mazo</h3>
               {player.bakugan.slice(0, 3).map((b, i) => (
                 <div
                   key={b.id}
@@ -424,7 +424,7 @@ export default function BattlePage() {
 
               <div className="mt-auto border-t border-gray-700 pt-3">
                 <h4 className="mb-1 font-mono text-[10px] uppercase text-gray-600">
-                  Gate Cards Won
+                  Gate Cards Ganadas
                 </h4>
                 <div className="flex gap-1">
                   {[0, 1, 2].map((i) => (

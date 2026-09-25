@@ -32,7 +32,7 @@ export const DeckSchema = z.object({
         }),
       })
     )
-    .length(3, 'Deck must have exactly 3 Bakugan'),
+    .length(3, 'El mazo debe tener exactamente 3 Bakugan'),
   /** Exactly 3 Gate Cards (1 Gold, 1 Silver, 1 Copper — validated against GateCard.tier) */
   gate_cards: z
     .array(
@@ -41,7 +41,7 @@ export const DeckSchema = z.object({
         gate_card_id: z.string().min(1),
       })
     )
-    .length(3, 'Deck must have exactly 3 Gate Cards'),
+    .length(3, 'El mazo debe tener exactamente 3 Gate Cards'),
   /** Exactly 3 Ability Cards (1 Red, 1 Green, 1 Blue — validated against AbilityCard.color) */
   ability_cards: z
     .array(
@@ -50,7 +50,7 @@ export const DeckSchema = z.object({
         ability_card_id: z.string().min(1),
       })
     )
-    .length(3, 'Deck must have exactly 3 Ability Cards'),
+    .length(3, 'El mazo debe tener exactamente 3 Ability Cards'),
   /** ISO 8601 creation timestamp */
   created_at: z.string().datetime(),
   /** ISO 8601 last-updated timestamp */
@@ -71,21 +71,21 @@ export function validateDeck(deck: Deck): { valid: boolean; errors: string[] } {
   const bakuganKeys = deck.bakugan.map((b) => b.bakugan_id);
   const uniqueBakugan = new Set(bakuganKeys);
   if (uniqueBakugan.size !== bakuganKeys.length) {
-    errors.push('Duplicate Bakugan in deck');
+    errors.push('Bakugan duplicados en el mazo');
   }
 
   // No duplicate Gate Card IDs
   const gateKeys = deck.gate_cards.map((g) => g.gate_card_id);
   const uniqueGates = new Set(gateKeys);
   if (uniqueGates.size !== gateKeys.length) {
-    errors.push('Duplicate Gate Cards in deck');
+    errors.push('Gate Cards duplicadas en el mazo');
   }
 
   // No duplicate Ability Card IDs
   const abilityKeys = deck.ability_cards.map((a) => a.ability_card_id);
   const uniqueAbilities = new Set(abilityKeys);
   if (uniqueAbilities.size !== abilityKeys.length) {
-    errors.push('Duplicate Ability Cards in deck');
+    errors.push('Ability Cards duplicadas en el mazo');
   }
 
   return { valid: errors.length === 0, errors };

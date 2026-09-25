@@ -27,9 +27,9 @@ const colorText: Record<AbilityCardColor, string> = {
 };
 
 const colorLabels: Record<AbilityCardColor, string> = {
-  red: "Red",
-  green: "Green",
-  blue: "Blue",
+  red: "Rojo",
+  green: "Verde",
+  blue: "Azul",
 };
 
 const colors: AbilityCardColor[] = ["red", "green", "blue"];
@@ -80,7 +80,7 @@ export default function AbilityCardPanel() {
               : "bg-gray-800 text-gray-400 hover:bg-gray-700"
           }`}
         >
-          All
+          Todos
         </button>
         {colors.map((c) => (
           <button
@@ -127,7 +127,7 @@ export default function AbilityCardPanel() {
             >
               {selected && (
                 <span className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold">
-                  IN DECK
+                  EN MAZO
                 </span>
               )}
 
@@ -169,7 +169,7 @@ export default function AbilityCardPanel() {
 
       {/* Deck count */}
       <div className="text-center text-xs text-gray-400 pt-2 border-t border-gray-700">
-        {deck.ability_cards.length} / 3 in deck
+        {deck.ability_cards.length} / 3 en mazo
       </div>
     </div>
   );

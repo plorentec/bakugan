@@ -73,7 +73,7 @@ export default function ItemCard({
       {/* Owned indicator */}
       {owned && (
         <span className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold">
-          OWNED
+          OBTENIDO
         </span>
       )}
 
@@ -114,7 +114,7 @@ export default function ItemCard({
       {/* Price & Buy */}
       <div className="mt-2 flex items-center justify-between">
         <span className="text-yellow-400 font-mono text-sm">
-          {isFree ? "FREE" : `${price.toLocaleString()} G`}
+          {isFree ? "Gratis" : `${price.toLocaleString()} G`}
         </span>
         {!owned && (
           <motion.button
@@ -131,7 +131,7 @@ export default function ItemCard({
                 : "bg-gray-700 text-gray-500 cursor-not-allowed"
             }`}
           >
-            {isFree ? "Get" : "Buy"}
+            {isFree ? "Obtener" : "Comprar"}
           </motion.button>
         )}
       </div>

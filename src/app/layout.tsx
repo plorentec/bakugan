@@ -4,7 +4,7 @@ import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: "Bakugan Battle Brawlers",
-  description: "Build your deck and battle in the Bakugan world",
+  description: "Construye tu mazo y batalla en el mundo Bakugan",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className="bg-gray-950 text-white min-h-screen antialiased">
         <ClientProviders>{children}</ClientProviders>
       </body>

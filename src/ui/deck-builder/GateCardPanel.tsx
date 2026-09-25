@@ -21,9 +21,9 @@ const tierBorderColors: Record<GateCardTier, string> = {
 };
 
 const tierLabels: Record<GateCardTier, string> = {
-  gold: "Gold",
-  silver: "Silver",
-  copper: "Copper",
+  gold: "Oro",
+  silver: "Plata",
+  copper: "Cobre",
 };
 
 const tiers: GateCardTier[] = ["gold", "silver", "copper"];
@@ -85,7 +85,7 @@ export default function GateCardPanel() {
               : "bg-gray-800 text-gray-400 hover:bg-gray-700"
           }`}
         >
-          All
+          Todos
         </button>
         {tiers.map((tier) => (
           <button
@@ -132,7 +132,7 @@ export default function GateCardPanel() {
             >
               {selected && (
                 <span className="absolute top-2 right-2 text-xs bg-green-600 text-white px-1.5 py-0.5 rounded font-bold">
-                  IN DECK
+                  EN MAZO
                 </span>
               )}
 
@@ -149,7 +149,7 @@ export default function GateCardPanel() {
               {/* Battle type + best bonus */}
               <div className="flex items-center gap-3 mb-1">
                 <span className="text-xs text-gray-400 capitalize">
-                  {card.battle_type} Battle
+                  Batalla {card.battle_type}
                 </span>
                 <span className="text-xs text-orange-300 font-mono">
                   +{bestBonus(card.bonuses)} G
@@ -166,7 +166,7 @@ export default function GateCardPanel() {
               {/* Depicted bakugan */}
               {card.depicted_bakugan && (
                 <div className="text-[10px] text-yellow-300/70">
-                  Depicts: {card.depicted_bakugan}
+                  Representa: {card.depicted_bakugan}
                 </div>
               )}
 
@@ -207,7 +207,7 @@ export default function GateCardPanel() {
 
       {/* Deck count */}
       <div className="text-center text-xs text-gray-400 pt-2 border-t border-gray-700">
-        {deck.gate_cards.length} / 3 in deck
+        {deck.gate_cards.length} / 3 en mazo
       </div>
     </div>
   );

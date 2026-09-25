@@ -38,20 +38,20 @@ const attributeTextColors: Record<Attribute, string> = {
   ventus: "text-green-400",
 };
 
-const difficultyLabels: Record<number, string> = {
-  1: "EASY",
-  2: "EASY",
-  3: "EASY",
+  const difficultyLabels: Record<number, string> = {
+  1: "FÁCIL",
+  2: "FÁCIL",
+  3: "FÁCIL",
   4: "NORMAL",
   5: "NORMAL",
-  6: "HARD",
-  7: "HARD",
+  6: "DIFÍCIL",
+  7: "DIFÍCIL",
 };
 
-const difficultyColors: Record<string, string> = {
-  EASY: "text-green-400",
+  const difficultyColors: Record<string, string> = {
+  FÁCIL: "text-green-400",
   NORMAL: "text-yellow-400",
-  HARD: "text-red-400",
+  DIFÍCIL: "text-red-400",
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────
@@ -85,14 +85,14 @@ export default function StoryPage() {
               onClick={() => playClickSound()}
               className="text-gray-400 hover:text-white transition text-sm font-bold"
             >
-              ← Home
+              ← Inicio
             </Link>
             <h1 className="text-xl font-black uppercase tracking-wider text-orange-400">
-              Story Mode
+              Modo Historia
             </h1>
           </div>
           <div className="text-sm text-gray-400">
-            {defeatedCount} / {STORY_OPPONENTS.length} defeated
+            {defeatedCount} / {STORY_OPPONENTS.length} derrotados
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default function StoryPage() {
         {/* Progress bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-gray-400">Story Progress</span>
+            <span className="text-sm text-gray-400">Progreso de Historia</span>
             <span className="text-sm text-orange-400 font-bold">
               {Math.round((defeatedCount / STORY_OPPONENTS.length) * 100)}%
             </span>
@@ -153,12 +153,12 @@ export default function StoryPage() {
                   <div className="flex items-center gap-2 mb-3">
                     {opponent.defeated && (
                       <span className="text-xs bg-green-600 text-white px-2 py-0.5 rounded font-bold">
-                        DEFEATED
+                        DERROTADO
                       </span>
                     )}
                     {isLocked && (
                       <span className="text-xs bg-gray-700 text-gray-400 px-2 py-0.5 rounded font-bold">
-                        🔒 LOCKED
+                        🔒 BLOQUEADO
                       </span>
                     )}
                     {!opponent.defeated && !isLocked && (
@@ -201,7 +201,7 @@ export default function StoryPage() {
                   <div className="mb-3">
                     <div className="flex justify-between text-xs text-gray-400 mb-1">
                       <span>G-Power</span>
-                      <span>{opponent.storyGPower} (Story Mode: {opponent.gPower} - 100)</span>
+                      <span>{opponent.storyGPower} (Modo Historia: {opponent.gPower} - 100)</span>
                     </div>
                     <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
                       <div
@@ -224,7 +224,7 @@ export default function StoryPage() {
                         attributeColors[opponent.attribute]
                       } text-white hover:opacity-90`}
                     >
-                      Battle {opponent.name}
+                      Batalla {opponent.name}
                     </Link>
                   )}
                 </div>
@@ -243,17 +243,17 @@ export default function StoryPage() {
           >
             <div className="text-4xl mb-4">🏆</div>
             <h2 className="text-2xl font-black text-orange-400 mb-2">
-              Story Complete!
+              ¡Historia Completa!
             </h2>
             <p className="text-gray-400 mb-4">
-              You&apos;ve defeated all opponents! The Bakugan Master Cup shop tier is now unlocked.
+              ¡Has derrotado a todos los oponentes! La categoría Tienda Bakugan Master Cup está desbloqueada.
             </p>
             <Link
               href="/shop"
               onClick={() => playClickSound()}
               className="inline-block px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold uppercase tracking-wider hover:from-orange-600 hover:to-red-600 transition"
             >
-              Visit Shop
+              Visitar Tienda
             </Link>
           </motion.div>
         )}

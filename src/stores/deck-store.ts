@@ -59,22 +59,22 @@ function validateDeckComposition(deck: Deck): string[] {
   if (tierCounts.gold !== 1) {
     errors.push(
       tierCounts.gold === 0
-        ? "Need 1 Gold Gate Card"
-        : `Too many Gold Gate Cards (${tierCounts.gold}, need 1)`
+        ? "Necesitas 1 Gate Card de Oro"
+        : `Demasiadas Gate Cards de Oro (${tierCounts.gold}, necesitas 1)`
     );
   }
   if (tierCounts.silver !== 1) {
     errors.push(
       tierCounts.silver === 0
-        ? "Need 1 Silver Gate Card"
-        : `Too many Silver Gate Cards (${tierCounts.silver}, need 1)`
+        ? "Necesitas 1 Gate Card de Plata"
+        : `Demasiadas Gate Cards de Plata (${tierCounts.silver}, necesitas 1)`
     );
   }
   if (tierCounts.copper !== 1) {
     errors.push(
       tierCounts.copper === 0
-        ? "Need 1 Copper Gate Card"
-        : `Too many Copper Gate Cards (${tierCounts.copper}, need 1)`
+        ? "Necesitas 1 Gate Card de Cobre"
+        : `Demasiadas Gate Cards de Cobre (${tierCounts.copper}, necesitas 1)`
     );
   }
 
@@ -89,22 +89,22 @@ function validateDeckComposition(deck: Deck): string[] {
   if (colorCounts.red !== 1) {
     errors.push(
       colorCounts.red === 0
-        ? "Need 1 Red Ability Card"
-        : `Too many Red Ability Cards (${colorCounts.red}, need 1)`
+        ? "Necesitas 1 Ability Card Roja"
+        : `Demasiadas Ability Cards Rojas (${colorCounts.red}, necesitas 1)`
     );
   }
   if (colorCounts.green !== 1) {
     errors.push(
       colorCounts.green === 0
-        ? "Need 1 Green Ability Card"
-        : `Too many Green Ability Cards (${colorCounts.green}, need 1)`
+        ? "Necesitas 1 Ability Card Verde"
+        : `Demasiadas Ability Cards Verdes (${colorCounts.green}, necesitas 1)`
     );
   }
   if (colorCounts.blue !== 1) {
     errors.push(
       colorCounts.blue === 0
-        ? "Need 1 Blue Ability Card"
-        : `Too many Blue Ability Cards (${colorCounts.blue}, need 1)`
+        ? "Necesitas 1 Ability Card Azul"
+        : `Demasiadas Ability Cards Azules (${colorCounts.blue}, necesitas 1)`
     );
   }
 

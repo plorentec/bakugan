@@ -13,21 +13,21 @@ import MinigameOverlay from './MinigameOverlay';
 /* ------------------------------------------------------------------ */
 
 const PHASE_LABELS: Record<BattlePhase, string> = {
-  SETUP: 'Setting Up',
-  PLACE_GATE: 'Place Gate Cards',
-  SELECT_BAKUGAN: 'Select Bakugan',
-  AIM: 'Aim & Throw',
-  THROW: 'Throwing...',
-  FIELD_MOVEMENT: 'Field Movement',
-  STAND: 'Standing',
-  BATTLE_TRIGGER: 'Battle!',
+  SETUP: 'Preparando',
+  PLACE_GATE: 'Coloca Gate Cards',
+  SELECT_BAKUGAN: 'Seleccionar Bakugan',
+  AIM: 'Apuntar y Lanzar',
+  THROW: 'Lanzando...',
+  FIELD_MOVEMENT: 'Movimiento en Campo',
+  STAND: 'Stand',
+  BATTLE_TRIGGER: '¡Batalla!',
   // Battle engine phases
-  REVEAL_GATE: 'Revealing Gate Card',
-  APPLY_BONUSES: 'Applying Bonuses',
-  ABILITY_WINDOW: 'Play Ability Card',
-  MINIGAME: 'Scratch Battle!',
-  G_POWER: 'Calculating G-Power',
-  RESOLUTION: 'Battle Resolved',
+  REVEAL_GATE: 'Revelando Gate Card',
+  APPLY_BONUSES: 'Aplicando Bonificaciones',
+  ABILITY_WINDOW: 'Jugar Ability Card',
+  MINIGAME: '¡Batalla Scratch!',
+  G_POWER: 'Calculando G-Power',
+  RESOLUTION: 'Batalla Resuelta',
 };
 
 const PHASE_COLORS: Record<BattlePhase, string> = {
@@ -90,31 +90,31 @@ export default function BattleHUD() {
   useEffect(() => {
     const handlers = {
       BAKUGAN_THROWN: (_d: GameEventPayloads['BAKUGAN_THROWN']) => {
-        setLastEvent('Bakugan thrown!');
+        setLastEvent('¡Bakugan lanzado!');
         playEventSound('BAKUGAN_THROWN');
       },
       BAKUGAN_STANDING: (d: GameEventPayloads['BAKUGAN_STANDING']) => {
-        setLastEvent(`${d.playerId === 0 ? 'Your' : "Opponent's"} Bakugan stands!`);
+        setLastEvent(`¡Bakugan de ${d.playerId === 0 ? 'tú' : 'tu oponente'} hace stand!`);
         playEventSound('BAKUGAN_STANDING');
       },
       DOUBLE_STAND: (d: GameEventPayloads['DOUBLE_STAND']) => {
-        setLastEvent(`DOUBLE STAND — ${d.playerId === 0 ? 'You' : 'Opponent'} win!`);
+        setLastEvent(`DOBLE STAND — ¡${d.playerId === 0 ? 'Tú' : 'Tu oponente'} ganas!`);
         playEventSound('DOUBLE_STAND');
         setEventShake(true);
         setTimeout(() => setEventShake(false), 500);
       },
       CRITICAL_KO: () => {
-        setLastEvent('CRITICAL KO!');
+        setLastEvent('¡KO CRÍTICO!');
         playEventSound('CRITICAL_KO');
         setEventShake(true);
         setTimeout(() => setEventShake(false), 500);
       },
       STEERING_EXPIRED: () => {
-        setLastEvent('Steering expired');
+        setLastEvent('Dirección agotada');
         playEventSound('STEERING_EXPIRED');
       },
       BATTLE_ENGINE_STARTED: (d: GameEventPayloads['BATTLE_ENGINE_STARTED']) => {
-        setLastEvent(`Battle: ${d.players[0].bakuganName} vs ${d.players[1].bakuganName}`);
+        setLastEvent(`Batalla: ${d.players[0].bakuganName} vs ${d.players[1].bakuganName}`);
         playEventSound('BATTLE_ENGINE_STARTED');
       },
       BATTLE_ENGINE_RESOLVED: (d: GameEventPayloads['BATTLE_ENGINE_RESOLVED']) => {
@@ -171,7 +171,7 @@ export default function BattleHUD() {
 
           {/* Gate Cards won */}
           <div className="flex gap-3">
-            <ScorePill label="You" won={player.gateCardsWon} color="emerald" />
+            <ScorePill label="Tú" won={player.gateCardsWon} color="emerald" />
             <ScorePill label="CPU" won={opponent.gateCardsWon} color="rose" />
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function BattleHUD() {
             <div className="flex flex-col gap-2 rounded-lg bg-black/60 p-3">
               {/* Player G-Power */}
               <div className="flex items-center gap-2">
-                <span className="w-16 font-mono text-[10px] text-emerald-400">YOU</span>
+                <span className="w-16 font-mono text-[10px] text-emerald-400">TÚ</span>
                 <div className="h-4 flex-1 overflow-hidden rounded-full bg-gray-800">
                   <motion.div
                     className="h-full rounded-full bg-gradient-to-r from-emerald-600 to-emerald-400"
@@ -231,7 +231,7 @@ export default function BattleHUD() {
               {/* Timer bar */}
               {maxTimer > 0 && (
                 <div className="mt-1 flex items-center gap-2">
-                  <span className="w-16 font-mono text-[10px] text-gray-500">TIME</span>
+                  <span className="w-16 font-mono text-[10px] text-gray-500">TIEMPO</span>
                   <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-800">
                     <motion.div
                       className={`h-full rounded-full ${
@@ -296,7 +296,7 @@ export default function BattleHUD() {
           >
             <div className="flex flex-col items-center gap-2 rounded-lg bg-black/70 p-3">
               <span className="font-mono text-[10px] uppercase text-gray-500">
-                Play an Ability Card
+                Juega una Ability Card
               </span>
               <motion.div
                 variants={staggerContainer}
@@ -334,7 +334,7 @@ export default function BattleHUD() {
                   }}
                   className="rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 font-mono text-xs text-gray-400 transition hover:border-gray-400 hover:text-white"
                 >
-                  Pass
+                  Pasar
                 </motion.button>
               </motion.div>
               {selectedAbilityCard && (
@@ -346,7 +346,7 @@ export default function BattleHUD() {
                   onClick={() => playAbilityCard(0, selectedAbilityCard)}
                   className="rounded-lg bg-yellow-500 px-4 py-1 font-mono text-xs font-bold text-black transition hover:bg-yellow-400"
                 >
-                  Play Card
+                  Jugar Carta
                 </motion.button>
               )}
             </div>
@@ -360,7 +360,7 @@ export default function BattleHUD() {
             animate={{ opacity: 1, x: 0 }}
             className="pointer-events-auto absolute bottom-20 left-4 max-h-32 w-64 overflow-y-auto rounded-lg bg-black/70 p-2"
           >
-            <div className="mb-1 font-mono text-[10px] uppercase text-gray-500">Battle Log</div>
+            <div className="mb-1 font-mono text-[10px] uppercase text-gray-500">Registro de Batalla</div>
             {battleLog.slice(-8).map((msg, i) => (
               <div key={i} className="font-mono text-[10px] text-gray-400">
                 {msg}

@@ -234,7 +234,7 @@ export default function MinigameOverlay() {
     ctx.fillStyle = '#888888';
     ctx.font = '12px monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('SCRATCH the symbol repeatedly!', CANVAS_WIDTH / 2, CANVAS_HEIGHT - 20);
+    ctx.fillText('¡RASPA el símbolo repetidamente!', CANVAS_WIDTH / 2, CANVAS_HEIGHT - 20);
   }
 
   /* ================================================================== */
@@ -265,9 +265,9 @@ export default function MinigameOverlay() {
             transition={{ delay: 0.15 }}
             className="text-center"
           >
-            <h2 className="font-mono text-xl font-bold text-yellow-400">SCRATCH BATTLE</h2>
+            <h2 className="font-mono text-xl font-bold text-yellow-400">BATALLA SCRATCH</h2>
             <p className="mt-1 font-mono text-sm text-gray-400">
-              Scratch the symbol as fast as you can!
+              ¡Raspa el símbolo lo más rápido que puedas!
             </p>
           </motion.div>
 
@@ -281,7 +281,7 @@ export default function MinigameOverlay() {
               >
                 {timeLeft.toFixed(1)}s
               </motion.div>
-              <div className="font-mono text-[10px] text-gray-500">TIME</div>
+              <div className="font-mono text-[10px] text-gray-500">TIEMPO</div>
             </div>
             <div className="text-center">
               <motion.div
@@ -290,7 +290,7 @@ export default function MinigameOverlay() {
               >
                 {animatedScore}%
               </motion.div>
-              <div className="font-mono text-[10px] text-gray-500">SCORE</div>
+              <div className="font-mono text-[10px] text-gray-500">PUNTUACIÓN</div>
             </div>
           </div>
 
@@ -313,7 +313,7 @@ export default function MinigameOverlay() {
             transition={{ delay: 0.3 }}
             className="font-mono text-sm text-gray-400"
           >
-            G-Power earned:{' '}
+            G-Power obtenido:{' '}
             <span className="font-bold text-green-400">
               +{Math.round(score * balanceConfig.minigame.g_power_per_result_point)} G
             </span>
@@ -327,7 +327,7 @@ export default function MinigameOverlay() {
               transition={{ duration: 0.3, ease: 'backOut' }}
               className="font-mono text-lg font-bold text-yellow-400"
             >
-              Time&apos;s up!
+              ¡Tiempo!
             </motion.div>
           )}
         </motion.div>

@@ -11,11 +11,11 @@ import { STAT_MAX, STAT_NAMES, recalculateGPower, getRemainingStatPoints } from 
 // ─── Stat display config ──────────────────────────────────────────────
 
 const statLabels: Record<StatName, { name: string; desc: string; icon: string }> = {
-  speed: { name: "Speed", desc: "Movement speed, starting velocity bonus", icon: "⚡" },
-  defense: { name: "Defense", desc: "Resistance to Critical KOs", icon: "🛡️" },
-  control: { name: "Control", desc: "Turn responsiveness, stop-and-turn speed", icon: "🎯" },
-  steering: { name: "Steering", desc: "Duration of movement control before auto-stand", icon: "🔄" },
-  magnet: { name: "Magnet", desc: "Stand probability when rolling over Gate Card", icon: "🧲" },
+  speed: { name: "Velocidad", desc: "Velocidad de movimiento, bono de velocidad inicial", icon: "⚡" },
+  defense: { name: "Defensa", desc: "Resistencia a KO Críticos", icon: "🛡️" },
+  control: { name: "Control", desc: "Capacidad de respuesta al girar, velocidad de parada y giro", icon: "🎯" },
+  steering: { name: "Dirección", desc: "Duración del control de movimiento antes de auto-stand", icon: "🔄" },
+  magnet: { name: "Imán", desc: "Probabilidad de stand al rodar sobre una Gate Card", icon: "🧲" },
 };
 
 const statColors: Record<StatName, string> = {
@@ -90,10 +90,10 @@ export default function LevelUpPage() {
             href="/"
             className="text-gray-400 hover:text-white transition text-sm font-bold"
           >
-            ← Home
+            ← Inicio
           </Link>
           <h1 className="text-xl font-black uppercase tracking-wider text-orange-400">
-            Level Up!
+            ¡Subiste de Nivel!
           </h1>
           <div className="text-sm text-gray-400">
             Lv. {level}
@@ -112,12 +112,12 @@ export default function LevelUpPage() {
         >
           <div className="text-6xl mb-4">⭐</div>
           <h2 className="text-4xl font-black text-orange-400 mb-2">
-            Level {level}!
+            Nivel {level}!
           </h2>
           <p className="text-gray-400">
             {currentPoints > 0
-              ? `Allocate ${currentPoints} stat point${currentPoints > 1 ? "s" : ""}`
-              : "All points allocated!"}
+              ? `Asigna ${currentPoints} punto de estadística${currentPoints > 1 ? "s" : ""}`
+              : "¡Todos los puntos asignados!"}
           </p>
         </motion.div>
 
@@ -128,7 +128,7 @@ export default function LevelUpPage() {
           transition={{ delay: 0.2 }}
           className="bg-gray-900 border border-gray-800 rounded-lg p-4 mb-8 text-center"
         >
-          <div className="text-sm text-gray-400 mb-1">Effective G-Power</div>
+          <div className="text-sm text-gray-400 mb-1">G-Power Efectivo</div>
           <div className="flex items-center justify-center gap-4">
             <span className="text-2xl font-black text-orange-300">
               {selectedStat ? (
@@ -215,7 +215,7 @@ export default function LevelUpPage() {
               <div className="max-w-2xl mx-auto flex items-center gap-4">
                 <div className="flex-1">
                   <div className="text-sm text-gray-400">
-                    Allocate to: <span className="text-white font-bold">{statLabels[selectedStat].name}</span>
+                    Asignar a: <span className="text-white font-bold">{statLabels[selectedStat].name}</span>
                   </div>
                   <div className="text-xs text-gray-500">
                     {allocatedStats[selectedStat]} → {allocatedStats[selectedStat] + 1}
@@ -226,7 +226,7 @@ export default function LevelUpPage() {
                     onClick={() => setSelectedStat(null)}
                     className="px-4 py-2 rounded-lg bg-gray-700 text-white text-sm font-bold hover:bg-gray-600 transition"
                   >
-                    Cancel
+                    Cancelar
                   </button>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
@@ -234,7 +234,7 @@ export default function LevelUpPage() {
                     onClick={confirmAllocation}
                     className="px-6 py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold hover:from-orange-600 hover:to-red-600 transition shadow-lg"
                   >
-                    Confirm
+                    Confirmar
                   </motion.button>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function LevelUpPage() {
               onClick={handleFinish}
               className="px-8 py-3 rounded-lg bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold text-lg uppercase tracking-wider hover:from-green-600 hover:to-emerald-600 transition shadow-lg"
             >
-              Continue
+              Continuar
             </motion.button>
           </motion.div>
         )}

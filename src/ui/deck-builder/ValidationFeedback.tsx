@@ -22,7 +22,7 @@ export default function ValidationFeedback() {
           }`}
         />
         <span className="text-sm font-bold text-white">
-          {isValid ? "Deck Valid" : "Deck Invalid"}
+          {isValid ? "Mazo Válido" : "Mazo Inválido"}
         </span>
       </div>
 
