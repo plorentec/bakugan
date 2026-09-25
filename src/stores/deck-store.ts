@@ -20,7 +20,7 @@ const abilityCardMap = new Map<string, AbilityCard>(
 
 function createEmptyDeck(): Deck {
   return {
-    id: crypto.randomUUID(),
+    id: typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `deck-${Date.now()}-${Math.random().toString(36).slice(2)}`,
     name: "My Deck",
     bakugan: [],
     gate_cards: [],
