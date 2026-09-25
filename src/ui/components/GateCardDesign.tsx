@@ -1,36 +1,31 @@
 "use client";
 
 /**
- * GateCardDesign.tsx — Gate Card design inspired by the real Bakugan TCG.
- * Features: tier colors, attribute bonuses, effect text.
+ * GateCardDesign.tsx — Gate Card inspired by the real Bakugan game.
+ * Circular symbol pattern with attribute icons.
  */
+
+/* ------------------------------------------------------------------ */
+/*  Attribute symbols and colors                                        */
+/* ------------------------------------------------------------------ */
+
+const ATTRIBUTES = [
+  { key: "pyrus", color: "#dc2626", symbol: "⚔", name: "PYRUS" },
+  { key: "aquos", color: "#2563eb", symbol: "💧", name: "AQUOS" },
+  { key: "subterra", color: "#d97706", symbol: "🪨", name: "SUBTERRA" },
+  { key: "haos", color: "#eab308", symbol: "✨", name: "HAOS" },
+  { key: "darkus", color: "#7c3aed", symbol: "🌀", name: "DARKUS" },
+  { key: "ventus", color: "#16a34a", symbol: "🍃", name: "VENTUS" },
+];
 
 /* ------------------------------------------------------------------ */
 /*  Tier styles                                                         */
 /* ------------------------------------------------------------------ */
 
-const TIER_STYLES: Record<string, {
-  border: string;
-  bg: string;
-  glow: string;
-  label: string;
-}> = {
-  gold: { border: "#fbbf24", bg: "#451a03", glow: "#fcd34d", label: "GOLD" },
-  silver: { border: "#9ca3af", bg: "#1f2937", glow: "#d1d5db", label: "SILVER" },
-  copper: { border: "#d97706", bg: "#451a03", glow: "#fbbf24", label: "COPPER" },
-};
-
-/* ------------------------------------------------------------------ */
-/*  Attribute colors                                                    */
-/* ------------------------------------------------------------------ */
-
-const ATTRIBUTE_COLORS: Record<string, string> = {
-  pyrus: "#dc2626",
-  aquos: "#2563eb",
-  subterra: "#d97706",
-  haos: "#eab308",
-  darkus: "#7c3aed",
-  ventus: "#16a34a",
+const TIER_STYLES: Record<string, { border: string; glow: string }> = {
+  gold: { border: "#fbbf24", glow: "#fcd34d" },
+  silver: { border: "#9ca3af", glow: "#d1d5db" },
+  copper: { border: "#d97706", glow: "#fbbf24" },
 };
 
 /* ------------------------------------------------------------------ */
@@ -67,68 +62,150 @@ export default function GateCardDesign({
 }: GateCardDesignProps) {
   const style = TIER_STYLES[tier] || TIER_STYLES.silver;
 
-  const sizeClasses = {
-    sm: "w-24 h-32",
-    md: "w-32 h-44",
-    lg: "w-40 h-56",
-  };
+  const sizeMap = { sm: 120, md: 160, lg: 200 };
+  const s = sizeMap[size];
 
   return (
     <div
-      className={`${sizeClasses[size]} rounded-lg overflow-hidden shadow-xl ${className}`}
+      className={`relative overflow-hidden rounded-lg ${className}`}
       style={{
-        background: `linear-gradient(135deg, ${style.bg} 0%, ${style.border}22 100%)`,
+        width: s,
+        height: s * 1.4,
+        background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)",
         border: `3px solid ${style.border}`,
-        boxShadow: `0 0 15px ${style.glow}40, inset 0 0 30px ${style.bg}`,
+        boxShadow: `0 0 20px ${style.glow}30, inset 0 0 40px rgba(0,0,0,0.5)`,
       }}
     >
-      {/* Header: Tier badge */}
+      {/* Top decoration line */}
       <div
-        className="px-2 py-1 text-center"
-        style={{ background: `linear-gradient(90deg, ${style.border} 0%, ${style.bg} 100%)` }}
-      >
+        className="absolute top-0 left-0 right-0 h-1"
+        style={{ background: `linear-gradient(90deg, transparent, ${style.border}, transparent)` }}
+      />
+
+      {/* Card name */}
+      <div className="text-center pt-2 pb-1 px-2">
         <span
-          className="text-[10px] font-black uppercase tracking-wider"
-          style={{ color: style.bg, textShadow: `0 0 4px ${style.glow}` }}
+          className="text-[10px] font-black uppercase tracking-widest"
+          style={{ color: style.border, textShadow: `0 0 8px ${style.glow}` }}
         >
-          {style.label}
+          {name}
         </span>
       </div>
 
-      {/* Card name */}
-      <div className="text-center px-2 py-2">
-        <span className="text-xs font-bold text-white truncate block">{name}</span>
-      </div>
+      {/* Circular symbol pattern */}
+      <svg
+        viewBox="0 0 100 100"
+        className="absolute"
+        style={{
+          width: s * 0.85,
+          height: s * 0.85,
+          left: s * 0.075,
+          top: s * 0.3,
+        }}
+      >
+        {/* Outer circle */}
+        <circle cx="50" cy="50" r="45" fill="none" stroke={style.border} strokeWidth="0.5" opacity="0.3" />
+        <circle cx="50" cy="50" r="40" fill="none" stroke={style.border} strokeWidth="0.3" opacity="0.2" />
 
-      {/* Attribute bonuses */}
-      <div className="px-2 py-1">
-        <div className="grid grid-cols-3 gap-1">
-          {Object.entries(bonuses).map(([attr, value]) => (
-            <div
-              key={attr}
-              className="text-center rounded px-1 py-0.5"
-              style={{ backgroundColor: `${ATTRIBUTE_COLORS[attr]}30` }}
-            >
-              <div className="text-[7px] text-gray-400 uppercase">{attr.slice(0, 3)}</div>
-              <div
-                className="text-[10px] font-bold"
-                style={{ color: ATTRIBUTE_COLORS[attr] }}
+        {/* Inner geometric pattern */}
+        <polygon
+          points="50,15 85,32.5 85,67.5 50,85 15,67.5 15,32.5"
+          fill="none"
+          stroke={style.border}
+          strokeWidth="0.4"
+          opacity="0.25"
+        />
+        <polygon
+          points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5"
+          fill="none"
+          stroke={style.border}
+          strokeWidth="0.3"
+          opacity="0.2"
+        />
+
+        {/* Connecting lines */}
+        {ATTRIBUTES.map((attr, i) => {
+          const angle = (i * 60 - 90) * (Math.PI / 180);
+          const x = 50 + Math.cos(angle) * 35;
+          const y = 50 + Math.sin(angle) * 35;
+          return (
+            <line
+              key={`line-${attr.key}`}
+              x1="50"
+              y1="50"
+              x2={x}
+              y2={y}
+              stroke={attr.color}
+              strokeWidth="0.3"
+              opacity="0.3"
+            />
+          );
+        })}
+
+        {/* Attribute symbols */}
+        {ATTRIBUTES.map((attr, i) => {
+          const angle = (i * 60 - 90) * (Math.PI / 180);
+          const x = 50 + Math.cos(angle) * 35;
+          const y = 50 + Math.sin(angle) * 35;
+          const bonus = bonuses[attr.key as keyof typeof bonuses];
+          return (
+            <g key={attr.key}>
+              {/* Symbol circle */}
+              <circle
+                cx={x}
+                cy={y}
+                r="10"
+                fill={`${attr.color}20`}
+                stroke={attr.color}
+                strokeWidth="1"
+              />
+              {/* Symbol */}
+              <text
+                x={x}
+                y={y + 1}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontSize="10"
               >
-                +{value}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+                {attr.symbol}
+              </text>
+              {/* Bonus value */}
+              <text
+                x={x}
+                y={y + 7}
+                textAnchor="middle"
+                fontSize="4"
+                fill={attr.color}
+                fontWeight="bold"
+              >
+                +{bonus}
+              </text>
+            </g>
+          );
+        })}
 
-      {/* Effect */}
+        {/* Center circle */}
+        <circle cx="50" cy="50" r="12" fill="#0a0a0a" stroke={style.border} strokeWidth="1" />
+        <circle cx="50" cy="50" r="8" fill="none" stroke={style.border} strokeWidth="0.5" opacity="0.5" />
+      </svg>
+
+      {/* Effect text */}
       {effect && (
-        <div className="px-2 py-1">
-          <div className="text-[8px] text-gray-400 text-center leading-tight">
-            {effect.length > 50 ? effect.slice(0, 50) + "…" : effect}
-          </div>
+        <div
+          className="absolute bottom-0 left-0 right-0 px-2 py-1.5 text-center"
+          style={{ background: "linear-gradient(transparent, #0a0a0a)" }}
+        >
+          <span className="text-[7px] text-gray-400 leading-tight">
+            {effect.length > 60 ? effect.slice(0, 60) + "…" : effect}
+          </span>
         </div>
       )}
+
+      {/* Bottom decoration */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-0.5"
+        style={{ background: `linear-gradient(90deg, transparent, ${style.border}, transparent)` }}
+      />
     </div>
   );
 }
