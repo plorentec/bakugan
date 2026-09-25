@@ -14,8 +14,22 @@ export type {
   AssetLicenseStatus,
 } from './source-metadata';
 
-export { BakuganSchema, BakuganStatsSchema } from './bakugan';
-export type { Bakugan, BakuganStats } from './bakugan';
+export {
+  BakuganSchema,
+  BakuganStatsSchema,
+  BakuganAssetsSchema,
+  BakuganModelsSchema,
+  BakuganAnimationsSchema,
+  AssetStatusSchema,
+} from './bakugan';
+export type {
+  Bakugan,
+  BakuganStats,
+  BakuganAssets,
+  BakuganModels,
+  BakuganAnimations,
+  AssetStatus,
+} from './bakugan';
 
 export {
   GateCardSchema,

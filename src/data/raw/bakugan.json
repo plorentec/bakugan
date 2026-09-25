@@ -206,6 +206,16 @@
     "base_g_power": 400,
     "max_g_power": 650,
     "stats": { "speed": 4, "defense": 2, "control": 2, "steering": 1, "magnet": 3 },
+    "assets": {
+      "models": {
+        "obj": "/assets/models/bakugan/Dragonoid/Model.obj",
+        "glb": "/assets/models/bakugan/Dragonoid/Model.glb"
+      },
+      "source": "DS",
+      "sourceUrl": "https://models.spriters-resource.com/ds_dsi/bakuganbattlebrawlers/asset/363838/",
+      "license": "reference_only_no_redistribution",
+      "status": "DOWNLOADED"
+    },
     "source": { "source": "GameFAQs guide FAQ 81516, Section F", "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516", "source_notes": "Section F — Bakugan List. Pyrus only.", "asset_license_status": "reference_only_no_redistribution" },
     "created_at": "2026-09-25T00:00:00Z", "updated_at": "2026-09-25T00:00:00Z"
   },
