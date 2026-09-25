@@ -1,0 +1,48 @@
+newmtl face
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka face.png
+map_Kd face.png
+map_d face.png
+newmtl hair
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka hair.png
+map_Kd hair.png
+map_d hair.png
+newmtl mouth
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka mouth.png
+map_Kd mouth.png
+map_d mouth.png
+newmtl nose
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka nose.png
+map_Kd nose.png
+map_d nose.png
+newmtl skin
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka skin.png
+map_Kd skin.png
+map_d skin.png
+newmtl wear
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka wear.png
+map_Kd wear.png
+map_d wear.png

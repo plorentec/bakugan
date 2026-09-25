@@ -1,0 +1,48 @@
+newmtl Material__15
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka Material__15.png
+map_Kd Material__15.png
+map_d Material__15.png
+newmtl face
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka face.png
+map_Kd face.png
+map_d face.png
+newmtl hair
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka hair.png
+map_Kd hair.png
+map_d hair.png
+newmtl item
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka item.png
+map_Kd item.png
+map_d item.png
+newmtl mouth
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka mouth.png
+map_Kd mouth.png
+map_d mouth.png
+newmtl skin
+Ka 0.5647059 0.5647059 0.5647059
+Kd 0.5647059 0.5647059 0.5647059
+d 1
+Tr 1
+map_Ka skin.png
+map_Kd skin.png
+map_d skin.png
