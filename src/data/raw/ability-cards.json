@@ -1,99 +1,2570 @@
 [
-  {"id":"a0000001-0000-0000-0000-000000000001","name":"Twin Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"TWIN_ATTRIBUTE","description":"Both combatants must share the same attribute"}}],"description":"Swap G-Power if both combatants same attribute","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000002","name":"Twin Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"TWIN_ATTRIBUTE","description":"Both combatants must share the same attribute"}}],"description":"Double minigame effectiveness if both same attribute","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000003","name":"Twin Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"TWIN_ATTRIBUTE","description":"Both combatants must share the same attribute"}}],"description":"Prevent opponent from playing minigame if both same attribute","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000004","name":"Rewind","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active"}],"description":"Battle starts over","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000005","name":"Scratch Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Scratch Battle","value":"scratch"}}],"description":"Battle starts over as Scratch Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000006","name":"Aquos Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Aquos","value":"aquos"}}],"description":"Swap G-Power if your Bakugan is Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000007","name":"Aquos Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Aquos","value":"aquos"}}],"description":"Prevent opponent minigame if your Bakugan is Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000008","name":"Aquos Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Aquos","value":"aquos"}}],"description":"Double minigame effectiveness if your Bakugan is Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000009","name":"Spin Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Spin Battle","value":"spin"}}],"description":"Battle starts over as Spin Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000010","name":"Subterra Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Subterra","value":"subterra"}}],"description":"Swap G-Power if your Bakugan is Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000011","name":"Subterra Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Subterra","value":"subterra"}}],"description":"Prevent opponent minigame if your Bakugan is Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000012","name":"Subterra Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Subterra","value":"subterra"}}],"description":"Double minigame effectiveness if your Bakugan is Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000013","name":"Timing Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Timing Battle","value":"timing"}}],"description":"Battle starts over as Timing Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000014","name":"Ventus Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Ventus","value":"ventus"}}],"description":"Swap G-Power if your Bakugan is Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000015","name":"Ventus Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Ventus","value":"ventus"}}],"description":"Prevent opponent minigame if your Bakugan is Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000016","name":"Ventus Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Ventus","value":"ventus"}}],"description":"Double minigame effectiveness if your Bakugan is Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000017","name":"Pop Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Pop Battle","value":"pop"}}],"description":"Battle starts over as Pop Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000018","name":"Pyrus Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Pyrus","value":"pyrus"}}],"description":"Swap G-Power if your Bakugan is Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000019","name":"Pyrus Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Pyrus","value":"pyrus"}}],"description":"Prevent opponent minigame if your Bakugan is Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000020","name":"Pyrus Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Pyrus","value":"pyrus"}}],"description":"Double minigame effectiveness if your Bakugan is Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000021","name":"Trace Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Trace Battle","value":"trace"}}],"description":"Battle starts over as Trace Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000022","name":"Haos Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Haos","value":"haos"}}],"description":"Swap G-Power if your Bakugan is Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000023","name":"Haos Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Haos","value":"haos"}}],"description":"Prevent opponent minigame if your Bakugan is Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000024","name":"Haos Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Haos","value":"haos"}}],"description":"Double minigame effectiveness if your Bakugan is Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000025","name":"Bound Battle Redo","color":"red","effects":[{"type":"RESTART_BATTLE","target":"all_active","condition":{"type":"BATTLE_TYPE","description":"Battle restarts as Bound Battle","value":"bound"}}],"description":"Battle starts over as Bound Battle","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000026","name":"Counter Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"DIFFERENT_ATTRIBUTE","description":"Swap G-Power if combatants different attributes"}}],"description":"Swap G-Power if combatants different attributes","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000027","name":"Counter Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"DIFFERENT_ATTRIBUTE","description":"Prevent opponent minigame if different attributes"}}],"description":"Prevent opponent minigame if different attributes","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000028","name":"Level Field","color":"red","effects":[{"type":"SET_G_POWER","target":"all_active"}],"description":"Battle starts over with both at same G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000029","name":"Counter Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"DIFFERENT_ATTRIBUTE","description":"Double minigame effectiveness if different attributes"}}],"description":"Double minigame effectiveness if different attributes","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000030","name":"Darkus Swap","color":"red","effects":[{"type":"SWAP_G_POWER","target":"all_active","condition":{"type":"ATTRIBUTE_MATCH","description":"Swap G-Power if your Bakugan is Darkus","value":"darkus"}}],"description":"Swap G-Power if your Bakugan is Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000031","name":"Darkus Time Breaker","color":"red","effects":[{"type":"PREVENT_MINIGAME","target":"opponent","condition":{"type":"ATTRIBUTE_MATCH","description":"Prevent opponent minigame if your Bakugan is Darkus","value":"darkus"}}],"description":"Prevent opponent minigame if your Bakugan is Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000001-0000-0000-0000-000000000032","name":"Darkus Double Input","color":"red","effects":[{"type":"DOUBLE_MINIGAME_INPUT","target":"self","condition":{"type":"ATTRIBUTE_MATCH","description":"Double minigame effectiveness if your Bakugan is Darkus","value":"darkus"}}],"description":"Double minigame effectiveness if your Bakugan is Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000001","name":"Stolen Gold","color":"green","effects":[{"type":"SKIP_BATTLE","target":"all_active","gate_card_tier":"gold"}],"conditions":[{"type":"GATE_CARD_TIER","description":"Only works on Gold Gate Cards","value":"gold"}],"description":"Skip battle on Gold Gate Card; highest G wins","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000002","name":"Swiped Silver","color":"green","effects":[{"type":"SKIP_BATTLE","target":"all_active","gate_card_tier":"silver"}],"conditions":[{"type":"GATE_CARD_TIER","description":"Only works on Silver Gate Cards","value":"silver"}],"description":"Skip battle on Silver Gate Card; highest G wins","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000003","name":"Copped Copper","color":"green","effects":[{"type":"SKIP_BATTLE","target":"all_active","gate_card_tier":"copper"}],"conditions":[{"type":"GATE_CARD_TIER","description":"Only works on Copper Gate Cards","value":"copper"}],"description":"Skip battle on Copper Gate Card; highest G wins","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000004","name":"Negative Wave","color":"green","effects":[{"type":"REMOVE_G_POWER","target":"all_active"}],"description":"Cancel G-Power boosts for both combatants","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000005","name":"No Trading","color":"green","effects":[{"type":"PREVENT_ABILITY_CARDS","target":"opponent","condition":{"type":"CARD_COLOR","description":"Opponent can't use Swap cards","value":"swap"}}],"description":"Opponent can't use Swap cards","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000006","name":"Out Of Time","color":"green","effects":[{"type":"PREVENT_ABILITY_CARDS","target":"opponent","condition":{"type":"CARD_COLOR","description":"Opponent can't use Time Breaker cards","value":"time_breaker"}}],"description":"Opponent can't use Time Breaker cards","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000007","name":"Double Input Cancel","color":"green","effects":[{"type":"PREVENT_ABILITY_CARDS","target":"opponent","condition":{"type":"CARD_COLOR","description":"Opponent can't use Double Input cards","value":"double_input"}}],"description":"Opponent can't use Double Input cards","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000008","name":"No Backsies","color":"green","effects":[{"type":"PREVENT_ABILITY_CARDS","target":"opponent","condition":{"type":"CARD_COLOR","description":"Opponent can't use Redo cards","value":"redo"}}],"description":"Opponent can't use Redo cards","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000009","name":"Prevention","color":"green","effects":[{"type":"SKIP_BATTLE","target":"all_active"}],"description":"Skip battle; highest G wins","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000010","name":"Imbalance","color":"green","effects":[{"type":"REMOVE_G_POWER","target":"opponent"}],"description":"Cancel G-Power boosts for opponent","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000011","name":"Alpha Blaster","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Leonidas"}],"description":"Leonidas gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000012","name":"Omega Eraser","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Omega Leonidas"}],"description":"Omega Leonidas gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000013","name":"Dark Sphere Impact","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Vladitor"}],"description":"Vladitor gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000014","name":"Thousand Destroyer","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Battle Ax Vladitor"}],"description":"Battle Ax Vladitor gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000015","name":"Boosted Dragon","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Dragonoid"}],"description":"Dragonoid gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000016","name":"Meteor Strike Dragon","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Delta Dragonoid II"}],"description":"Delta Dragonoid II gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000017","name":"Face of Rage","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Fortress"}],"description":"Fortress gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000018","name":"Blue Stealth","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Preyas"}],"description":"Preyas gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000019","name":"Forcing Wave","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Sirenoid"}],"description":"Sirenoid gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000020","name":"Special Stealth","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Preyas II"}],"description":"Preyas II gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000021","name":"Mega Impact","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Gorem"}],"description":"Gorem gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific. Note: Mega Impact also exists as a Blue card with different effect.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000022","name":"Grand Impact","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Hammer Gorem"}],"description":"Hammer Gorem gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000023","name":"Right Giganto","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Cycloid"}],"description":"Cycloid gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000024","name":"Cut in Saber","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Tigrerra"}],"description":"Tigrerra gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000025","name":"Velocity Fang","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Blade Tigrerra"}],"description":"Blade Tigrerra gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000026","name":"Flare Binder","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Tentaclear"}],"description":"Tentaclear gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000027","name":"Chaos of the Darkness","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Hydranoid"}],"description":"Hydranoid gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000028","name":"Darkus Gazer","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Dual Hydranoid"}],"description":"Dual Hydranoid gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000029","name":"Reaper of the Chaos","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Reaper"}],"description":"Reaper gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific. Guide printed as 'Reapoer of the Chaos' (typo corrected here).","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000030","name":"Fire Storm","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Skyress"}],"description":"Skyress gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000031","name":"Destruction Meteor Storm","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Storm Skyress"}],"description":"Storm Skyress gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000002-0000-0000-0000-000000000032","name":"Feather Storm","color":"green","effects":[{"type":"CHARACTER_G_POWER_BOOST","target":"self","magnitude":200,"character":"Harpus"}],"description":"Harpus gains 200 G-Power","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Green Ability Card. Character-specific.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000001","name":"Bright Light","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":80,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"haos"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["subterra","darkus"]}}],"description":"+80 G for Haos, +50 G for Subterra and Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000002","name":"G-Power Boost","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["pyrus","subterra","darkus"]}}],"description":"+60 G for Pyrus, Subterra, and Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000003","name":"G-Power Bump","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["aquos","haos","ventus"]}}],"description":"+60 G for Aquos, Haos, and Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000004","name":"Blaze","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":80,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"pyrus"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["aquos","ventus"]}}],"description":"+80 G for Pyrus, +50 G for Aquos and Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000005","name":"Darkus and Aquos Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"aquos","attributes":["darkus"]}}],"description":"If opponent is Aquos, +200 G for Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000006","name":"Subterra and Aquos Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OWN_TEAM_ATTRIBUTE","value":["subterra","aquos"]}}],"description":"If you have Subterra+Aquos Bakugan, +200 G for all","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000007","name":"Pyrus, Aquos and Haos Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":400,"target":"self","condition":{"type":"OWN_TEAM_ATTRIBUTE","value":["pyrus","aquos","haos"]}}],"description":"If your 3 Bakugan are Pyrus+Aquos+Haos, +400 G for those","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000008","name":"Mega Impact","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":80,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"subterra"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["aquos","haos"]}}],"description":"+80 G for Subterra, +50 G for Aquos and Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card. Note: Mega Impact also exists as a Green card (Gorem-specific) with different effect.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000009","name":"G-Power Up","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["pyrus","subterra","haos"]}}],"description":"+60 G for Pyrus, Subterra, and Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000010","name":"Subterra, Ventus and Darkus Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":400,"target":"self","condition":{"type":"OWN_TEAM_ATTRIBUTE","value":["subterra","ventus","darkus"]}}],"description":"If your 3 are Subterra+Ventus+Darkus, +400 G for those","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000011","name":"Hot Wind","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":80,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"ventus"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["pyrus","darkus"]}}],"description":"+80 G for Ventus, +50 G for Pyrus and Darkus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000012","name":"G-Power Increase","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["pyrus","haos","ventus"]}}],"description":"+60 G for Pyrus, Haos, and Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000013","name":"Aquos and Ventus Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"ventus","attributes":["aquos"]}}],"description":"If opponent is Ventus, +200 G for Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000014","name":"Ventus and Haos Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OWN_TEAM_ATTRIBUTE","value":["ventus","haos"]}}],"description":"If you have Ventus+Haos Bakugan, +200 G for all","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000015","name":"Pyrus and Darkus Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OWN_TEAM_ATTRIBUTE","value":["pyrus","darkus"]}}],"description":"If you have Pyrus+Darkus Bakugan, +200 G for all","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000016","name":"Pyrus and Subterra Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"subterra","attributes":["pyrus"]}}],"description":"If opponent is Subterra, +200 G for Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000017","name":"Circle Of Fire","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":110,"target":"self","condition":{"type":"ON_OWN_GATE_CARD","attributes":["pyrus"]}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"ventus"}}],"description":"If on your own Gate Card, +110 G for Pyrus, +50 G for Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000018","name":"Ventus and Pyrus Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"pyrus","attributes":["ventus"]}}],"description":"If opponent is Pyrus, +200 G for Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000019","name":"Flash","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":110,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"haos"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"subterra"}}],"description":"+110 G for Haos, +50 G for Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000020","name":"Subterra and Haos Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"haos","attributes":["subterra"]}}],"description":"If opponent is Haos, +200 G for Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000021","name":"Haos and Darkus Combo","color":"blue","effects":[{"type":"ATTRIBUTE_COMBO_BOOST","magnitude":200,"target":"self","condition":{"type":"OPPONENT_ATTRIBUTE","value":"darkus","attributes":["haos"]}}],"description":"If opponent is Darkus, +200 G for Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000022","name":"Power Triangle","color":"blue","effects":[{"type":"GATE_CARD_OWNERSHIP_BOOST","magnitude":50,"target":"self","attributes":["pyrus","aquos","haos"]}],"description":"+50 G for Pyrus+Aquos+Haos per Gate Card won","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000023","name":"Brushfire","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":140,"target":"self","condition":{"type":"ON_OPPONENT_GATE_CARD","attributes":["pyrus"]}},{"type":"ADD_G_POWER","magnitude":70,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"subterra"}}],"description":"If on opponent's Gate Card, +140 G for Pyrus, +70 G for Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000024","name":"Summon Wave","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":140,"target":"self","condition":{"type":"ON_OPPONENT_GATE_CARD","attributes":["aquos"]}},{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"pyrus"}}],"description":"If on opponent's Gate Card, +140 G for Aquos, +60 G for Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000025","name":"Triangle of Power","color":"blue","effects":[{"type":"GATE_CARD_OWNERSHIP_BOOST","magnitude":50,"target":"self","attributes":["subterra","darkus","ventus"]}],"description":"+50 G for Subterra+Darkus+Ventus per Gate Card won","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000026","name":"Home Advantage","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":110,"target":"self","condition":{"type":"ON_OWN_GATE_CARD","attributes":["subterra"]}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"aquos"}}],"description":"If on your own Gate Card, +110 G for Subterra, +50 G for Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000027","name":"G-Power Bonus","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["aquos","darkus","ventus"]}}],"description":"+60 G for Aquos+Darkus+Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000028","name":"The Glow","color":"blue","effects":[{"type":"CONDITIONAL_BOOST","target":"self","condition":{"type":"HIGHER_OPPONENT_G","description":"If opponent has higher original G, boost Haos, Pyrus, Aquos"},"values":[{"attribute":"haos","magnitude":140},{"attribute":"pyrus","magnitude":90},{"attribute":"aquos","magnitude":50}]}],"description":"If opponent has higher original G, +140 G for Haos, +90 G for Pyrus, +50 G for Aquos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000029","name":"The Shadow","color":"blue","effects":[{"type":"CONDITIONAL_BOOST","target":"self","condition":{"type":"HIGHER_OPPONENT_G","description":"If opponent has higher original G, boost Darkus, Aquos, Subterra"},"values":[{"attribute":"darkus","magnitude":120},{"attribute":"aquos","magnitude":90},{"attribute":"subterra","magnitude":20}]}],"description":"If opponent has higher original G, +120 G for Darkus, +90 G for Aquos, +20 G for Subterra","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000030","name":"Power From Darkness","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":140,"target":"self","condition":{"type":"ON_OPPONENT_GATE_CARD","attributes":["darkus"]}},{"type":"ADD_G_POWER","magnitude":60,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"haos"}}],"description":"If on opponent's Gate Card, +140 G for Darkus, +60 G for Haos","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000031","name":"Dark Growth","color":"blue","effects":[{"type":"ADD_G_POWER","magnitude":80,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"darkus"}},{"type":"ADD_G_POWER","magnitude":50,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":["haos","ventus"]}}],"description":"+80 G for Darkus, +50 G for Haos and Ventus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000032","name":"The Gust","color":"blue","effects":[{"type":"CONDITIONAL_BOOST","target":"self","condition":{"type":"HIGHER_OPPONENT_G","description":"If opponent has higher original G, boost Ventus, Subterra, Pyrus"},"values":[{"attribute":"ventus","magnitude":120},{"attribute":"subterra","magnitude":70},{"attribute":"pyrus","magnitude":50}]}],"description":"If opponent has higher original G, +120 G for Ventus, +70 G for Subterra, +50 G for Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"a0000003-0000-0000-0000-000000000033","name":"Updraft","color":"blue","effects":[{"type":"POSITION_BOOST","magnitude":140,"target":"self","condition":{"type":"ON_OPPONENT_GATE_CARD","attributes":["ventus"]}},{"type":"ADD_G_POWER","magnitude":70,"target":"self","condition":{"type":"ATTRIBUTE_MATCH","value":"pyrus"}}],"description":"If on opponent's Gate Card, +140 G for Ventus, +70 G for Pyrus","source":{"source":"GameFAQs guide FAQ 81516, Section H","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"}
+  {
+    "id": "a0000001-0000-0000-0000-000000000001",
+    "name": "Twin Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "TWIN_ATTRIBUTE",
+          "description": "Both combatants must share the same attribute"
+        }
+      }
+    ],
+    "description": "Intercambia G-Power si ambos combatientes son del mismo atributo",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000002",
+    "name": "Twin Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "TWIN_ATTRIBUTE",
+          "description": "Both combatants must share the same attribute"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si ambos son del mismo atributo",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000003",
+    "name": "Twin Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "TWIN_ATTRIBUTE",
+          "description": "Both combatants must share the same attribute"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si ambos son del mismo atributo",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000004",
+    "name": "Rewind",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active"
+      }
+    ],
+    "description": "La batalla comienza de nuevo",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000005",
+    "name": "Scratch Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Scratch Battle",
+          "value": "scratch"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Scratch",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000006",
+    "name": "Aquos Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Aquos",
+          "value": "aquos"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000007",
+    "name": "Aquos Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Aquos",
+          "value": "aquos"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000008",
+    "name": "Aquos Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Aquos",
+          "value": "aquos"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000009",
+    "name": "Spin Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Spin Battle",
+          "value": "spin"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Spin",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000010",
+    "name": "Subterra Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Subterra",
+          "value": "subterra"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000011",
+    "name": "Subterra Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Subterra",
+          "value": "subterra"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000012",
+    "name": "Subterra Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Subterra",
+          "value": "subterra"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000013",
+    "name": "Timing Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Timing Battle",
+          "value": "timing"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Timing",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000014",
+    "name": "Ventus Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Ventus",
+          "value": "ventus"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000015",
+    "name": "Ventus Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Ventus",
+          "value": "ventus"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000016",
+    "name": "Ventus Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Ventus",
+          "value": "ventus"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000017",
+    "name": "Pop Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Pop Battle",
+          "value": "pop"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Pop",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000018",
+    "name": "Pyrus Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Pyrus",
+          "value": "pyrus"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000019",
+    "name": "Pyrus Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Pyrus",
+          "value": "pyrus"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000020",
+    "name": "Pyrus Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Pyrus",
+          "value": "pyrus"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000021",
+    "name": "Trace Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Trace Battle",
+          "value": "trace"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Trace",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000022",
+    "name": "Haos Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Haos",
+          "value": "haos"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000023",
+    "name": "Haos Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Haos",
+          "value": "haos"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000024",
+    "name": "Haos Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Haos",
+          "value": "haos"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000025",
+    "name": "Bound Battle Redo",
+    "color": "red",
+    "effects": [
+      {
+        "type": "RESTART_BATTLE",
+        "target": "all_active",
+        "condition": {
+          "type": "BATTLE_TYPE",
+          "description": "Battle restarts as Bound Battle",
+          "value": "bound"
+        }
+      }
+    ],
+    "description": "La batalla comienza de nuevo como Batalla Bound",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000026",
+    "name": "Counter Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "DIFFERENT_ATTRIBUTE",
+          "description": "Swap G-Power if combatants different attributes"
+        }
+      }
+    ],
+    "description": "Intercambia G-Power si los combatientes tienen atributos diferentes",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000027",
+    "name": "Counter Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "DIFFERENT_ATTRIBUTE",
+          "description": "Prevent opponent minigame if different attributes"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si los atributos son diferentes",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000028",
+    "name": "Level Field",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SET_G_POWER",
+        "target": "all_active"
+      }
+    ],
+    "description": "La batalla comienza de nuevo con ambos en el mismo G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000029",
+    "name": "Counter Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "DIFFERENT_ATTRIBUTE",
+          "description": "Double minigame effectiveness if different attributes"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si los atributos son diferentes",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000030",
+    "name": "Darkus Swap",
+    "color": "red",
+    "effects": [
+      {
+        "type": "SWAP_G_POWER",
+        "target": "all_active",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Swap G-Power if your Bakugan is Darkus",
+          "value": "darkus"
+        }
+      }
+    ],
+    "description": "Swap G-Power if your Bakugan is Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000031",
+    "name": "Darkus Time Breaker",
+    "color": "red",
+    "effects": [
+      {
+        "type": "PREVENT_MINIGAME",
+        "target": "opponent",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Prevent opponent minigame if your Bakugan is Darkus",
+          "value": "darkus"
+        }
+      }
+    ],
+    "description": "Impide al oponente jugar el minijuego si tu Bakugan es Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000001-0000-0000-0000-000000000032",
+    "name": "Darkus Double Input",
+    "color": "red",
+    "effects": [
+      {
+        "type": "DOUBLE_MINIGAME_INPUT",
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "description": "Double minigame effectiveness if your Bakugan is Darkus",
+          "value": "darkus"
+        }
+      }
+    ],
+    "description": "Duplica la efectividad del minijuego si tu Bakugan es Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000001",
+    "name": "Stolen Gold",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "gate_card_tier": "gold"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Gold Gate Cards",
+        "value": "gold"
+      }
+    ],
+    "description": "Skip battle on Gold Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000002",
+    "name": "Swiped Silver",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "gate_card_tier": "silver"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Silver Gate Cards",
+        "value": "silver"
+      }
+    ],
+    "description": "Skip battle on Silver Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000003",
+    "name": "Copped Copper",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active",
+        "gate_card_tier": "copper"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "GATE_CARD_TIER",
+        "description": "Only works on Copper Gate Cards",
+        "value": "copper"
+      }
+    ],
+    "description": "Skip battle on Copper Gate Card; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000004",
+    "name": "Negative Wave",
+    "color": "green",
+    "effects": [
+      {
+        "type": "REMOVE_G_POWER",
+        "target": "all_active"
+      }
+    ],
+    "description": "Cancel G-Power boosts for both combatants",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000005",
+    "name": "No Trading",
+    "color": "green",
+    "effects": [
+      {
+        "type": "PREVENT_ABILITY_CARDS",
+        "target": "opponent",
+        "condition": {
+          "type": "CARD_COLOR",
+          "description": "Opponent can't use Swap cards",
+          "value": "swap"
+        }
+      }
+    ],
+    "description": "Opponent can't use Swap cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000006",
+    "name": "Out Of Time",
+    "color": "green",
+    "effects": [
+      {
+        "type": "PREVENT_ABILITY_CARDS",
+        "target": "opponent",
+        "condition": {
+          "type": "CARD_COLOR",
+          "description": "Opponent can't use Time Breaker cards",
+          "value": "time_breaker"
+        }
+      }
+    ],
+    "description": "Opponent can't use Time Breaker cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000007",
+    "name": "Double Input Cancel",
+    "color": "green",
+    "effects": [
+      {
+        "type": "PREVENT_ABILITY_CARDS",
+        "target": "opponent",
+        "condition": {
+          "type": "CARD_COLOR",
+          "description": "Opponent can't use Double Input cards",
+          "value": "double_input"
+        }
+      }
+    ],
+    "description": "Opponent can't use Double Input cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000008",
+    "name": "No Backsies",
+    "color": "green",
+    "effects": [
+      {
+        "type": "PREVENT_ABILITY_CARDS",
+        "target": "opponent",
+        "condition": {
+          "type": "CARD_COLOR",
+          "description": "Opponent can't use Redo cards",
+          "value": "redo"
+        }
+      }
+    ],
+    "description": "Opponent can't use Redo cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000009",
+    "name": "Prevention",
+    "color": "green",
+    "effects": [
+      {
+        "type": "SKIP_BATTLE",
+        "target": "all_active"
+      }
+    ],
+    "description": "Skip battle; highest G wins",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000010",
+    "name": "Imbalance",
+    "color": "green",
+    "effects": [
+      {
+        "type": "REMOVE_G_POWER",
+        "target": "opponent"
+      }
+    ],
+    "description": "Cancel G-Power boosts for opponent",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000011",
+    "name": "Alpha Blaster",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Leonidas"
+      }
+    ],
+    "description": "Leonidas gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000012",
+    "name": "Omega Eraser",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Omega Leonidas"
+      }
+    ],
+    "description": "Omega Leonidas gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000013",
+    "name": "Dark Sphere Impact",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Vladitor"
+      }
+    ],
+    "description": "Vladitor gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000014",
+    "name": "Thousand Destroyer",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Battle Ax Vladitor"
+      }
+    ],
+    "description": "Battle Ax Vladitor gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000015",
+    "name": "Boosted Dragon",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Dragonoid"
+      }
+    ],
+    "description": "Dragonoid gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000016",
+    "name": "Meteor Strike Dragon",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Delta Dragonoid II"
+      }
+    ],
+    "description": "Delta Dragonoid II gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000017",
+    "name": "Face of Rage",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Fortress"
+      }
+    ],
+    "description": "Fortress gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000018",
+    "name": "Blue Stealth",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Preyas"
+      }
+    ],
+    "description": "Preyas gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000019",
+    "name": "Forcing Wave",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Sirenoid"
+      }
+    ],
+    "description": "Sirenoid gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000020",
+    "name": "Special Stealth",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Preyas II"
+      }
+    ],
+    "description": "Preyas II gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000021",
+    "name": "Mega Impact",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Gorem"
+      }
+    ],
+    "description": "Gorem gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific. Note: Mega Impact also exists as a Blue card with different effect.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000022",
+    "name": "Grand Impact",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Hammer Gorem"
+      }
+    ],
+    "description": "Hammer Gorem gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000023",
+    "name": "Right Giganto",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Cycloid"
+      }
+    ],
+    "description": "Cycloid gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000024",
+    "name": "Cut in Saber",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Tigrerra"
+      }
+    ],
+    "description": "Tigrerra gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000025",
+    "name": "Velocity Fang",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Blade Tigrerra"
+      }
+    ],
+    "description": "Blade Tigrerra gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000026",
+    "name": "Flare Binder",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Tentaclear"
+      }
+    ],
+    "description": "Tentaclear gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000027",
+    "name": "Chaos of the Darkness",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Hydranoid"
+      }
+    ],
+    "description": "Hydranoid gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000028",
+    "name": "Darkus Gazer",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Dual Hydranoid"
+      }
+    ],
+    "description": "Dual Hydranoid gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000029",
+    "name": "Reaper of the Chaos",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Reaper"
+      }
+    ],
+    "description": "Reaper gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific. Guide printed as 'Reapoer of the Chaos' (typo corrected here).",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000030",
+    "name": "Fire Storm",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Skyress"
+      }
+    ],
+    "description": "Skyress gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000031",
+    "name": "Destruction Meteor Storm",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Storm Skyress"
+      }
+    ],
+    "description": "Storm Skyress gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000002-0000-0000-0000-000000000032",
+    "name": "Feather Storm",
+    "color": "green",
+    "effects": [
+      {
+        "type": "CHARACTER_G_POWER_BOOST",
+        "target": "self",
+        "magnitude": 200,
+        "character": "Harpus"
+      }
+    ],
+    "description": "Harpus gana 200 de G-Power",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Green Ability Card. Character-specific.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000001",
+    "name": "Bright Light",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "haos"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "subterra",
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "+80 G for Haos, +50 G for Subterra and Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000002",
+    "name": "G-Power Boost",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "pyrus",
+            "subterra",
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "+60 G for Pyrus, Subterra, and Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000003",
+    "name": "G-Power Bump",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "aquos",
+            "haos",
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "+60 G for Aquos, Haos, and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000004",
+    "name": "Blaze",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "pyrus"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "aquos",
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "+80 G for Pyrus, +50 G for Aquos and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000005",
+    "name": "Darkus and Aquos Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "aquos",
+          "attributes": [
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Aquos, +200 G for Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000006",
+    "name": "Subterra and Aquos Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OWN_TEAM_ATTRIBUTE",
+          "value": [
+            "subterra",
+            "aquos"
+          ]
+        }
+      }
+    ],
+    "description": "If you have Subterra+Aquos Bakugan, +200 G for all",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000007",
+    "name": "Pyrus, Aquos and Haos Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 400,
+        "target": "self",
+        "condition": {
+          "type": "OWN_TEAM_ATTRIBUTE",
+          "value": [
+            "pyrus",
+            "aquos",
+            "haos"
+          ]
+        }
+      }
+    ],
+    "description": "If your 3 Bakugan are Pyrus+Aquos+Haos, +400 G for those",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000008",
+    "name": "Mega Impact",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "subterra"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "aquos",
+            "haos"
+          ]
+        }
+      }
+    ],
+    "description": "+80 G for Subterra, +50 G for Aquos and Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card. Note: Mega Impact also exists as a Green card (Gorem-specific) with different effect.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000009",
+    "name": "G-Power Up",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "pyrus",
+            "subterra",
+            "haos"
+          ]
+        }
+      }
+    ],
+    "description": "+60 G for Pyrus, Subterra, and Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000010",
+    "name": "Subterra, Ventus and Darkus Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 400,
+        "target": "self",
+        "condition": {
+          "type": "OWN_TEAM_ATTRIBUTE",
+          "value": [
+            "subterra",
+            "ventus",
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "If your 3 are Subterra+Ventus+Darkus, +400 G for those",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000011",
+    "name": "Hot Wind",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "ventus"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "pyrus",
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "+80 G for Ventus, +50 G for Pyrus and Darkus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000012",
+    "name": "G-Power Increase",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "pyrus",
+            "haos",
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "+60 G for Pyrus, Haos, and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000013",
+    "name": "Aquos and Ventus Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "ventus",
+          "attributes": [
+            "aquos"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Ventus, +200 G for Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000014",
+    "name": "Ventus and Haos Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OWN_TEAM_ATTRIBUTE",
+          "value": [
+            "ventus",
+            "haos"
+          ]
+        }
+      }
+    ],
+    "description": "If you have Ventus+Haos Bakugan, +200 G for all",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000015",
+    "name": "Pyrus and Darkus Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OWN_TEAM_ATTRIBUTE",
+          "value": [
+            "pyrus",
+            "darkus"
+          ]
+        }
+      }
+    ],
+    "description": "If you have Pyrus+Darkus Bakugan, +200 G for all",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000016",
+    "name": "Pyrus and Subterra Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "subterra",
+          "attributes": [
+            "pyrus"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Subterra, +200 G for Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000017",
+    "name": "Circle Of Fire",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 110,
+        "target": "self",
+        "condition": {
+          "type": "ON_OWN_GATE_CARD",
+          "attributes": [
+            "pyrus"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "ventus"
+        }
+      }
+    ],
+    "description": "If on your own Gate Card, +110 G for Pyrus, +50 G for Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000018",
+    "name": "Ventus and Pyrus Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "pyrus",
+          "attributes": [
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Pyrus, +200 G for Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000019",
+    "name": "Flash",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 110,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "haos"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "subterra"
+        }
+      }
+    ],
+    "description": "+110 G for Haos, +50 G for Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000020",
+    "name": "Subterra and Haos Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "haos",
+          "attributes": [
+            "subterra"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Haos, +200 G for Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000021",
+    "name": "Haos and Darkus Combo",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ATTRIBUTE_COMBO_BOOST",
+        "magnitude": 200,
+        "target": "self",
+        "condition": {
+          "type": "OPPONENT_ATTRIBUTE",
+          "value": "darkus",
+          "attributes": [
+            "haos"
+          ]
+        }
+      }
+    ],
+    "description": "If opponent is Darkus, +200 G for Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000022",
+    "name": "Power Triangle",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "GATE_CARD_OWNERSHIP_BOOST",
+        "magnitude": 50,
+        "target": "self",
+        "attributes": [
+          "pyrus",
+          "aquos",
+          "haos"
+        ]
+      }
+    ],
+    "description": "+50 G for Pyrus+Aquos+Haos per Gate Card won",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000023",
+    "name": "Brushfire",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 140,
+        "target": "self",
+        "condition": {
+          "type": "ON_OPPONENT_GATE_CARD",
+          "attributes": [
+            "pyrus"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 70,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "subterra"
+        }
+      }
+    ],
+    "description": "If on opponent's Gate Card, +140 G for Pyrus, +70 G for Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000024",
+    "name": "Summon Wave",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 140,
+        "target": "self",
+        "condition": {
+          "type": "ON_OPPONENT_GATE_CARD",
+          "attributes": [
+            "aquos"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "pyrus"
+        }
+      }
+    ],
+    "description": "If on opponent's Gate Card, +140 G for Aquos, +60 G for Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000025",
+    "name": "Triangle of Power",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "GATE_CARD_OWNERSHIP_BOOST",
+        "magnitude": 50,
+        "target": "self",
+        "attributes": [
+          "subterra",
+          "darkus",
+          "ventus"
+        ]
+      }
+    ],
+    "description": "+50 G for Subterra+Darkus+Ventus per Gate Card won",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000026",
+    "name": "Home Advantage",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 110,
+        "target": "self",
+        "condition": {
+          "type": "ON_OWN_GATE_CARD",
+          "attributes": [
+            "subterra"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "aquos"
+        }
+      }
+    ],
+    "description": "If on your own Gate Card, +110 G for Subterra, +50 G for Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000027",
+    "name": "G-Power Bonus",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "aquos",
+            "darkus",
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "+60 G for Aquos+Darkus+Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000028",
+    "name": "The Glow",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "CONDITIONAL_BOOST",
+        "target": "self",
+        "condition": {
+          "type": "HIGHER_OPPONENT_G",
+          "description": "If opponent has higher original G, boost Haos, Pyrus, Aquos"
+        },
+        "values": [
+          {
+            "attribute": "haos",
+            "magnitude": 140
+          },
+          {
+            "attribute": "pyrus",
+            "magnitude": 90
+          },
+          {
+            "attribute": "aquos",
+            "magnitude": 50
+          }
+        ]
+      }
+    ],
+    "description": "If opponent has higher original G, +140 G for Haos, +90 G for Pyrus, +50 G for Aquos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000029",
+    "name": "The Shadow",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "CONDITIONAL_BOOST",
+        "target": "self",
+        "condition": {
+          "type": "HIGHER_OPPONENT_G",
+          "description": "If opponent has higher original G, boost Darkus, Aquos, Subterra"
+        },
+        "values": [
+          {
+            "attribute": "darkus",
+            "magnitude": 120
+          },
+          {
+            "attribute": "aquos",
+            "magnitude": 90
+          },
+          {
+            "attribute": "subterra",
+            "magnitude": 20
+          }
+        ]
+      }
+    ],
+    "description": "If opponent has higher original G, +120 G for Darkus, +90 G for Aquos, +20 G for Subterra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000030",
+    "name": "Power From Darkness",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 140,
+        "target": "self",
+        "condition": {
+          "type": "ON_OPPONENT_GATE_CARD",
+          "attributes": [
+            "darkus"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 60,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "haos"
+        }
+      }
+    ],
+    "description": "If on opponent's Gate Card, +140 G for Darkus, +60 G for Haos",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000031",
+    "name": "Dark Growth",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 80,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "darkus"
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 50,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": [
+            "haos",
+            "ventus"
+          ]
+        }
+      }
+    ],
+    "description": "+80 G for Darkus, +50 G for Haos and Ventus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000032",
+    "name": "The Gust",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "CONDITIONAL_BOOST",
+        "target": "self",
+        "condition": {
+          "type": "HIGHER_OPPONENT_G",
+          "description": "If opponent has higher original G, boost Ventus, Subterra, Pyrus"
+        },
+        "values": [
+          {
+            "attribute": "ventus",
+            "magnitude": 120
+          },
+          {
+            "attribute": "subterra",
+            "magnitude": 70
+          },
+          {
+            "attribute": "pyrus",
+            "magnitude": 50
+          }
+        ]
+      }
+    ],
+    "description": "If opponent has higher original G, +120 G for Ventus, +70 G for Subterra, +50 G for Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "a0000003-0000-0000-0000-000000000033",
+    "name": "Updraft",
+    "color": "blue",
+    "effects": [
+      {
+        "type": "POSITION_BOOST",
+        "magnitude": 140,
+        "target": "self",
+        "condition": {
+          "type": "ON_OPPONENT_GATE_CARD",
+          "attributes": [
+            "ventus"
+          ]
+        }
+      },
+      {
+        "type": "ADD_G_POWER",
+        "magnitude": 70,
+        "target": "self",
+        "condition": {
+          "type": "ATTRIBUTE_MATCH",
+          "value": "pyrus"
+        }
+      }
+    ],
+    "description": "If on opponent's Gate Card, +140 G for Ventus, +70 G for Pyrus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section H",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  }
 ]

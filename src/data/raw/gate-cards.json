@@ -1,105 +1,2433 @@
 [
-  {"id":"g0000001-0000-0000-0000-000000000001","name":"Serpenoid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":180,"aquos":60,"subterra":90,"haos":140,"darkus":130,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Serpenoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Serpenoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000002","name":"Juggernoid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":80,"aquos":160,"subterra":70,"haos":100,"darkus":70,"ventus":40},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Juggernoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Juggernoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000003","name":"Robotallion","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":160,"aquos":110,"subterra":90,"haos":120,"darkus":90,"ventus":40},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Robotallion","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Robotallion stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000004","name":"Saurus","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":100,"aquos":50,"subterra":180,"haos":100,"darkus":50,"ventus":80},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Saurus","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Saurus stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000005","name":"Falconeer","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":80,"aquos":100,"subterra":80,"haos":70,"darkus":80,"ventus":160},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Falconeer","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Falconeer stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000006","name":"Warius","tier":"gold","battle_type":"spin","bonuses":{"pyrus":160,"aquos":100,"subterra":70,"haos":70,"darkus":90,"ventus":70},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Warius","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Warius stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000007","name":"Manion","tier":"gold","battle_type":"spin","bonuses":{"pyrus":60,"aquos":50,"subterra":150,"haos":70,"darkus":10,"ventus":130},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Manion","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Manion stands on it. Darkus bonus 10 (suspect typo for 100).","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000008","name":"Ravenoid","tier":"gold","battle_type":"spin","bonuses":{"pyrus":90,"aquos":60,"subterra":70,"haos":130,"darkus":30,"ventus":180},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Ravenoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Ravenoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000009","name":"Stinglash","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":80,"aquos":90,"subterra":130,"haos":50,"darkus":150,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Stinglash","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Stinglash stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000010","name":"Centipoid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":70,"aquos":40,"subterra":140,"haos":130,"darkus":160,"ventus":100},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Centipoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Centipoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000011","name":"Gargonoid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":160,"aquos":110,"subterra":70,"haos":40,"darkus":70,"ventus":160},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Gargonoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Gargonoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000012","name":"Fear Ripper","tier":"gold","battle_type":"spin","bonuses":{"pyrus":90,"aquos":110,"subterra":90,"haos":170,"darkus":70,"ventus":80},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Fear Ripper","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Fear Ripper stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000013","name":"Siege","tier":"gold","battle_type":"spin","bonuses":{"pyrus":70,"aquos":170,"subterra":60,"haos":100,"darkus":60,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Siege","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Siege stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000014","name":"Monarus","tier":"gold","battle_type":"spin","bonuses":{"pyrus":30,"aquos":50,"subterra":70,"haos":80,"darkus":20,"ventus":180},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Monarus","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Monarus stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000015","name":"Griffon","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":140,"aquos":120,"subterra":100,"haos":130,"darkus":50,"ventus":80},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Griffon","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Griffon stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000016","name":"Terrorclaw","tier":"gold","battle_type":"spin","bonuses":{"pyrus":40,"aquos":180,"subterra":90,"haos":40,"darkus":40,"ventus":80},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Terrorclaw","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Terrorclaw stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000017","name":"Laserman","tier":"gold","battle_type":"spin","bonuses":{"pyrus":80,"aquos":100,"subterra":130,"haos":90,"darkus":180,"ventus":130},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Laserman","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Laserman stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000018","name":"Leonidas","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":100,"aquos":100,"subterra":100,"haos":100,"darkus":100,"ventus":100},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Leonidas","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Leonidas stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000019","name":"Omega Leonidas","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":200,"aquos":200,"subterra":200,"haos":200,"darkus":200,"ventus":200},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Omega Leonidas","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Omega Leonidas stands on it. Highest overall bonuses.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000020","name":"Vladitor","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":20,"aquos":20,"subterra":20,"haos":20,"darkus":150,"ventus":20},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Vladitor","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Vladitor stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000021","name":"Battle Ax Vladitor","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":10,"aquos":10,"subterra":10,"haos":10,"darkus":200,"ventus":10},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Battle Ax Vladitor","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Battle Ax Vladitor stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000022","name":"Dragonoid","tier":"gold","battle_type":"spin","bonuses":{"pyrus":150,"aquos":50,"subterra":70,"haos":30,"darkus":50,"ventus":40},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Dragonoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Dragonoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000023","name":"Delta Dragonoid II","tier":"gold","battle_type":"spin","bonuses":{"pyrus":200,"aquos":100,"subterra":150,"haos":50,"darkus":100,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Delta Dragonoid II","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Delta Dragonoid II stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000024","name":"Fortress","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":180,"aquos":110,"subterra":170,"haos":130,"darkus":100,"ventus":140},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Fortress","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Fortress stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000025","name":"Preyas","tier":"gold","battle_type":"spin","bonuses":{"pyrus":10,"aquos":150,"subterra":150,"haos":20,"darkus":150,"ventus":10},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Preyas","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Preyas stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000026","name":"Preyas's","tier":"gold","battle_type":"spin","bonuses":{"pyrus":100,"aquos":200,"subterra":180,"haos":50,"darkus":180,"ventus":10},"effect":{"type":"BONUS_TWICE","description":"Preyas II gets bonus twice"},"depicted_bakugan":"Preyas II","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Preyas II gets bonus twice. Card name as printed in guide.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000027","name":"Sirenoid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":150,"aquos":180,"subterra":110,"haos":120,"darkus":70,"ventus":130},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Sirenoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Sirenoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000028","name":"Gorem","tier":"gold","battle_type":"spin","bonuses":{"pyrus":80,"aquos":10,"subterra":150,"haos":20,"darkus":30,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Gorem","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Gorem stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000029","name":"Hammer Gorem","tier":"gold","battle_type":"spin","bonuses":{"pyrus":150,"aquos":90,"subterra":200,"haos":120,"darkus":70,"ventus":130},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Hammer Gorem","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Hammer Gorem stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000030","name":"Cycloid","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":150,"aquos":120,"subterra":180,"haos":120,"darkus":100,"ventus":60},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Cycloid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Cycloid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000031","name":"Tigrerra","tier":"gold","battle_type":"spin","bonuses":{"pyrus":50,"aquos":50,"subterra":90,"haos":150,"darkus":20,"ventus":10},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Tigrerra","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Tigrerra stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000032","name":"Blade Tigrerra","tier":"gold","battle_type":"spin","bonuses":{"pyrus":50,"aquos":40,"subterra":90,"haos":200,"darkus":150,"ventus":60},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Blade Tigrerra","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Blade Tigrerra stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000033","name":"Tentaclear","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":120,"aquos":100,"subterra":150,"haos":180,"darkus":100,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Tentaclear","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Tentaclear stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000034","name":"Hydranoid","tier":"gold","battle_type":"spin","bonuses":{"pyrus":20,"aquos":40,"subterra":10,"haos":10,"darkus":150,"ventus":50},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Hydranoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Hydranoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000035","name":"Dual Hydranoid","tier":"gold","battle_type":"spin","bonuses":{"pyrus":70,"aquos":90,"subterra":130,"haos":130,"darkus":200,"ventus":60},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Dual Hydranoid","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Dual Hydranoid stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000036","name":"Reaper","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":100,"aquos":50,"subterra":150,"haos":70,"darkus":200,"ventus":140},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Reaper","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Reaper stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000037","name":"Skyress","tier":"gold","battle_type":"spin","bonuses":{"pyrus":20,"aquos":50,"subterra":50,"haos":50,"darkus":70,"ventus":150},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Skyress","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Skyress stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000038","name":"Storm Skyress","tier":"gold","battle_type":"spin","bonuses":{"pyrus":150,"aquos":50,"subterra":60,"haos":90,"darkus":40,"ventus":200},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Storm Skyress","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Spin Battle minigame. Bonus twice if Storm Skyress stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000001-0000-0000-0000-000000000039","name":"Harpus","tier":"gold","battle_type":"scratch","bonuses":{"pyrus":120,"aquos":140,"subterra":100,"haos":110,"darkus":90,"ventus":180},"effect":{"type":"BONUS_TWICE","description":"If the depicted Bakugan stands on it, bonus applied twice"},"depicted_bakugan":"Harpus","source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Gold card. Scratch Battle minigame. Bonus twice if Harpus stands on it.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000001","name":"Fire Pit","tier":"silver","battle_type":"timing","bonuses":{"pyrus":140,"aquos":120,"subterra":80,"haos":20,"darkus":20,"ventus":60},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000002","name":"Muddy Ground","tier":"silver","battle_type":"timing","bonuses":{"pyrus":20,"aquos":60,"subterra":140,"haos":120,"darkus":80,"ventus":20},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000003","name":"Light-Burst","tier":"silver","battle_type":"timing","bonuses":{"pyrus":50,"aquos":50,"subterra":90,"haos":200,"darkus":170,"ventus":110},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000004","name":"Tsunami","tier":"silver","battle_type":"timing","bonuses":{"pyrus":20,"aquos":170,"subterra":110,"haos":80,"darkus":110,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000005","name":"Dusk","tier":"silver","battle_type":"timing","bonuses":{"pyrus":80,"aquos":20,"subterra":20,"haos":60,"darkus":140,"ventus":120},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000006","name":"High Energy","tier":"silver","battle_type":"timing","bonuses":{"pyrus":110,"aquos":120,"subterra":120,"haos":110,"darkus":120,"ventus":120},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects. Balanced bonuses.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000007","name":"Whirlpool","tier":"silver","battle_type":"timing","bonuses":{"pyrus":90,"aquos":200,"subterra":170,"haos":110,"darkus":50,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. One of two Whirlpool entries (different battle types).","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000008","name":"Aquos Vortex","tier":"silver","battle_type":"timing","bonuses":{"pyrus":60,"aquos":150,"subterra":120,"haos":50,"darkus":20,"ventus":20},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000009","name":"Heavy Surf","tier":"silver","battle_type":"timing","bonuses":{"pyrus":60,"aquos":140,"subterra":120,"haos":80,"darkus":20,"ventus":40},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000010","name":"Elevated Field","tier":"silver","battle_type":"timing","bonuses":{"pyrus":90,"aquos":110,"subterra":100,"haos":90,"darkus":110,"ventus":100},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000011","name":"Earthen Mound","tier":"silver","battle_type":"timing","bonuses":{"pyrus":50,"aquos":90,"subterra":200,"haos":170,"darkus":110,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000012","name":"Sand Storm","tier":"silver","battle_type":"timing","bonuses":{"pyrus":110,"aquos":80,"subterra":110,"haos":50,"darkus":20,"ventus":170},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000013","name":"The Cliffs","tier":"silver","battle_type":"timing","bonuses":{"pyrus":120,"aquos":100,"subterra":150,"haos":50,"darkus":100,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000014","name":"Black Hole","tier":"silver","battle_type":"timing","bonuses":{"pyrus":120,"aquos":100,"subterra":150,"haos":50,"darkus":100,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects. Same bonuses as The Cliffs.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000015","name":"Tornado Alley","tier":"silver","battle_type":"timing","bonuses":{"pyrus":170,"aquos":110,"subterra":50,"haos":50,"darkus":90,"ventus":180},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000016","name":"Force Wind","tier":"silver","battle_type":"timing","bonuses":{"pyrus":120,"aquos":80,"subterra":20,"haos":40,"darkus":60,"ventus":140},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Timing Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000017","name":"The Spires","tier":"silver","battle_type":"pop","bonuses":{"pyrus":50,"aquos":40,"subterra":40,"haos":110,"darkus":70,"ventus":150},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000018","name":"Wind Farm","tier":"silver","battle_type":"pop","bonuses":{"pyrus":50,"aquos":20,"subterra":50,"haos":60,"darkus":20,"ventus":70},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000019","name":"Blue Sky","tier":"silver","battle_type":"pop","bonuses":{"pyrus":50,"aquos":40,"subterra":40,"haos":110,"darkus":70,"ventus":150},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects. Same bonuses as The Spires.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000020","name":"Vacuum","tier":"silver","battle_type":"pop","bonuses":{"pyrus":50,"aquos":20,"subterra":50,"haos":60,"darkus":20,"ventus":70},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects. Same bonuses as Wind Farm.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000021","name":"Volcanic Lake","tier":"silver","battle_type":"pop","bonuses":{"pyrus":200,"aquos":170,"subterra":110,"haos":50,"darkus":50,"ventus":90},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000022","name":"Powder Keg","tier":"silver","battle_type":"pop","bonuses":{"pyrus":140,"aquos":120,"subterra":80,"haos":20,"darkus":40,"ventus":60},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000023","name":"Earthen Wave","tier":"silver","battle_type":"pop","bonuses":{"pyrus":140,"aquos":120,"subterra":80,"haos":20,"darkus":40,"ventus":60},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects. Same bonuses as Powder Keg.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000024","name":"Low Energy","tier":"silver","battle_type":"pop","bonuses":{"pyrus":50,"aquos":60,"subterra":20,"haos":70,"darkus":50,"ventus":20},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000025","name":"Sunrise","tier":"silver","battle_type":"pop","bonuses":{"pyrus":20,"aquos":20,"subterra":60,"haos":140,"darkus":120,"ventus":80},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000026","name":"Spitting Fire","tier":"silver","battle_type":"pop","bonuses":{"pyrus":60,"aquos":150,"subterra":120,"haos":50,"darkus":20,"ventus":20},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000027","name":"Sun Spot","tier":"silver","battle_type":"pop","bonuses":{"pyrus":60,"aquos":140,"subterra":120,"haos":80,"darkus":20,"ventus":40},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000028","name":"Haunted Night","tier":"silver","battle_type":"pop","bonuses":{"pyrus":110,"aquos":50,"subterra":50,"haos":90,"darkus":200,"ventus":170},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000029","name":"Pit Dweller","tier":"silver","battle_type":"pop","bonuses":{"pyrus":100,"aquos":50,"subterra":120,"haos":100,"darkus":150,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000030","name":"Nightmare","tier":"silver","battle_type":"pop","bonuses":{"pyrus":80,"aquos":70,"subterra":20,"haos":120,"darkus":170,"ventus":120},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000031","name":"Whirlpool","tier":"silver","battle_type":"pop","bonuses":{"pyrus":100,"aquos":50,"subterra":120,"haos":100,"darkus":150,"ventus":50},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. One of two Whirlpool entries (different battle types). Same bonuses as Pit Dweller.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000002-0000-0000-0000-000000000032","name":"Fields Of Lava","tier":"silver","battle_type":"pop","bonuses":{"pyrus":80,"aquos":70,"subterra":20,"haos":120,"darkus":170,"ventus":120},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Silver card. Pop Battle minigame. No special effects. Same bonuses as Nightmare.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000001","name":"Lockdown","tier":"copper","battle_type":"trace","bonuses":{"pyrus":110,"aquos":100,"subterra":80,"haos":70,"darkus":50,"ventus":40},"effect":{"type":"DOUBLE_ABILITY_CARD_BOOSTS","description":"All G-Power boosts from Ability Cards doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Doubles Ability Card G-Power boosts.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000002","name":"G-Power Exchange","tier":"copper","battle_type":"trace","bonuses":{"pyrus":60,"aquos":30,"subterra":50,"haos":20,"darkus":20,"ventus":40},"effect":{"type":"SWAP_G_POWER","description":"Each Bakugan's original G-Power swapped"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps original G-Power between combatants.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000003","name":"Mega Warrior","tier":"copper","battle_type":"trace","bonuses":{"pyrus":100,"aquos":40,"subterra":50,"haos":110,"darkus":150,"ventus":50},"effect":{"type":"GATE_CARD_BONUS","magnitude":100,"description":"+100 G for each Gate Card each side won"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. +100 G per captured Gate Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000004","name":"Stand Off","tier":"copper","battle_type":"trace","bonuses":{"pyrus":140,"aquos":80,"subterra":50,"haos":80,"darkus":60,"ventus":20},"effect":{"type":"PREVENT_ABILITY_CARDS","description":"Neither side can play Ability Cards"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Prevents both sides from playing Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000005","name":"Stand Your Ground","tier":"copper","battle_type":"trace","bonuses":{"pyrus":20,"aquos":80,"subterra":140,"haos":50,"darkus":60,"ventus":110},"effect":{"type":"RETURN_ABILITY_CARDS","description":"Both players get all used Ability Cards back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Both players recover used Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000006","name":"Trick Jump","tier":"copper","battle_type":"trace","bonuses":{"pyrus":110,"aquos":80,"subterra":60,"haos":90,"darkus":120,"ventus":140},"effect":{"type":"ABILITY_CARD_BONUS","magnitude":100,"description":"+100 G for each Ability Card each side used"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. +100 G per Ability Card used.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000007","name":"Overtake","tier":"copper","battle_type":"trace","bonuses":{"pyrus":80,"aquos":90,"subterra":50,"haos":50,"darkus":60,"ventus":80},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000008","name":"Reflexes","tier":"copper","battle_type":"trace","bonuses":{"pyrus":110,"aquos":170,"subterra":110,"haos":140,"darkus":170,"ventus":140},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000009","name":"Power Siphon","tier":"copper","battle_type":"trace","bonuses":{"pyrus":110,"aquos":100,"subterra":80,"haos":70,"darkus":50,"ventus":40},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Aquos"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Aquos.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000010","name":"Sand Trap","tier":"copper","battle_type":"trace","bonuses":{"pyrus":80,"aquos":60,"subterra":90,"haos":120,"darkus":140,"ventus":90},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Subterra"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Subterra.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000011","name":"Amped","tier":"copper","battle_type":"trace","bonuses":{"pyrus":30,"aquos":10,"subterra":30,"haos":10,"darkus":30,"ventus":10},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power. Very low bonuses.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000012","name":"Down For The Count","tier":"copper","battle_type":"trace","bonuses":{"pyrus":150,"aquos":80,"subterra":170,"haos":130,"darkus":110,"ventus":100},"effect":{"type":"CONDITIONAL_PREVENT","description":"Lower gate bonus holder can't play Ability Cards"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Player with lower Gate Card bonus cannot play Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000013","name":"Take Cover","tier":"copper","battle_type":"trace","bonuses":{"pyrus":110,"aquos":60,"subterra":90,"haos":120,"darkus":140,"ventus":110},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Ventus"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Ventus.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000014","name":"G-Power Swap","tier":"copper","battle_type":"trace","bonuses":{"pyrus":70,"aquos":90,"subterra":130,"haos":130,"darkus":100,"ventus":60},"effect":{"type":"SWAP_G_POWER","description":"Each Bakugan's original G-Power swapped"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps original G-Power between combatants.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000015","name":"Molten Rock","tier":"copper","battle_type":"trace","bonuses":{"pyrus":70,"aquos":90,"subterra":120,"haos":130,"darkus":100,"ventus":60},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000016","name":"Flaming Wind","tier":"copper","battle_type":"trace","bonuses":{"pyrus":80,"aquos":50,"subterra":20,"haos":20,"darkus":50,"ventus":80},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Pyrus"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Pyrus.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000017","name":"Waist Deep","tier":"copper","battle_type":"bound","bonuses":{"pyrus":170,"aquos":80,"subterra":120,"haos":100,"darkus":70,"ventus":150},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000018","name":"Lucky Find","tier":"copper","battle_type":"bound","bonuses":{"pyrus":80,"aquos":60,"subterra":20,"haos":90,"darkus":70,"ventus":50},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000019","name":"Blinding Flash","tier":"copper","battle_type":"bound","bonuses":{"pyrus":110,"aquos":80,"subterra":60,"haos":90,"darkus":120,"ventus":140},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Haos"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Swaps G-Power if one combatant is Haos.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000020","name":"Elements","tier":"copper","battle_type":"bound","bonuses":{"pyrus":100,"aquos":120,"subterra":80,"haos":170,"darkus":150,"ventus":70},"effect":{"type":"DOUBLE_LOWEST_G","description":"Lowest original G-Power doubled"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000021","name":"Delayed Attack","tier":"copper","battle_type":"bound","bonuses":{"pyrus":100,"aquos":40,"subterra":50,"haos":110,"darkus":150,"ventus":50},"effect":{"type":"CONDITIONAL_RETURN","description":"Fewer captured gates → all used Ability Cards back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers all used Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000022","name":"Heavy Load","tier":"copper","battle_type":"bound","bonuses":{"pyrus":150,"aquos":50,"subterra":100,"haos":90,"darkus":130,"ventus":20},"effect":{"type":"CONDITIONAL_PREVENT","description":"More captured gates → can't play Ability Cards"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with more captured Gate Cards cannot play Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000023","name":"Clipped Wings","tier":"copper","battle_type":"bound","bonuses":{"pyrus":100,"aquos":170,"subterra":120,"haos":130,"darkus":100,"ventus":90},"effect":{"type":"CONDITIONAL_PREVENT","description":"Higher gate bonus holder can't play Ability Cards"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with higher Gate Card bonus cannot play Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000024","name":"Wind Tunnel","tier":"copper","battle_type":"bound","bonuses":{"pyrus":150,"aquos":50,"subterra":90,"haos":70,"darkus":50,"ventus":100},"effect":{"type":"CONDITIONAL_RETURN_BLUE","description":"Lower G → gets Blue Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with lower G-Power recovers their Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000025","name":"Flat Out","tier":"copper","battle_type":"bound","bonuses":{"pyrus":100,"aquos":150,"subterra":70,"haos":50,"darkus":80,"ventus":150},"effect":{"type":"CONDITIONAL_RETURN_RED","description":"Lower G → gets Red Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with lower G-Power recovers their Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000026","name":"Scuttle","tier":"copper","battle_type":"bound","bonuses":{"pyrus":60,"aquos":80,"subterra":50,"haos":20,"darkus":90,"ventus":70},"effect":{"type":"CONDITIONAL_PREVENT_HIGH","description":"Higher G → can't play Ability Cards"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with higher G-Power cannot play Ability Cards.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000027","name":"Electrified","tier":"copper","battle_type":"bound","bonuses":{"pyrus":250,"aquos":200,"subterra":300,"haos":250,"darkus":200,"ventus":150},"effect":{"type":"CONDITIONAL_RETURN_GREEN","description":"Fewer captured gates → Green Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Green Ability Card. Highest Copper bonuses.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000028","name":"Bait and Switch","tier":"copper","battle_type":"bound","bonuses":{"pyrus":150,"aquos":50,"subterra":90,"haos":70,"darkus":50,"ventus":100},"effect":{"type":"CONDITIONAL_RETURN_BLUE","description":"Fewer captured gates → Blue Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Blue Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000029","name":"Darkus Dealings","tier":"copper","battle_type":"bound","bonuses":{"pyrus":80,"aquos":50,"subterra":30,"haos":50,"darkus":140,"ventus":80},"effect":{"type":"CONDITIONAL_SWAP","description":"G-Power swapped if one combatant is Darkus"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Swaps G-Power if one combatant is Darkus.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000030","name":"Naga's Wrath","tier":"copper","battle_type":"bound","bonuses":{"pyrus":110,"aquos":100,"subterra":80,"haos":70,"darkus":50,"ventus":40},"effect":{"type":"POSITION_BONUS","magnitude":150,"description":"+150 G per Bakugan standing on another Gate Card"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. +150 G for each Bakugan standing on another Gate Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000031","name":"Heat Haze","tier":"copper","battle_type":"bound","bonuses":{"pyrus":70,"aquos":170,"subterra":120,"haos":130,"darkus":90,"ventus":200},"effect":{"type":"CONDITIONAL_RETURN_GREEN","description":"Lower G → gets Green Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with lower G-Power recovers their Green Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"},
-  {"id":"g0000003-0000-0000-0000-000000000032","name":"Load Up","tier":"copper","battle_type":"bound","bonuses":{"pyrus":100,"aquos":150,"subterra":70,"haos":50,"darkus":80,"ventus":150},"effect":{"type":"CONDITIONAL_RETURN_RED","description":"Fewer captured gates → Red Ability Card back"},"source":{"source":"GameFAQs guide FAQ 81516, Section G","source_url":"https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516","source_notes":"Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Red Ability Card.","asset_license_status":"reference_only_no_redistribution"},"created_at":"2026-09-25T00:00:00Z","updated_at":"2026-09-25T00:00:00Z"}
+  {
+    "id": "g0000001-0000-0000-0000-000000000001",
+    "name": "Serpenoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 180,
+      "aquos": 60,
+      "subterra": 90,
+      "haos": 140,
+      "darkus": 130,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Serpenoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Serpenoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000002",
+    "name": "Juggernoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 160,
+      "subterra": 70,
+      "haos": 100,
+      "darkus": 70,
+      "ventus": 40
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Juggernoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Juggernoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000003",
+    "name": "Robotallion",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 160,
+      "aquos": 110,
+      "subterra": 90,
+      "haos": 120,
+      "darkus": 90,
+      "ventus": 40
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Robotallion",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Robotallion stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000004",
+    "name": "Saurus",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 50,
+      "subterra": 180,
+      "haos": 100,
+      "darkus": 50,
+      "ventus": 80
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Saurus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Saurus stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000005",
+    "name": "Falconeer",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 80,
+      "ventus": 160
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Falconeer",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Falconeer stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000006",
+    "name": "Warius",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 160,
+      "aquos": 100,
+      "subterra": 70,
+      "haos": 70,
+      "darkus": 90,
+      "ventus": 70
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Warius",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Warius stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000007",
+    "name": "Manion",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 50,
+      "subterra": 150,
+      "haos": 70,
+      "darkus": 10,
+      "ventus": 130
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Manion",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Manion stands on it. Darkus bonus 10 (suspect typo for 100).",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000008",
+    "name": "Ravenoid",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 90,
+      "aquos": 60,
+      "subterra": 70,
+      "haos": 130,
+      "darkus": 30,
+      "ventus": 180
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Ravenoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Ravenoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000009",
+    "name": "Stinglash",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 90,
+      "subterra": 130,
+      "haos": 50,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Stinglash",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Stinglash stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000010",
+    "name": "Centipoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 40,
+      "subterra": 140,
+      "haos": 130,
+      "darkus": 160,
+      "ventus": 100
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Centipoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Centipoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000011",
+    "name": "Gargonoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 160,
+      "aquos": 110,
+      "subterra": 70,
+      "haos": 40,
+      "darkus": 70,
+      "ventus": 160
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Gargonoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Gargonoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000012",
+    "name": "Fear Ripper",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 90,
+      "aquos": 110,
+      "subterra": 90,
+      "haos": 170,
+      "darkus": 70,
+      "ventus": 80
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Fear Ripper",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Fear Ripper stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000013",
+    "name": "Siege",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 170,
+      "subterra": 60,
+      "haos": 100,
+      "darkus": 60,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Siege",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Siege stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000014",
+    "name": "Monarus",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 30,
+      "aquos": 50,
+      "subterra": 70,
+      "haos": 80,
+      "darkus": 20,
+      "ventus": 180
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Monarus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Monarus stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000015",
+    "name": "Griffon",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 120,
+      "subterra": 100,
+      "haos": 130,
+      "darkus": 50,
+      "ventus": 80
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Griffon",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Griffon stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000016",
+    "name": "Terrorclaw",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 40,
+      "aquos": 180,
+      "subterra": 90,
+      "haos": 40,
+      "darkus": 40,
+      "ventus": 80
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Terrorclaw",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Terrorclaw stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000017",
+    "name": "Laserman",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 100,
+      "subterra": 130,
+      "haos": 90,
+      "darkus": 180,
+      "ventus": 130
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Laserman",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Laserman stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000018",
+    "name": "Leonidas",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 100,
+      "subterra": 100,
+      "haos": 100,
+      "darkus": 100,
+      "ventus": 100
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Leonidas",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Leonidas stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000019",
+    "name": "Omega Leonidas",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 200,
+      "aquos": 200,
+      "subterra": 200,
+      "haos": 200,
+      "darkus": 200,
+      "ventus": 200
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Omega Leonidas",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Omega Leonidas stands on it. Highest overall bonuses.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000020",
+    "name": "Vladitor",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 20,
+      "subterra": 20,
+      "haos": 20,
+      "darkus": 150,
+      "ventus": 20
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Vladitor",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Vladitor stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000021",
+    "name": "Battle Ax Vladitor",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 10,
+      "aquos": 10,
+      "subterra": 10,
+      "haos": 10,
+      "darkus": 200,
+      "ventus": 10
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Battle Ax Vladitor",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Battle Ax Vladitor stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000022",
+    "name": "Dragonoid",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 50,
+      "subterra": 70,
+      "haos": 30,
+      "darkus": 50,
+      "ventus": 40
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Dragonoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Dragonoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000023",
+    "name": "Delta Dragonoid II",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 200,
+      "aquos": 100,
+      "subterra": 150,
+      "haos": 50,
+      "darkus": 100,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Delta Dragonoid II",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Delta Dragonoid II stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000024",
+    "name": "Fortress",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 180,
+      "aquos": 110,
+      "subterra": 170,
+      "haos": 130,
+      "darkus": 100,
+      "ventus": 140
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Fortress",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Fortress stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000025",
+    "name": "Preyas",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 10,
+      "aquos": 150,
+      "subterra": 150,
+      "haos": 20,
+      "darkus": 150,
+      "ventus": 10
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Preyas",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Preyas stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000026",
+    "name": "Preyas's",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 200,
+      "subterra": 180,
+      "haos": 50,
+      "darkus": 180,
+      "ventus": 10
+    },
+    "effect": "Preyas II recibe la bonificación dos veces",
+    "depicted_bakugan": "Preyas II",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Preyas II gets bonus twice. Card name as printed in guide.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000027",
+    "name": "Sirenoid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 180,
+      "subterra": 110,
+      "haos": 120,
+      "darkus": 70,
+      "ventus": 130
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Sirenoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Sirenoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000028",
+    "name": "Gorem",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 10,
+      "subterra": 150,
+      "haos": 20,
+      "darkus": 30,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Gorem",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Gorem stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000029",
+    "name": "Hammer Gorem",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 90,
+      "subterra": 200,
+      "haos": 120,
+      "darkus": 70,
+      "ventus": 130
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Hammer Gorem",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Hammer Gorem stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000030",
+    "name": "Cycloid",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 120,
+      "subterra": 180,
+      "haos": 120,
+      "darkus": 100,
+      "ventus": 60
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Cycloid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Cycloid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000031",
+    "name": "Tigrerra",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 50,
+      "subterra": 90,
+      "haos": 150,
+      "darkus": 20,
+      "ventus": 10
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Tigrerra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Tigrerra stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000032",
+    "name": "Blade Tigrerra",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 40,
+      "subterra": 90,
+      "haos": 200,
+      "darkus": 150,
+      "ventus": 60
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Blade Tigrerra",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Blade Tigrerra stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000033",
+    "name": "Tentaclear",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 120,
+      "aquos": 100,
+      "subterra": 150,
+      "haos": 180,
+      "darkus": 100,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Tentaclear",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Tentaclear stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000034",
+    "name": "Hydranoid",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 40,
+      "subterra": 10,
+      "haos": 10,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Hydranoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Hydranoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000035",
+    "name": "Dual Hydranoid",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 90,
+      "subterra": 130,
+      "haos": 130,
+      "darkus": 200,
+      "ventus": 60
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Dual Hydranoid",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Dual Hydranoid stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000036",
+    "name": "Reaper",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 50,
+      "subterra": 150,
+      "haos": 70,
+      "darkus": 200,
+      "ventus": 140
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Reaper",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Reaper stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000037",
+    "name": "Skyress",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 50,
+      "subterra": 50,
+      "haos": 50,
+      "darkus": 70,
+      "ventus": 150
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Skyress",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Skyress stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000038",
+    "name": "Storm Skyress",
+    "tier": "gold",
+    "battle_type": "spin",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 50,
+      "subterra": 60,
+      "haos": 90,
+      "darkus": 40,
+      "ventus": 200
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Storm Skyress",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Spin Battle minigame. Bonus twice if Storm Skyress stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000039",
+    "name": "Harpus",
+    "tier": "gold",
+    "battle_type": "scratch",
+    "bonuses": {
+      "pyrus": 120,
+      "aquos": 140,
+      "subterra": 100,
+      "haos": 110,
+      "darkus": 90,
+      "ventus": 180
+    },
+    "effect": "Si el Bakugan representado hace Stand, la bonificación se aplica dos veces",
+    "depicted_bakugan": "Harpus",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Gold card. Scratch Battle minigame. Bonus twice if Harpus stands on it.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000001",
+    "name": "Fire Pit",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 120,
+      "subterra": 80,
+      "haos": 20,
+      "darkus": 20,
+      "ventus": 60
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000002",
+    "name": "Muddy Ground",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 60,
+      "subterra": 140,
+      "haos": 120,
+      "darkus": 80,
+      "ventus": 20
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000003",
+    "name": "Light-Burst",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 50,
+      "subterra": 90,
+      "haos": 200,
+      "darkus": 170,
+      "ventus": 110
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000004",
+    "name": "Tsunami",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 170,
+      "subterra": 110,
+      "haos": 80,
+      "darkus": 110,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000005",
+    "name": "Dusk",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 20,
+      "subterra": 20,
+      "haos": 60,
+      "darkus": 140,
+      "ventus": 120
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000006",
+    "name": "High Energy",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 120,
+      "subterra": 120,
+      "haos": 110,
+      "darkus": 120,
+      "ventus": 120
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects. Balanced bonuses.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000007",
+    "name": "Whirlpool",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 90,
+      "aquos": 200,
+      "subterra": 170,
+      "haos": 110,
+      "darkus": 50,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. One of two Whirlpool entries (different battle types).",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000008",
+    "name": "Aquos Vortex",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 150,
+      "subterra": 120,
+      "haos": 50,
+      "darkus": 20,
+      "ventus": 20
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000009",
+    "name": "Heavy Surf",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 140,
+      "subterra": 120,
+      "haos": 80,
+      "darkus": 20,
+      "ventus": 40
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000010",
+    "name": "Elevated Field",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 90,
+      "aquos": 110,
+      "subterra": 100,
+      "haos": 90,
+      "darkus": 110,
+      "ventus": 100
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000011",
+    "name": "Earthen Mound",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 90,
+      "subterra": 200,
+      "haos": 170,
+      "darkus": 110,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000012",
+    "name": "Sand Storm",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 80,
+      "subterra": 110,
+      "haos": 50,
+      "darkus": 20,
+      "ventus": 170
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000013",
+    "name": "The Cliffs",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 120,
+      "aquos": 100,
+      "subterra": 150,
+      "haos": 50,
+      "darkus": 100,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000014",
+    "name": "Black Hole",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 120,
+      "aquos": 100,
+      "subterra": 150,
+      "haos": 50,
+      "darkus": 100,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects. Same bonuses as The Cliffs.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000015",
+    "name": "Tornado Alley",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 170,
+      "aquos": 110,
+      "subterra": 50,
+      "haos": 50,
+      "darkus": 90,
+      "ventus": 180
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000016",
+    "name": "Force Wind",
+    "tier": "silver",
+    "battle_type": "timing",
+    "bonuses": {
+      "pyrus": 120,
+      "aquos": 80,
+      "subterra": 20,
+      "haos": 40,
+      "darkus": 60,
+      "ventus": 140
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Timing Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000017",
+    "name": "The Spires",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 40,
+      "subterra": 40,
+      "haos": 110,
+      "darkus": 70,
+      "ventus": 150
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000018",
+    "name": "Wind Farm",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 20,
+      "subterra": 50,
+      "haos": 60,
+      "darkus": 20,
+      "ventus": 70
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000019",
+    "name": "Blue Sky",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 40,
+      "subterra": 40,
+      "haos": 110,
+      "darkus": 70,
+      "ventus": 150
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects. Same bonuses as The Spires.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000020",
+    "name": "Vacuum",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 20,
+      "subterra": 50,
+      "haos": 60,
+      "darkus": 20,
+      "ventus": 70
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects. Same bonuses as Wind Farm.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000021",
+    "name": "Volcanic Lake",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 200,
+      "aquos": 170,
+      "subterra": 110,
+      "haos": 50,
+      "darkus": 50,
+      "ventus": 90
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000022",
+    "name": "Powder Keg",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 120,
+      "subterra": 80,
+      "haos": 20,
+      "darkus": 40,
+      "ventus": 60
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000023",
+    "name": "Earthen Wave",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 120,
+      "subterra": 80,
+      "haos": 20,
+      "darkus": 40,
+      "ventus": 60
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects. Same bonuses as Powder Keg.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000024",
+    "name": "Low Energy",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 50,
+      "aquos": 60,
+      "subterra": 20,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 20
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000025",
+    "name": "Sunrise",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 20,
+      "subterra": 60,
+      "haos": 140,
+      "darkus": 120,
+      "ventus": 80
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000026",
+    "name": "Spitting Fire",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 150,
+      "subterra": 120,
+      "haos": 50,
+      "darkus": 20,
+      "ventus": 20
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000027",
+    "name": "Sun Spot",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 140,
+      "subterra": 120,
+      "haos": 80,
+      "darkus": 20,
+      "ventus": 40
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000028",
+    "name": "Haunted Night",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 50,
+      "subterra": 50,
+      "haos": 90,
+      "darkus": 200,
+      "ventus": 170
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000029",
+    "name": "Pit Dweller",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 50,
+      "subterra": 120,
+      "haos": 100,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000030",
+    "name": "Nightmare",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 70,
+      "subterra": 20,
+      "haos": 120,
+      "darkus": 170,
+      "ventus": 120
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000031",
+    "name": "Whirlpool",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 50,
+      "subterra": 120,
+      "haos": 100,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. One of two Whirlpool entries (different battle types). Same bonuses as Pit Dweller.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000002-0000-0000-0000-000000000032",
+    "name": "Fields Of Lava",
+    "tier": "silver",
+    "battle_type": "pop",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 70,
+      "subterra": 20,
+      "haos": 120,
+      "darkus": 170,
+      "ventus": 120
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Silver card. Pop Battle minigame. No special effects. Same bonuses as Nightmare.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000001",
+    "name": "Lockdown",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 40
+    },
+    "effect": "Todas las bonificaciones de G-Power de Ability Cards se duplican",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles Ability Card G-Power boosts.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000002",
+    "name": "G-Power Exchange",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 30,
+      "subterra": 50,
+      "haos": 20,
+      "darkus": 20,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "SWAP_G_POWER",
+      "description": "Each Bakugan's original G-Power swapped"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps original G-Power between combatants.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000003",
+    "name": "Mega Warrior",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 40,
+      "subterra": 50,
+      "haos": 110,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "effect": "+100 G por cada Gate Card que haya ganado cada lado",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. +100 G per captured Gate Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000004",
+    "name": "Stand Off",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 140,
+      "aquos": 80,
+      "subterra": 50,
+      "haos": 80,
+      "darkus": 60,
+      "ventus": 20
+    },
+    "effect": "Ningún lado puede usar Ability Cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Prevents both sides from playing Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000005",
+    "name": "Stand Your Ground",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 20,
+      "aquos": 80,
+      "subterra": 140,
+      "haos": 50,
+      "darkus": 60,
+      "ventus": 110
+    },
+    "effect": "Ambos jugadores recuperan todas las Ability Cards usadas",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Both players recover used Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000006",
+    "name": "Trick Jump",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 80,
+      "subterra": 60,
+      "haos": 90,
+      "darkus": 120,
+      "ventus": 140
+    },
+    "effect": "+100 G por cada Ability Card que haya usado cada lado",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. +100 G per Ability Card used.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000007",
+    "name": "Overtake",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 90,
+      "subterra": 50,
+      "haos": 50,
+      "darkus": 60,
+      "ventus": 80
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000008",
+    "name": "Reflexes",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 170,
+      "subterra": 110,
+      "haos": 140,
+      "darkus": 170,
+      "ventus": 140
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000009",
+    "name": "Power Siphon",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Aquos"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Aquos.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000010",
+    "name": "Sand Trap",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 60,
+      "subterra": 90,
+      "haos": 120,
+      "darkus": 140,
+      "ventus": 90
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Subterra"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Subterra.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000011",
+    "name": "Amped",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 30,
+      "aquos": 10,
+      "subterra": 30,
+      "haos": 10,
+      "darkus": 30,
+      "ventus": 10
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power. Very low bonuses.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000012",
+    "name": "Down For The Count",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 80,
+      "subterra": 170,
+      "haos": 130,
+      "darkus": 110,
+      "ventus": 100
+    },
+    "effect": "El que tenga la menor bonificación de Gate Card no puede usar Ability Cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Player with lower Gate Card bonus cannot play Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000013",
+    "name": "Take Cover",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 60,
+      "subterra": 90,
+      "haos": 120,
+      "darkus": 140,
+      "ventus": 110
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Ventus"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Ventus.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000014",
+    "name": "G-Power Swap",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 90,
+      "subterra": 130,
+      "haos": 130,
+      "darkus": 100,
+      "ventus": 60
+    },
+    "effect": {
+      "type": "SWAP_G_POWER",
+      "description": "Each Bakugan's original G-Power swapped"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps original G-Power between combatants.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000015",
+    "name": "Molten Rock",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 90,
+      "subterra": 120,
+      "haos": 130,
+      "darkus": 100,
+      "ventus": 60
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000016",
+    "name": "Flaming Wind",
+    "tier": "copper",
+    "battle_type": "trace",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 50,
+      "subterra": 20,
+      "haos": 20,
+      "darkus": 50,
+      "ventus": 80
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Pyrus"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Trace Battle minigame. Swaps G-Power if one combatant is Pyrus.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000017",
+    "name": "Waist Deep",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 170,
+      "aquos": 80,
+      "subterra": 120,
+      "haos": 100,
+      "darkus": 70,
+      "ventus": 150
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000018",
+    "name": "Lucky Find",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 60,
+      "subterra": 20,
+      "haos": 90,
+      "darkus": 70,
+      "ventus": 50
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000019",
+    "name": "Blinding Flash",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 80,
+      "subterra": 60,
+      "haos": 90,
+      "darkus": 120,
+      "ventus": 140
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Haos"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Swaps G-Power if one combatant is Haos.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000020",
+    "name": "Elements",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 120,
+      "subterra": 80,
+      "haos": 170,
+      "darkus": 150,
+      "ventus": 70
+    },
+    "effect": "El G-Power original más bajo se duplica",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Doubles the lower combatant's original G-Power.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000021",
+    "name": "Delayed Attack",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 40,
+      "subterra": 50,
+      "haos": 110,
+      "darkus": 150,
+      "ventus": 50
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN",
+      "description": "Fewer captured gates → all used Ability Cards back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers all used Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000022",
+    "name": "Heavy Load",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 50,
+      "subterra": 100,
+      "haos": 90,
+      "darkus": 130,
+      "ventus": 20
+    },
+    "effect": {
+      "type": "CONDITIONAL_PREVENT",
+      "description": "More captured gates → can't play Ability Cards"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with more captured Gate Cards cannot play Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000023",
+    "name": "Clipped Wings",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 170,
+      "subterra": 120,
+      "haos": 130,
+      "darkus": 100,
+      "ventus": 90
+    },
+    "effect": "El que tenga la mayor bonificación de Gate Card no puede usar Ability Cards",
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with higher Gate Card bonus cannot play Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000024",
+    "name": "Wind Tunnel",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 50,
+      "subterra": 90,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 100
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_BLUE",
+      "description": "Lower G → gets Blue Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with lower G-Power recovers their Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000025",
+    "name": "Flat Out",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 150,
+      "subterra": 70,
+      "haos": 50,
+      "darkus": 80,
+      "ventus": 150
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_RED",
+      "description": "Lower G → gets Red Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with lower G-Power recovers their Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000026",
+    "name": "Scuttle",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 60,
+      "aquos": 80,
+      "subterra": 50,
+      "haos": 20,
+      "darkus": 90,
+      "ventus": 70
+    },
+    "effect": {
+      "type": "CONDITIONAL_PREVENT_HIGH",
+      "description": "Higher G → can't play Ability Cards"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with higher G-Power cannot play Ability Cards.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000027",
+    "name": "Electrified",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 250,
+      "aquos": 200,
+      "subterra": 300,
+      "haos": 250,
+      "darkus": 200,
+      "ventus": 150
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_GREEN",
+      "description": "Fewer captured gates → Green Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Green Ability Card. Highest Copper bonuses.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000028",
+    "name": "Bait and Switch",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 150,
+      "aquos": 50,
+      "subterra": 90,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 100
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_BLUE",
+      "description": "Fewer captured gates → Blue Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Blue Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000029",
+    "name": "Darkus Dealings",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 80,
+      "aquos": 50,
+      "subterra": 30,
+      "haos": 50,
+      "darkus": 140,
+      "ventus": 80
+    },
+    "effect": {
+      "type": "CONDITIONAL_SWAP",
+      "description": "G-Power swapped if one combatant is Darkus"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Swaps G-Power if one combatant is Darkus.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000030",
+    "name": "Naga's Wrath",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 110,
+      "aquos": 100,
+      "subterra": 80,
+      "haos": 70,
+      "darkus": 50,
+      "ventus": 40
+    },
+    "effect": {
+      "type": "POSITION_BONUS",
+      "magnitude": 150,
+      "description": "+150 G per Bakugan standing on another Gate Card"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. +150 G for each Bakugan standing on another Gate Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000031",
+    "name": "Heat Haze",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 70,
+      "aquos": 170,
+      "subterra": 120,
+      "haos": 130,
+      "darkus": 90,
+      "ventus": 200
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_GREEN",
+      "description": "Lower G → gets Green Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with lower G-Power recovers their Green Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  },
+  {
+    "id": "g0000003-0000-0000-0000-000000000032",
+    "name": "Load Up",
+    "tier": "copper",
+    "battle_type": "bound",
+    "bonuses": {
+      "pyrus": 100,
+      "aquos": 150,
+      "subterra": 70,
+      "haos": 50,
+      "darkus": 80,
+      "ventus": 150
+    },
+    "effect": {
+      "type": "CONDITIONAL_RETURN_RED",
+      "description": "Fewer captured gates → Red Ability Card back"
+    },
+    "source": {
+      "source": "GameFAQs guide FAQ 81516, Section G",
+      "source_url": "https://gamefaqs.gamespot.com/ds/959716-bakugan-battle-brawlers/faqs/81516",
+      "source_notes": "Copper card. Bound Battle minigame. Player with fewer captured Gate Cards recovers Red Ability Card.",
+      "asset_license_status": "reference_only_no_redistribution"
+    },
+    "created_at": "2026-09-25T00:00:00Z",
+    "updated_at": "2026-09-25T00:00:00Z"
+  }
 ]
