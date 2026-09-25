@@ -6,6 +6,9 @@ import gateCardsData from '@/data/raw/gate-cards.json';
 import abilityCardsData from '@/data/raw/ability-cards.json';
 import BakuganImage from '@/ui/components/BakuganImage';
 import ArenaBackground from '@/ui/components/ArenaBackground';
+import dynamic from "next/dynamic";
+
+const BakuganViewer = dynamic(() => import("@/ui/components/BakuganViewer"), { ssr: false });
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                               */
@@ -243,10 +246,10 @@ function BakuganCard({ bakugan, owned }: { bakugan: any; owned: boolean }) {
   return (
     <div className={`rounded-lg p-3 border ${owned ? 'bg-gray-800/80 backdrop-blur border-gray-600' : 'bg-gray-900/80 backdrop-blur border-gray-800 opacity-50'}`}>
       <div className="flex items-center gap-3 mb-1">
-        <BakuganImage
+        <BakuganViewer
           name={bakugan.name}
           attribute={bakugan.attributes[0]}
-          size={48}
+          size={56}
           showName={false}
         />
         <div>

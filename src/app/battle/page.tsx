@@ -21,6 +21,8 @@ import type { Attribute, Bakugan, GateCard, AbilityCard } from '@/data/schemas';
 import { BattleEngine } from '@/battle-engine/state-machine';
 import type { BattleContext } from '@/battle-engine/types';
 
+const BakuganViewer = dynamic(() => import("@/ui/components/BakuganViewer"), { ssr: false });
+
 // Dynamic import — Phaser requires `window` so it must not be SSR'd.
 const PhaserGame = dynamic(() => import('@/game/PhaserGame'), { ssr: false });
 
@@ -225,10 +227,10 @@ export default function BattlePage() {
                       key={b.id}
                       className="flex flex-col items-center gap-1 rounded-lg border border-gray-700 bg-gray-900/80 backdrop-blur p-3"
                     >
-                      <BakuganImage
+                      <BakuganViewer
                         name={b.name}
                         attribute={b.attributes[0]}
-                        size={56}
+                        size={64}
                         showName={false}
                       />
                       <span className="font-mono text-xs font-bold">{b.name}</span>

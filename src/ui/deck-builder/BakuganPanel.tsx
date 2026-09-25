@@ -8,6 +8,9 @@ import { staggerContainer, staggerItem } from "@/lib/animations";
 import type { Bakugan, Attribute } from "@/data/schemas";
 import bakuganData from "@/data/raw/bakugan.json";
 import BakuganCard from "@/ui/components/BakuganCard";
+import dynamic from "next/dynamic";
+
+const BakuganViewer = dynamic(() => import("@/ui/components/BakuganViewer"), { ssr: false });
 
 // ─── Attribute Colors ─────────────────────────────────────────────────
 
@@ -152,15 +155,13 @@ export default function BakuganPanel() {
                 </motion.span>
               )}
 
-              {/* Bakugan Card */}
+              {/* Bakugan 3D Viewer */}
               <div className="flex justify-center mb-1.5">
-                <BakuganCard
+                <BakuganViewer
                   name={b.name}
                   attribute={primaryAttr}
-                  baseGPower={b.base_g_power}
-                  maxGPower={b.max_g_power}
-                  stats={b.stats}
-                  size="sm"
+                  size={100}
+                  showName={false}
                 />
               </div>
 
