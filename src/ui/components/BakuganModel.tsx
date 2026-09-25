@@ -2,11 +2,41 @@
 
 /**
  * BakuganModel.tsx — Loads and renders 3D Bakugan models using Three.js.
- * Falls back to SVG placeholder if model fails to load.
+ * Uses a shared renderer to avoid WebGL context limits.
  */
 
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+
+/* ------------------------------------------------------------------ */
+/*  Shared renderer (singleton)                                         */
+/* ------------------------------------------------------------------ */
+
+let sharedRenderer: THREE.WebGLRenderer | null = null;
+let rendererRefCount = 0;
+
+function getSharedRenderer(): THREE.WebGLRenderer {
+  if (!sharedRenderer) {
+    sharedRenderer = new THREE.WebGLRenderer({
+      alpha: true,
+      antialias: true,
+      powerPreference: "low-power",
+    });
+    sharedRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    sharedRenderer.setClearColor(0x000000, 0);
+  }
+  rendererRefCount++;
+  return sharedRenderer;
+}
+
+function releaseSharedRenderer() {
+  rendererRefCount--;
+  if (rendererRefCount <= 0 && sharedRenderer) {
+    sharedRenderer.dispose();
+    sharedRenderer = null;
+    rendererRefCount = 0;
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /*  Attribute colors for fallback                                       */
@@ -54,24 +84,22 @@ export default function BakuganModel({
     if (!containerRef.current || !modelPath || error) return;
 
     const container = containerRef.current;
-    let renderer: THREE.WebGLRenderer | null = null;
     let animationId: number | null = null;
+    let renderer: THREE.WebGLRenderer | null = null;
+    let scene: THREE.Scene | null = null;
+    let camera: THREE.PerspectiveCamera | null = null;
+    let obj: THREE.Group | null = null;
 
     const init = async () => {
       try {
         // Scene setup
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
         camera.position.z = 3;
 
-        // Renderer
-        renderer = new THREE.WebGLRenderer({
-          alpha: true,
-          antialias: true,
-        });
+        // Use shared renderer
+        renderer = getSharedRenderer();
         renderer.setSize(size, size);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setClearColor(0x000000, 0);
         container.appendChild(renderer.domElement);
 
         // Lighting
@@ -88,11 +116,9 @@ export default function BakuganModel({
 
         // Load OBJ model
         const { OBJLoader } = await import("three/examples/jsm/loaders/OBJLoader.js");
-
         const objLoader = new OBJLoader();
-        const objPath = modelPath;
 
-        const obj = await objLoader.loadAsync(objPath);
+        obj = await objLoader.loadAsync(modelPath);
 
         // Center and scale model
         const box = new THREE.Box3().setFromObject(obj);
@@ -105,9 +131,9 @@ export default function BakuganModel({
 
         scene.add(obj);
 
-        // Load textures if available
+        // Try to load textures
         const textureLoader = new THREE.TextureLoader();
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= 4; i++) {
           const texPath = modelPath.replace("Model.obj", `mat${i}.png`);
           try {
             const texture = await textureLoader.loadAsync(texPath);
@@ -129,10 +155,12 @@ export default function BakuganModel({
         // Animation loop
         const animate = () => {
           animationId = requestAnimationFrame(animate);
-          if (autoRotate) {
+          if (autoRotate && obj) {
             obj.rotation.y += 0.01;
           }
-          renderer!.render(scene, camera);
+          if (renderer && scene && camera) {
+            renderer.render(scene, camera);
+          }
         };
         animate();
 
@@ -148,10 +176,10 @@ export default function BakuganModel({
     return () => {
       if (animationId !== null) cancelAnimationFrame(animationId);
       if (renderer) {
-        renderer.dispose();
         if (container.contains(renderer.domElement)) {
           container.removeChild(renderer.domElement);
         }
+        releaseSharedRenderer();
       }
     };
   }, [modelPath, size, autoRotate, error]);

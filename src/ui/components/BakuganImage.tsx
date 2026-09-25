@@ -52,7 +52,7 @@ export default function BakuganImage({
   size = 80,
   className = "",
   showName = true,
-  use3D = false,
+  use3D = true,
 }: BakuganImageProps) {
   const modelPath = use3D ? getModelPath(name) : undefined;
   const style = ATTRIBUTE_STYLES[attribute] || ATTRIBUTE_STYLES.pyrus;
