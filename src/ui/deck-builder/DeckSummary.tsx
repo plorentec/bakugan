@@ -214,7 +214,7 @@ export default function DeckSummary() {
           Resumen del Mazo
         </h3>
         <div className="flex justify-between text-xs">
-          <span className="text-gray-400">G-Power Base Total</span>
+          <span className="text-gray-400">G-Power Total Base</span>
           <span className="text-orange-300 font-mono font-bold">{totalGPower}</span>
         </div>
       </div>
