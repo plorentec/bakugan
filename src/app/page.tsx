@@ -161,6 +161,17 @@ export default function Home() {
           >
             📚 Bakudex
           </motion.a>
+
+          <motion.a
+            variants={staggerItem}
+            whileHover={{ scale: 1.03, boxShadow: "0 0 30px rgba(168,85,247,0.4)" }}
+            whileTap={{ scale: 0.97 }}
+            href="/models"
+            onClick={() => playSelectSound()}
+            className="block w-full py-4 px-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-center font-bold text-lg uppercase tracking-wider transition-all shadow-lg shadow-purple-500/20"
+          >
+            🎮 Modelos 3D
+          </motion.a>
         </motion.div>
 
         {/* Footer */}
