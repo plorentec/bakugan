@@ -5,4 +5,5 @@ data/*.sqlite
 data/*.sqlite3
 .env
 *.log
+*.tsbuildinfo
 .DS_Store

@@ -33,6 +33,11 @@ All notable changes to the Bakugan Battle Brawlers web game.
   - Refreshed `README.md`: Documentation index, verified Content counts, Getting Started,
     Project Structure, Tech Stack, Sources & License
 
+### Changed
+- **Repo hygiene**
+  - `tsconfig.tsbuildinfo` untracked (`git rm --cached`); `*.tsbuildinfo` added to `.gitignore`,
+    so the TypeScript build artifact no longer shows up in every diff
+
 ## [0.9.0] - 2026-09-24
 
 ### Added
