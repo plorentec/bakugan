@@ -5,42 +5,195 @@
       "name": "From the Start",
       "unlock_condition": "default",
       "bakugan": [
-        { "bakugan_id": "serpenoid", "price": 1100, "start_g_power": 190, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "juggernoid", "price": 1200, "start_g_power": 200, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "robotallion", "price": 1200, "start_g_power": 200, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "saurus", "price": 1300, "start_g_power": 210, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "falconeer", "price": 1700, "start_g_power": 210, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "manion", "price": 0, "start_g_power": 300, "attributes": ["subterra", "haos", "ventus"] },
-        { "bakugan_id": "ravenoid", "price": 0, "start_g_power": 300, "attributes": ["pyrus", "haos", "ventus"] }
+        {
+          "bakugan_id": "serpenoid",
+          "price": 0,
+          "start_g_power": 190,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "juggernoid",
+          "price": 0,
+          "start_g_power": 200,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "robotallion",
+          "price": 0,
+          "start_g_power": 200,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "saurus",
+          "price": 0,
+          "start_g_power": 210,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "falconeer",
+          "price": 0,
+          "start_g_power": 210,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "manion",
+          "price": 0,
+          "start_g_power": 300,
+          "attributes": [
+            "subterra",
+            "haos",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "ravenoid",
+          "price": 0,
+          "start_g_power": 300,
+          "attributes": [
+            "pyrus",
+            "haos",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "serpenoid", "price": 250 },
-        { "gate_card_id": "robotallion", "price": 250 },
-        { "gate_card_id": "saurus", "price": 250 },
-        { "gate_card_id": "falconeer", "price": 250 },
-        { "gate_card_id": "warius", "price": 900 },
-        { "gate_card_id": "muddy-ground", "price": 200 },
-        { "gate_card_id": "light-burst", "price": 200 },
-        { "gate_card_id": "tsunami", "price": 200 },
-        { "gate_card_id": "dusk", "price": 200 },
-        { "gate_card_id": "high-energy", "price": 200 },
-        { "gate_card_id": "lockdown", "price": 300 },
-        { "gate_card_id": "g-power-exchange", "price": 300 },
-        { "gate_card_id": "mega-warrior", "price": 300 },
-        { "gate_card_id": "stand-your-ground", "price": 300 },
-        { "gate_card_id": "trick-jump", "price": 300 }
+        {
+          "gate_card_id": "serpenoid",
+          "price": 0
+        },
+        {
+          "gate_card_id": "robotallion",
+          "price": 0
+        },
+        {
+          "gate_card_id": "saurus",
+          "price": 0
+        },
+        {
+          "gate_card_id": "falconeer",
+          "price": 0
+        },
+        {
+          "gate_card_id": "warius",
+          "price": 0
+        },
+        {
+          "gate_card_id": "muddy-ground",
+          "price": 0
+        },
+        {
+          "gate_card_id": "light-burst",
+          "price": 0
+        },
+        {
+          "gate_card_id": "tsunami",
+          "price": 0
+        },
+        {
+          "gate_card_id": "dusk",
+          "price": 0
+        },
+        {
+          "gate_card_id": "high-energy",
+          "price": 0
+        },
+        {
+          "gate_card_id": "lockdown",
+          "price": 0
+        },
+        {
+          "gate_card_id": "g-power-exchange",
+          "price": 0
+        },
+        {
+          "gate_card_id": "mega-warrior",
+          "price": 0
+        },
+        {
+          "gate_card_id": "stand-your-ground",
+          "price": 0
+        },
+        {
+          "gate_card_id": "trick-jump",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "twin-swap", "price": 750 },
-        { "ability_card_id": "twin-double-input", "price": 1000 },
-        { "ability_card_id": "twin-time-breaker", "price": 750 },
-        { "ability_card_id": "scratch-battle-redo", "price": 500 },
-        { "ability_card_id": "stolen-gold", "price": 500 },
-        { "ability_card_id": "swiped-silver", "price": 500 },
-        { "ability_card_id": "copped-copper", "price": 500 },
-        { "ability_card_id": "bright-light", "price": 300 },
-        { "ability_card_id": "g-power-boost", "price": 300 },
-        { "ability_card_id": "g-power-bump", "price": 300 }
+        {
+          "ability_card_id": "twin-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "twin-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "twin-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "scratch-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "stolen-gold",
+          "price": 0
+        },
+        {
+          "ability_card_id": "swiped-silver",
+          "price": 0
+        },
+        {
+          "ability_card_id": "copped-copper",
+          "price": 0
+        },
+        {
+          "ability_card_id": "bright-light",
+          "price": 0
+        },
+        {
+          "ability_card_id": "g-power-boost",
+          "price": 0
+        },
+        {
+          "ability_card_id": "g-power-bump",
+          "price": 0
+        }
       ]
     },
     {
@@ -48,34 +201,132 @@
       "name": "After Neo Challengers Tournament",
       "unlock_condition": "neo_challengers_tournament",
       "bakugan": [
-        { "bakugan_id": "stinglash", "price": 3200, "start_g_power": 230, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "centipoid", "price": 3300, "start_g_power": 240, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "gargonoid", "price": 4000, "start_g_power": 250, "attributes": ["pyrus", "aquos", "subterra", "darkus", "ventus"] }
+        {
+          "bakugan_id": "stinglash",
+          "price": 0,
+          "start_g_power": 230,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "centipoid",
+          "price": 0,
+          "start_g_power": 240,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "gargonoid",
+          "price": 0,
+          "start_g_power": 250,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "darkus",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "stinglash", "price": 350 },
-        { "gate_card_id": "centipoid", "price": 350 },
-        { "gate_card_id": "gargonoid", "price": 350 },
-        { "gate_card_id": "whirlpool-a", "price": 280 },
-        { "gate_card_id": "aquos-vortex", "price": 280 },
-        { "gate_card_id": "heavy-surf", "price": 280 },
-        { "gate_card_id": "elevated-field", "price": 280 },
-        { "gate_card_id": "overtake", "price": 420 },
-        { "gate_card_id": "reflexes", "price": 420 },
-        { "gate_card_id": "power-siphon", "price": 420 }
+        {
+          "gate_card_id": "stinglash",
+          "price": 0
+        },
+        {
+          "gate_card_id": "centipoid",
+          "price": 0
+        },
+        {
+          "gate_card_id": "gargonoid",
+          "price": 0
+        },
+        {
+          "gate_card_id": "whirlpool-a",
+          "price": 0
+        },
+        {
+          "gate_card_id": "aquos-vortex",
+          "price": 0
+        },
+        {
+          "gate_card_id": "heavy-surf",
+          "price": 0
+        },
+        {
+          "gate_card_id": "elevated-field",
+          "price": 0
+        },
+        {
+          "gate_card_id": "overtake",
+          "price": 0
+        },
+        {
+          "gate_card_id": "reflexes",
+          "price": 0
+        },
+        {
+          "gate_card_id": "power-siphon",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "aquos-swap", "price": 1000 },
-        { "ability_card_id": "aquos-time-breaker", "price": 1000 },
-        { "ability_card_id": "aquos-double-input", "price": 1500 },
-        { "ability_card_id": "spin-battle-redo", "price": 750 },
-        { "ability_card_id": "no-trading", "price": 750 },
-        { "ability_card_id": "out-of-time", "price": 750 },
-        { "ability_card_id": "double-input-cancel", "price": 750 },
-        { "ability_card_id": "no-backsies", "price": 500 },
-        { "ability_card_id": "darkus-aquos-combo", "price": 450 },
-        { "ability_card_id": "subterra-aquos-combo", "price": 450 },
-        { "ability_card_id": "pyrus-aquos-haos-combo", "price": 450 }
+        {
+          "ability_card_id": "aquos-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "aquos-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "aquos-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "spin-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "no-trading",
+          "price": 0
+        },
+        {
+          "ability_card_id": "out-of-time",
+          "price": 0
+        },
+        {
+          "ability_card_id": "double-input-cancel",
+          "price": 0
+        },
+        {
+          "ability_card_id": "no-backsies",
+          "price": 0
+        },
+        {
+          "ability_card_id": "darkus-aquos-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "subterra-aquos-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pyrus-aquos-haos-combo",
+          "price": 0
+        }
       ]
     },
     {
@@ -83,30 +334,108 @@
       "name": "After Supreme Tag Team Tournament",
       "unlock_condition": "supreme_tag_team_tournament",
       "bakugan": [
-        { "bakugan_id": "fear-ripper", "price": 7300, "start_g_power": 270, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "siege", "price": 8100, "start_g_power": 270, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] }
+        {
+          "bakugan_id": "fear-ripper",
+          "price": 0,
+          "start_g_power": 270,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "siege",
+          "price": 0,
+          "start_g_power": 270,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "manion", "price": 450 },
-        { "gate_card_id": "fear-ripper", "price": 450 },
-        { "gate_card_id": "siege", "price": 450 },
-        { "gate_card_id": "earthen-mound", "price": 400 },
-        { "gate_card_id": "sand-storm", "price": 400 },
-        { "gate_card_id": "the-cliffs", "price": 400 },
-        { "gate_card_id": "black-hole", "price": 400 },
-        { "gate_card_id": "sand-trap", "price": 660 },
-        { "gate_card_id": "amped", "price": 660 },
-        { "gate_card_id": "down-for-the-count", "price": 660 }
+        {
+          "gate_card_id": "manion",
+          "price": 0
+        },
+        {
+          "gate_card_id": "fear-ripper",
+          "price": 0
+        },
+        {
+          "gate_card_id": "siege",
+          "price": 0
+        },
+        {
+          "gate_card_id": "earthen-mound",
+          "price": 0
+        },
+        {
+          "gate_card_id": "sand-storm",
+          "price": 0
+        },
+        {
+          "gate_card_id": "the-cliffs",
+          "price": 0
+        },
+        {
+          "gate_card_id": "black-hole",
+          "price": 0
+        },
+        {
+          "gate_card_id": "sand-trap",
+          "price": 0
+        },
+        {
+          "gate_card_id": "amped",
+          "price": 0
+        },
+        {
+          "gate_card_id": "down-for-the-count",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "subterra-swap", "price": 1600 },
-        { "ability_card_id": "subterra-time-breaker", "price": 1600 },
-        { "ability_card_id": "subterra-double-input", "price": 2200 },
-        { "ability_card_id": "timing-battle-redo", "price": 1100 },
-        { "ability_card_id": "prevention", "price": 3000 },
-        { "ability_card_id": "mega-impact-blue", "price": 600 },
-        { "ability_card_id": "g-power-up", "price": 600 },
-        { "ability_card_id": "subterra-ventus-darkus-combo", "price": 600 }
+        {
+          "ability_card_id": "subterra-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "subterra-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "subterra-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "timing-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "prevention",
+          "price": 0
+        },
+        {
+          "ability_card_id": "mega-impact-blue",
+          "price": 0
+        },
+        {
+          "ability_card_id": "g-power-up",
+          "price": 0
+        },
+        {
+          "ability_card_id": "subterra-ventus-darkus-combo",
+          "price": 0
+        }
       ]
     },
     {
@@ -114,33 +443,117 @@
       "name": "After Brave Battlers Tournament",
       "unlock_condition": "brave_battlers_tournament",
       "bakugan": [
-        { "bakugan_id": "monarus", "price": 13200, "start_g_power": 300, "attributes": ["pyrus", "haos", "ventus"] },
-        { "bakugan_id": "griffon", "price": 12000, "start_g_power": 300, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] }
+        {
+          "bakugan_id": "monarus",
+          "price": 0,
+          "start_g_power": 300,
+          "attributes": [
+            "pyrus",
+            "haos",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "griffon",
+          "price": 0,
+          "start_g_power": 300,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "ravenoid", "price": 600 },
-        { "gate_card_id": "monarus", "price": 600 },
-        { "gate_card_id": "griffon", "price": 600 },
-        { "gate_card_id": "tornado-alley", "price": 560 },
-        { "gate_card_id": "force-wind", "price": 560 },
-        { "gate_card_id": "the-spires", "price": 560 },
-        { "gate_card_id": "wind-farm", "price": 560 },
-        { "gate_card_id": "blue-sky", "price": 560 },
-        { "gate_card_id": "vacuum", "price": 560 },
-        { "gate_card_id": "take-cover", "price": 1020 },
-        { "gate_card_id": "g-power-swap", "price": 1020 },
-        { "gate_card_id": "molten-rock", "price": 1020 }
+        {
+          "gate_card_id": "ravenoid",
+          "price": 0
+        },
+        {
+          "gate_card_id": "monarus",
+          "price": 0
+        },
+        {
+          "gate_card_id": "griffon",
+          "price": 0
+        },
+        {
+          "gate_card_id": "tornado-alley",
+          "price": 0
+        },
+        {
+          "gate_card_id": "force-wind",
+          "price": 0
+        },
+        {
+          "gate_card_id": "the-spires",
+          "price": 0
+        },
+        {
+          "gate_card_id": "wind-farm",
+          "price": 0
+        },
+        {
+          "gate_card_id": "blue-sky",
+          "price": 0
+        },
+        {
+          "gate_card_id": "vacuum",
+          "price": 0
+        },
+        {
+          "gate_card_id": "take-cover",
+          "price": 0
+        },
+        {
+          "gate_card_id": "g-power-swap",
+          "price": 0
+        },
+        {
+          "gate_card_id": "molten-rock",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "ventus-swap", "price": 2600 },
-        { "ability_card_id": "ventus-time-breaker", "price": 2600 },
-        { "ability_card_id": "ventus-double-input", "price": 3500 },
-        { "ability_card_id": "pop-battle-redo", "price": 1700 },
-        { "ability_card_id": "imbalance", "price": 5000 },
-        { "ability_card_id": "hot-wind", "price": 900 },
-        { "ability_card_id": "g-power-increase", "price": 900 },
-        { "ability_card_id": "aquos-ventus-combo", "price": 900 },
-        { "ability_card_id": "ventus-haos-combo", "price": 900 }
+        {
+          "ability_card_id": "ventus-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "ventus-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "ventus-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pop-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "imbalance",
+          "price": 0
+        },
+        {
+          "ability_card_id": "hot-wind",
+          "price": 0
+        },
+        {
+          "ability_card_id": "g-power-increase",
+          "price": 0
+        },
+        {
+          "ability_card_id": "aquos-ventus-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "ventus-haos-combo",
+          "price": 0
+        }
       ]
     },
     {
@@ -148,25 +561,78 @@
       "name": "After Maximum Power Tournament",
       "unlock_condition": "maximum_power_tournament",
       "bakugan": [
-        { "bakugan_id": "terrorclaw", "price": 17600, "start_g_power": 320, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus"] }
+        {
+          "bakugan_id": "terrorclaw",
+          "price": 0,
+          "start_g_power": 320,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "terrorclaw", "price": 900 },
-        { "gate_card_id": "volcanic-lake", "price": 890 },
-        { "gate_card_id": "powder-keg", "price": 890 },
-        { "gate_card_id": "earthen-wave", "price": 890 },
-        { "gate_card_id": "flaming-wind", "price": 1500 },
-        { "gate_card_id": "waist-deep", "price": 1500 }
+        {
+          "gate_card_id": "terrorclaw",
+          "price": 0
+        },
+        {
+          "gate_card_id": "volcanic-lake",
+          "price": 0
+        },
+        {
+          "gate_card_id": "powder-keg",
+          "price": 0
+        },
+        {
+          "gate_card_id": "earthen-wave",
+          "price": 0
+        },
+        {
+          "gate_card_id": "flaming-wind",
+          "price": 0
+        },
+        {
+          "gate_card_id": "waist-deep",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "pyrus-swap", "price": 3000 },
-        { "ability_card_id": "pyrus-time-breaker", "price": 3000 },
-        { "ability_card_id": "pyrus-double-input", "price": 4500 },
-        { "ability_card_id": "trace-battle-redo", "price": 2200 },
-        { "ability_card_id": "pyrus-darkus-combo", "price": 1200 },
-        { "ability_card_id": "pyrus-subterra-combo", "price": 1200 },
-        { "ability_card_id": "circle-of-fire", "price": 1200 },
-        { "ability_card_id": "ventus-pyrus-combo", "price": 1200 }
+        {
+          "ability_card_id": "pyrus-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pyrus-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pyrus-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "trace-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pyrus-darkus-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "pyrus-subterra-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "circle-of-fire",
+          "price": 0
+        },
+        {
+          "ability_card_id": "ventus-pyrus-combo",
+          "price": 0
+        }
       ]
     },
     {
@@ -174,26 +640,83 @@
       "name": "After Bakugan Master Cup Tournament",
       "unlock_condition": "bakugan_master_cup_tournament",
       "bakugan": [
-        { "bakugan_id": "laserman", "price": 31000, "start_g_power": 370, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] }
+        {
+          "bakugan_id": "laserman",
+          "price": 0,
+          "start_g_power": 370,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "laserman", "price": 1200 },
-        { "gate_card_id": "leonidas", "price": 3000 },
-        { "gate_card_id": "low-energy", "price": 1150 },
-        { "gate_card_id": "sunrise", "price": 1150 },
-        { "gate_card_id": "lucky-find", "price": 2000 },
-        { "gate_card_id": "blinding-flash", "price": 2000 },
-        { "gate_card_id": "elements", "price": 2000 }
+        {
+          "gate_card_id": "laserman",
+          "price": 0
+        },
+        {
+          "gate_card_id": "leonidas",
+          "price": 0
+        },
+        {
+          "gate_card_id": "low-energy",
+          "price": 0
+        },
+        {
+          "gate_card_id": "sunrise",
+          "price": 0
+        },
+        {
+          "gate_card_id": "lucky-find",
+          "price": 0
+        },
+        {
+          "gate_card_id": "blinding-flash",
+          "price": 0
+        },
+        {
+          "gate_card_id": "elements",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "haos-swap", "price": 4100 },
-        { "ability_card_id": "haos-time-breaker", "price": 4100 },
-        { "ability_card_id": "haos-double-input", "price": 4500 },
-        { "ability_card_id": "bound-battle-redo", "price": 2700 },
-        { "ability_card_id": "alpha-blaster", "price": 5000 },
-        { "ability_card_id": "flash", "price": 2000 },
-        { "ability_card_id": "subterra-haos-combo", "price": 2000 },
-        { "ability_card_id": "haos-darkus-combo", "price": 2000 }
+        {
+          "ability_card_id": "haos-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "haos-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "haos-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "bound-battle-redo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "alpha-blaster",
+          "price": 0
+        },
+        {
+          "ability_card_id": "flash",
+          "price": 0
+        },
+        {
+          "ability_card_id": "subterra-haos-combo",
+          "price": 0
+        },
+        {
+          "ability_card_id": "haos-darkus-combo",
+          "price": 0
+        }
       ]
     },
     {
@@ -201,23 +724,79 @@
       "name": "After Completing Story Mode",
       "unlock_condition": "story_complete",
       "bakugan": [
-        { "bakugan_id": "omega-leonidas", "price": 80000, "start_g_power": 650, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "reaper", "price": 38000, "start_g_power": 380, "attributes": ["aquos", "subterra", "haos", "darkus", "ventus"] }
+        {
+          "bakugan_id": "omega-leonidas",
+          "price": 0,
+          "start_g_power": 650,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "reaper",
+          "price": 0,
+          "start_g_power": 380,
+          "attributes": [
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [
-        { "gate_card_id": "omega-leonidas", "price": 10000 },
-        { "gate_card_id": "vladitor", "price": 15000 },
-        { "gate_card_id": "battle-ax-vladitor", "price": 25000 },
-        { "gate_card_id": "delayed-attack", "price": 5000 }
+        {
+          "gate_card_id": "omega-leonidas",
+          "price": 0
+        },
+        {
+          "gate_card_id": "vladitor",
+          "price": 0
+        },
+        {
+          "gate_card_id": "battle-ax-vladitor",
+          "price": 0
+        },
+        {
+          "gate_card_id": "delayed-attack",
+          "price": 0
+        }
       ],
       "ability_cards": [
-        { "ability_card_id": "counter-swap", "price": 7500 },
-        { "ability_card_id": "counter-time-breaker", "price": 7500 },
-        { "ability_card_id": "level-field", "price": 5000 },
-        { "ability_card_id": "counter-double-input", "price": 10000 },
-        { "ability_card_id": "omega-eraser", "price": 10000 },
-        { "ability_card_id": "dark-sphere-impact", "price": 5000 },
-        { "ability_card_id": "thousand-destroyer", "price": 10000 }
+        {
+          "ability_card_id": "counter-swap",
+          "price": 0
+        },
+        {
+          "ability_card_id": "counter-time-breaker",
+          "price": 0
+        },
+        {
+          "ability_card_id": "level-field",
+          "price": 0
+        },
+        {
+          "ability_card_id": "counter-double-input",
+          "price": 0
+        },
+        {
+          "ability_card_id": "omega-eraser",
+          "price": 0
+        },
+        {
+          "ability_card_id": "dark-sphere-impact",
+          "price": 0
+        },
+        {
+          "ability_card_id": "thousand-destroyer",
+          "price": 0
+        }
       ]
     },
     {
@@ -225,26 +804,171 @@
       "name": "Available from Park Battles",
       "unlock_condition": "park_battles",
       "bakugan": [
-        { "bakugan_id": "leonidas", "price": 50000, "start_g_power": 420, "attributes": ["pyrus", "aquos", "subterra", "haos", "darkus", "ventus"] },
-        { "bakugan_id": "fortress", "price": 42000, "start_g_power": 390, "attributes": ["pyrus"] },
-        { "bakugan_id": "dragonoid", "price": 48000, "start_g_power": 400, "attributes": ["pyrus"] },
-        { "bakugan_id": "delta-dragonoid-ii", "price": 67000, "start_g_power": 500, "attributes": ["pyrus"] },
-        { "bakugan_id": "sirenoid", "price": 42000, "start_g_power": 390, "attributes": ["aquos"] },
-        { "bakugan_id": "preyas", "price": 44000, "start_g_power": 380, "attributes": ["aquos"] },
-        { "bakugan_id": "preyas-ii", "price": 58000, "start_g_power": 480, "attributes": ["aquos"] },
-        { "bakugan_id": "cycloid", "price": 40000, "start_g_power": 390, "attributes": ["subterra"] },
-        { "bakugan_id": "gorem", "price": 48000, "start_g_power": 400, "attributes": ["subterra"] },
-        { "bakugan_id": "hammer-gorem", "price": 62000, "start_g_power": 500, "attributes": ["subterra"] },
-        { "bakugan_id": "tentaclear", "price": 40000, "start_g_power": 390, "attributes": ["haos"] },
-        { "bakugan_id": "tigrerra", "price": 44000, "start_g_power": 400, "attributes": ["haos"] },
-        { "bakugan_id": "blade-tigrerra", "price": 62000, "start_g_power": 500, "attributes": ["haos"] },
-        { "bakugan_id": "hydranoid", "price": 57000, "start_g_power": 450, "attributes": ["darkus"] },
-        { "bakugan_id": "dual-hydranoid", "price": 72000, "start_g_power": 550, "attributes": ["darkus"] },
-        { "bakugan_id": "vladitor", "price": 54000, "start_g_power": 420, "attributes": ["darkus"] },
-        { "bakugan_id": "battle-ax-vladitor", "price": 84000, "start_g_power": 650, "attributes": ["darkus"] },
-        { "bakugan_id": "harpus", "price": 40000, "start_g_power": 390, "attributes": ["ventus"] },
-        { "bakugan_id": "skyress", "price": 48000, "start_g_power": 400, "attributes": ["ventus"] },
-        { "bakugan_id": "storm-skyress", "price": 67000, "start_g_power": 500, "attributes": ["ventus"] }
+        {
+          "bakugan_id": "leonidas",
+          "price": 0,
+          "start_g_power": 420,
+          "attributes": [
+            "pyrus",
+            "aquos",
+            "subterra",
+            "haos",
+            "darkus",
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "fortress",
+          "price": 0,
+          "start_g_power": 390,
+          "attributes": [
+            "pyrus"
+          ]
+        },
+        {
+          "bakugan_id": "dragonoid",
+          "price": 0,
+          "start_g_power": 400,
+          "attributes": [
+            "pyrus"
+          ]
+        },
+        {
+          "bakugan_id": "delta-dragonoid-ii",
+          "price": 0,
+          "start_g_power": 500,
+          "attributes": [
+            "pyrus"
+          ]
+        },
+        {
+          "bakugan_id": "sirenoid",
+          "price": 0,
+          "start_g_power": 390,
+          "attributes": [
+            "aquos"
+          ]
+        },
+        {
+          "bakugan_id": "preyas",
+          "price": 0,
+          "start_g_power": 380,
+          "attributes": [
+            "aquos"
+          ]
+        },
+        {
+          "bakugan_id": "preyas-ii",
+          "price": 0,
+          "start_g_power": 480,
+          "attributes": [
+            "aquos"
+          ]
+        },
+        {
+          "bakugan_id": "cycloid",
+          "price": 0,
+          "start_g_power": 390,
+          "attributes": [
+            "subterra"
+          ]
+        },
+        {
+          "bakugan_id": "gorem",
+          "price": 0,
+          "start_g_power": 400,
+          "attributes": [
+            "subterra"
+          ]
+        },
+        {
+          "bakugan_id": "hammer-gorem",
+          "price": 0,
+          "start_g_power": 500,
+          "attributes": [
+            "subterra"
+          ]
+        },
+        {
+          "bakugan_id": "tentaclear",
+          "price": 0,
+          "start_g_power": 390,
+          "attributes": [
+            "haos"
+          ]
+        },
+        {
+          "bakugan_id": "tigrerra",
+          "price": 0,
+          "start_g_power": 400,
+          "attributes": [
+            "haos"
+          ]
+        },
+        {
+          "bakugan_id": "blade-tigrerra",
+          "price": 0,
+          "start_g_power": 500,
+          "attributes": [
+            "haos"
+          ]
+        },
+        {
+          "bakugan_id": "hydranoid",
+          "price": 0,
+          "start_g_power": 450,
+          "attributes": [
+            "darkus"
+          ]
+        },
+        {
+          "bakugan_id": "dual-hydranoid",
+          "price": 0,
+          "start_g_power": 550,
+          "attributes": [
+            "darkus"
+          ]
+        },
+        {
+          "bakugan_id": "vladitor",
+          "price": 0,
+          "start_g_power": 420,
+          "attributes": [
+            "darkus"
+          ]
+        },
+        {
+          "bakugan_id": "battle-ax-vladitor",
+          "price": 0,
+          "start_g_power": 650,
+          "attributes": [
+            "darkus"
+          ]
+        },
+        {
+          "bakugan_id": "harpus",
+          "price": 0,
+          "start_g_power": 390,
+          "attributes": [
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "skyress",
+          "price": 0,
+          "start_g_power": 400,
+          "attributes": [
+            "ventus"
+          ]
+        },
+        {
+          "bakugan_id": "storm-skyress",
+          "price": 0,
+          "start_g_power": 500,
+          "attributes": [
+            "ventus"
+          ]
+        }
       ],
       "gate_cards": [],
       "ability_cards": []
