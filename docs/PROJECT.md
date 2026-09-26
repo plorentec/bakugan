@@ -360,6 +360,10 @@ Each failed source is remembered (`failedSrc`) and the next candidate is tried.
       load/normalize/validate the JSON files.
 - [ ] **Online PvP is stubbed only** — `websocket-stub.ts` / `pvp-manager.ts`, no server.
 - [ ] **`openai` and `better-sqlite3` are declared but unused** — remove or implement.
+- [ ] **`tsconfig.tsbuildinfo` is tracked in git** — it is a TypeScript build artifact, so it changes
+      on almost every build and adds noise to every diff. Pending decision: untrack it
+      (`git rm --cached tsconfig.tsbuildinfo` and add it to `.gitignore`), or keep following the
+      repository's existing practice of committing it.
 
 ---
 
