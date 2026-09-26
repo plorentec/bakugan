@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import bakuganData from '@/data/raw/bakugan.json';
 import { getModelPath } from '@/lib/model-paths';
+import { getBakuganImage } from '@/lib/image-manifest';
 import ArenaBackground from '@/ui/components/ArenaBackground';
 import dynamic from 'next/dynamic';
 
@@ -162,6 +163,7 @@ export default function ModelsPage() {
               <div className="flex flex-col gap-2 max-h-[500px] overflow-y-auto">
                 {filtered.map((b: any) => {
                   const hasModel = !!getModelPath(b.name);
+                  const hasArt = !!getBakuganImage(b.name);
                   const isSelected = selectedBakugan?.id === b.id;
 
                   return (
@@ -195,11 +197,13 @@ export default function ModelsPage() {
 
                       {/* Status badge */}
                       <div className={`text-[9px] px-1.5 py-0.5 rounded ${
-                        hasModel 
-                          ? 'bg-green-900/50 text-green-400' 
-                          : 'bg-gray-700 text-gray-500'
+                        hasModel
+                          ? 'bg-green-900/50 text-green-400'
+                          : hasArt
+                            ? 'bg-blue-900/50 text-blue-300'
+                            : 'bg-gray-700 text-gray-500'
                       }`}>
-                        {hasModel ? '3D' : 'SVG'}
+                        {hasModel ? '3D' : hasArt ? '2D' : '—'}
                       </div>
                     </button>
                   );

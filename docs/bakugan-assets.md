@@ -1,5 +1,28 @@
 # Bakugan 3D Assets Research
 
+## 2D Images (character portraits + Bakugan artwork) — implemented 2026-09-26
+
+- **Source**: Bakugan Wiki (Fandom) — `https://bakugan.fandom.com` (pageimages + infobox files).
+- **Files**: `public/assets/images/bakugan/` (38 WebP) and `public/assets/images/characters/` (9 WebP).
+- **Lookup**: `src/lib/image-manifest.ts` — generated manifest with `getBakuganImage(name)` /
+  `getCharacterImage(name)` plus per-entry `source` URL for attribution.
+- **Identity check**: every download was matched against the filename of the source file;
+  for pages whose infobox is a `<gallery>` (Dan, Runo, Joe) the image was replaced by a
+  file whose name proves the subject.
+- **Coverage**: Bakugan 38/38 · Characters 9/10 — **Kai has no image** (page does not exist
+  on the wiki, and neither The Models Resource DS nor Wii rosters include him).
+- **Fallback chain** (all image components): explicit URL → wiki artwork → model texture →
+  SVG sphere. A missing file never breaks the UI.
+- **License**: wiki art is third-party/fan content — internal, non-commercial use with
+  attribution, consistent with `asset_license_status: reference_only_no_redistribution`.
+
+### Image sources used
+
+| Entity | Count | Source |
+|--------|-------|--------|
+| Bakugan artwork | 38 | Bakugan Wiki infobox images (`BK_CD_*` card art, `*` character art) |
+| Character portraits | 9 | Bakugan Wiki infobox files (Dan, Marucho, Julie, Runo, Shun, Masquerade, Marduk, Naga, Joe) |
+
 ## Sources
 
 ### 1. The Models Resource — DS/DSi
@@ -115,9 +138,12 @@
 | Wii models available | 1 (Dragonoid) |
 | Models downloaded | 20 |
 | Models converted to GLB | 0 |
-| Models integrated | 0 |
-| Missing models | 18 |
-| **Coverage** | **52.6%** (20/38) |
+| Game roster resolved to a 3D model | 19 (17 exact + 2 aliases: Delta Dragonoid II, Preyas II) |
+| Bakugan shown in 2D artwork (no model) | 19 |
+| 2D artwork downloaded | 38/38 |
+| Character portraits downloaded | 9/10 (Kai missing) |
+| **3D coverage** | **50%** (19/38) |
+| **2D image coverage** | **100%** bakugan / 90% characters |
 
 ## Model Directory Structure
 

@@ -7,6 +7,7 @@ import { useProgressionStore } from "@/stores/progression-store";
 import { playClickSound } from "@/lib/sounds";
 import { fadeScaleIn, PAGE_TRANSITION } from "@/lib/animations";
 import { STORY_OPPONENTS, isOpponentUnlocked, getDefeatedCount } from "@/lib/story";
+import { getCharacterImage } from "@/lib/image-manifest";
 import type { Attribute } from "@/data/schemas";
 
 // ─── Attribute styles ─────────────────────────────────────────────────
@@ -173,9 +174,21 @@ export default function StoryPage() {
                     <div
                       className={`w-14 h-14 rounded-lg bg-gradient-to-br ${
                         attributeColors[opponent.attribute]
-                      } flex items-center justify-center text-2xl font-black text-white`}
+                      } overflow-hidden flex items-center justify-center text-2xl font-black text-white flex-shrink-0`}
                     >
-                      {opponent.name[0]}
+                      {(() => {
+                        const portrait = getCharacterImage(opponent.name);
+                        return portrait ? (
+                          <img
+                            src={portrait}
+                            alt={opponent.name}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        ) : (
+                          opponent.name[0]
+                        );
+                      })()}
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-white">

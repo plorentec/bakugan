@@ -7,6 +7,7 @@
 
 import { useState } from "react";
 import { getModelPath } from "@/lib/model-paths";
+import { getBakuganImage } from "@/lib/image-manifest";
 
 /* ------------------------------------------------------------------ */
 /*  Attribute styles                                                    */
@@ -62,17 +63,21 @@ export default function BakuganImage({
   className = "",
   showName = true,
 }: BakuganImageProps) {
-  const [imgError, setImgError] = useState(false);
+  const [failedSrc, setFailedSrc] = useState<string | null>(null);
   const style = ATTRIBUTE_STYLES[attribute] || ATTRIBUTE_STYLES.pyrus;
-  const texturePath = getTexturePath(name);
-  const showTexture = texturePath && !imgError;
 
-  // If we have a texture, use it
-  if (showTexture) {
+  // Fallback chain: explicit URL > wiki artwork > model texture > SVG sphere
+  const candidates: string[] = [imageUrl ?? getBakuganImage(name), getTexturePath(name)].filter(
+    (src): src is string => !!src && src !== failedSrc
+  );
+  const src = candidates[0];
+
+  // If we have an image source, use it
+  if (src) {
     return (
       <div className={`relative ${className}`} style={{ width: size, height: size }}>
         <img
-          src={texturePath}
+          src={src}
           alt={name}
           width={size}
           height={size}
@@ -80,7 +85,7 @@ export default function BakuganImage({
           style={{
             filter: "drop-shadow(0 0 8px " + style.glow + ")",
           }}
-          onError={() => setImgError(true)}
+          onError={() => setFailedSrc(src)}
         />
         {showName && (
           <div

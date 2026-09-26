@@ -3,7 +3,7 @@
 /**
  * BakuganViewer.tsx — Reusable 3D Bakugan viewer with fallback chain.
  *
- * Fallback priority: 3D GLB model → 3D OBJ model → texture image → portrait → SVG placeholder
+ * Fallback priority: 3D GLB model → 3D OBJ model → wiki artwork → model texture → SVG placeholder
  * Never shows broken images.
  *
  * Supports: rotation, zoom, idle animation, attribute-based lighting.
@@ -14,6 +14,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import type * as THREE from "three";
 import { getModelPath } from "@/lib/model-paths";
 import { getBestModelPath } from "@/lib/asset-tracker";
+import { getBakuganImage } from "@/lib/image-manifest";
 
 /* ------------------------------------------------------------------ */
 /*  Attribute colors and lighting                                       */
@@ -222,7 +223,7 @@ export default function BakuganViewer({
   const containerRef = useRef<HTMLDivElement>(null);
   const cleanupRef = useRef<(() => void) | null>(null);
   const [renderMode, setRenderMode] = useState<"loading" | "3d" | "image" | "svg">("loading");
-  const [imgError, setImgError] = useState(false);
+  const [failedSrc, setFailedSrc] = useState<string | null>(null);
 
   const style = ATTRIBUTE_STYLES[attribute] || ATTRIBUTE_STYLES.pyrus;
 
@@ -234,10 +235,14 @@ export default function BakuganViewer({
     ? resolvedModelPath.replace(/Model\.(obj|fbx|dae|glb)/i, "mat1.png")
     : null;
 
+  // Fallback chain when there is no usable 3D model: wiki artwork → texture
+  const imageSrc = [imageUrl ?? getBakuganImage(name), texturePath].find(
+    (src): src is string => !!src && src !== failedSrc
+  );
+
   // Determine what to show
   const show3D = !!resolvedModelPath && renderMode !== "image" && renderMode !== "svg";
-  const showImage = !show3D && !!imageUrl && !imgError;
-  const showTexture = !show3D && !showImage && !!texturePath && !imgError;
+  const showImage = !show3D && !!imageSrc;
 
   // 3D rendering with Three.js
   useEffect(() => {
@@ -321,8 +326,8 @@ export default function BakuganViewer({
   }
 
   // Image fallback
-  if (showImage || showTexture) {
-    const src = imageUrl || texturePath!;
+  if (showImage && imageSrc) {
+    const src = imageSrc;
     return (
       <div className={`relative ${className}`} style={{ width: size, height: size }}>
         <img
@@ -334,7 +339,7 @@ export default function BakuganViewer({
           style={{
             filter: `drop-shadow(0 0 8px ${style.glow})`,
           }}
-          onError={() => setImgError(true)}
+          onError={() => setFailedSrc(src)}
         />
         {showName && (
           <div

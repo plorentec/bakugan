@@ -2,6 +2,37 @@
 
 All notable changes to the Bakugan Battle Brawlers web game.
 
+## [0.10.0] - 2026-09-26
+
+### Added
+- **2D artwork system**
+  - 38/38 Bakugan artwork + 9/10 character portraits downloaded from the Bakugan Wiki (Fandom)
+  - New generated manifest `src/lib/image-manifest.ts` keyed by game name, with per-entry
+    `wikiTitle` + `source` URL for attribution (`getBakuganImage` / `getCharacterImage`)
+  - Kai has no portrait (no wiki page; absent from the DS/Wii model rosters)
+  - Files: `public/assets/images/bakugan/` (38 WebP), `public/assets/images/characters/` (9 WebP)
+
+- **Image fallback chains** (`BakuganImage`, `BakuganViewer`)
+  - `BakuganImage`: explicit URL → wiki artwork → model texture → SVG sphere
+  - `BakuganViewer`: 3D GLB → 3D OBJ → wiki artwork → model texture → SVG sphere
+  - Failed sources are skipped at runtime, so a missing file never breaks the UI
+
+- **Story page portraits**
+  - Opponents now show their character portrait instead of the initial letter
+  - Initial-letter fallback kept for characters without artwork
+
+- **Models page `3D` / `2D` badge**
+  - `/models` gallery marks each Bakugan as `3D` (model resolves) or `2D` (artwork only)
+
+- **Model path aliases** (`src/lib/model-paths.ts`)
+  - `Delta Dragonoid II` → `Delta Dragonoid`, `Preyas II` → `Preyas Angelo`
+  - Raises real-3D coverage to **19/38** roster Bakugan (the other 19 render as 2D artwork)
+
+- **Documentation**
+  - New comprehensive `docs/PROJECT.md` (status, systems, architecture, assets, sources, gaps)
+  - Refreshed `README.md`: Documentation index, verified Content counts, Getting Started,
+    Project Structure, Tech Stack, Sources & License
+
 ## [0.9.0] - 2026-09-24
 
 ### Added

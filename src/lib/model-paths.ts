@@ -178,6 +178,26 @@ export const BAKUGAN_MODELS: Record<string, ModelEntry> = {
 };
 
 /* ------------------------------------------------------------------ */
+/*  Name aliases                                                        */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Game roster name → model registry key.
+ * The DS model dumps use slightly different names than bakugan.json,
+ * so these aliases let more Bakugan resolve to a real 3D model.
+ */
+const MODEL_ALIASES: Record<string, string> = {
+  // DS asset is published as "Delta Dragonoid"
+  "Delta Dragonoid II": "Delta Dragonoid",
+  // DS ships the Angelo/Diablo evolutions instead of a "Preyas II" asset
+  "Preyas II": "Preyas Angelo",
+};
+
+function resolveModelKey(name: string): string {
+  return MODEL_ALIASES[name] ?? name;
+}
+
+/* ------------------------------------------------------------------ */
 /*  Backward-compatible helper functions                                */
 /* ------------------------------------------------------------------ */
 
@@ -187,7 +207,7 @@ export const BAKUGAN_MODELS: Record<string, ModelEntry> = {
  * Maintains the same API as before — returns a string path or undefined.
  */
 export function getModelPath(name: string): string | undefined {
-  const entry = BAKUGAN_MODELS[name];
+  const entry = BAKUGAN_MODELS[resolveModelKey(name)];
   if (!entry) return undefined;
 
   // Prefer GLB if it exists (checked at runtime via fetch or build)
@@ -200,7 +220,7 @@ export function getModelPath(name: string): string | undefined {
  * Get the full model entry with metadata.
  */
 export function getModelEntry(name: string): ModelEntry | undefined {
-  return BAKUGAN_MODELS[name];
+  return BAKUGAN_MODELS[resolveModelKey(name)];
 }
 
 /**
@@ -214,12 +234,12 @@ export function getAvailableModels(): string[] {
  * Get the source platform for a model.
  */
 export function getModelSource(name: string): string | undefined {
-  return BAKUGAN_MODELS[name]?.source;
+  return BAKUGAN_MODELS[resolveModelKey(name)]?.source;
 }
 
 /**
  * Get the source URL for a model.
  */
 export function getModelSourceUrl(name: string): string | undefined {
-  return BAKUGAN_MODELS[name]?.sourceUrl;
+  return BAKUGAN_MODELS[resolveModelKey(name)]?.sourceUrl;
 }
